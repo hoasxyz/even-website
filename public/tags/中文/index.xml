@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>中文 on Even - A super concise theme for Hugo</title>
+    <title>中文 on Website of Hoas.</title>
     <link>/tags/%E4%B8%AD%E6%96%87/</link>
-    <description>Recent content in 中文 on Even - A super concise theme for Hugo</description>
+    <description>Recent content in 中文 on Website of Hoas.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Aug 2017 01:37:56 +0800</lastBuildDate>
+    <copyright>Hoas</copyright>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/%E4%B8%AD%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>[中文] 《长恨歌》</title>
-      <link>/post/chinese-preview/</link>
-      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
+      <title>一本线分差分析</title>
+      <link>/post/oneline/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/chinese-preview/</guid>
-      <description>《长恨歌》是中国唐朝诗人白居易的一首长篇叙事诗。 第一段：贵妃受宠爱 汉皇重色思倾国，御宇多年求不得。杨家有女初长成，养在深闺人未识。 天生丽质难</description>
+      <guid>/post/oneline/</guid>
+      <description>某日，我正在办公室玩电脑，突然听见高三年级主任李老师的声音——以及朝我而来的脚步声。我知道李老师又要来开我找不到女朋友的玩笑了，但是久经沙场</description>
+    </item>
+    
+    <item>
+      <title>御龙将军</title>
+      <link>/post/terrylin/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/terrylin/</guid>
+      <description>&lt;p&gt;每个人从开始接触音乐（现代歌曲）到现在都会有一些对音乐的体会。渐渐地，形成了自己的音乐欣赏体系，这里记录了我本人对音乐的理解。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>华山攻略</title>
+      <link>/post/huashan/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/huashan/</guid>
+      <description>&lt;p&gt;华山由险著称，声称是“天下第一险”，华山被评为&lt;a href=&#34;https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E5%8D%81%E5%A4%A7%E5%90%8D%E5%B1%B1/4047358&#34;&gt;中华十大名山&lt;/a&gt;，国家AAAAA级旅游景区。而本博文是一篇简要介绍自己身体力行过的冬（淡）季华山攻略，这里不是指南，而是一些小小的提示以及自己的感想。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2Xi&#39;an</title>
+      <link>/post/2xi-an/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2xi-an/</guid>
+      <description>移动端最好的阅读方式是桌面版网站模式。 要是我这里不写一点话，网站首页又要出现莫名其妙的代码了…….Rmd文件怎么提取摘要现在还不知道怎么做。</description>
+    </item>
+    
+    <item>
+      <title>武汉都下雪了</title>
+      <link>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</link>
+      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</guid>
+      <description>&lt;p&gt;你们呢？&lt;/p&gt;</description>
     </item>
     
   </channel>

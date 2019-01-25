@@ -1,20 +1,16 @@
 ---
 title: "Theme preview"
 date: 2018-07-10T00:00:00+08:00
-lastmod: 2018-07-10T00:00:00+08:00
+lastmod: 2018-07-16T00:00:00+08:00
 draft: false
 tags: ["Theme preview"]
 categories: ["Theme preview"]
 
-weight: 10
 contentCopyright: MIT
 mathjax: true
 autoCollapseToc: true
 
 ---
-
-There are some brief usage about Markdown and even-theme.
-<!--more-->
 
 > Based on [MarkdownPreview test.md](https://github.com/facelessuser/MarkdownPreview/blob/master/examples/test.md).
 

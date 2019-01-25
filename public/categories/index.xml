@@ -6,6 +6,7 @@
     <description>Recent content in Categories on Website of Hoas.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>Hoas</copyright>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,9 +21,54 @@
     </item>
     
     <item>
+      <title>brilliant</title>
+      <link>/categories/brilliant/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/brilliant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course</title>
+      <link>/categories/course/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debugging</title>
+      <link>/categories/debugging/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/debugging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fragmentray</title>
+      <link>/categories/fragmentray/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/fragmentray/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plain</title>
+      <link>/categories/plain/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/plain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>中文</title>
       <link>/categories/%E4%B8%AD%E6%96%87/</link>
-      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/%E4%B8%AD%E6%96%87/</guid>
       <description></description>

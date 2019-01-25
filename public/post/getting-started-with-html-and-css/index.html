@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Getting Started with HTML and CSS - Website of Hoas.</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Hoas" /><meta name="description" content="It&amp;rsquo;s learning abstract from Head First HTML and CSS, 2nd Edition. " /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.53 with even 4.0.0" />
+
+
+<link rel="canonical" href="/post/getting-started-with-html-and-css/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.34139671.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Getting Started with HTML and CSS" />
+<meta property="og:description" content="It&rsquo;s learning abstract from Head First HTML and CSS, 2nd Edition.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/getting-started-with-html-and-css/" /><meta property="article:published_time" content="2019-01-18T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-22T00:00:00&#43;00:00"/>
+
+<meta itemprop="name" content="Getting Started with HTML and CSS">
+<meta itemprop="description" content="It&rsquo;s learning abstract from Head First HTML and CSS, 2nd Edition.
+">
+
+
+<meta itemprop="datePublished" content="2019-01-18T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3706">
+
+
+
+<meta itemprop="keywords" content="HTML,CSS," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting Started with HTML and CSS"/>
+<meta name="twitter:description" content="It&rsquo;s learning abstract from Head First HTML and CSS, 2nd Edition.
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Hoas</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Hoas</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Getting Started with HTML and CSS</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-01-18 </span>
+        <div class="post-category">
+            <a href="/categories/fragmentray/"> fragmentray </a>
+            </div>
+          <span class="more-meta"> 3706 words </span>
+          <span class="more-meta"> 8 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#relative-path-ht">Relative Path(HT)</a>
+<ul>
+<li><a href="#for-html-file">for <code>.html</code> file</a></li>
+<li><a href="#for-images">for images</a></li>
+</ul></li>
+<li><a href="#web-page-construction">Web Page Construction</a>
+<ul>
+<li><a href="#citation-quotation">citation/quotation</a>
+<ul>
+<li><a href="#q"><code>&lt;q&gt;</code></a></li>
+<li><a href="#blockquote"><code>&lt;blockquote&gt;</code></a></li>
+</ul></li>
+<li><a href="#void-element">void element</a></li>
+<li><a href="#list">list</a>
+<ul>
+<li><a href="#ordered-list">ordered list</a></li>
+<li><a href="#unordered-list">unordered list</a></li>
+<li><a href="#nested-list">nested list</a></li>
+<li><a href="#definition-list">definition list</a></li>
+</ul></li>
+<li><a href="#character-entity">character entity</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#image">image</a></li>
+</ul></li>
+<li><a href="#getting-serious-with-html">Getting Serious with HTML</a>
+<ul>
+<li><a href="#backwards-compatibility">backwards compatibility</a></li>
+<li><a href="#the-w3c-validator">the W3C validator</a></li>
+<li><a href="#specify-the-character-encoding">specify the character encoding</a></li>
+<li><a href="#why-do-we-need-that-alt-attribute-anyway">why do we need that alt attribute anyway?</a></li>
+</ul></li>
+<li><a href="#adding-a-little-style">Adding a Little Style</a>
+<ul>
+<li><a href="#p">p {}</a></li>
+<li><a href="#h1-h2">h1,h2 {}</a></li>
+<li><a href="#css-file">CSS file</a></li>
+<li><a href="#class">class</a></li>
+<li><a href="#font-face"><code>@font-face</code></a></li>
+<li><a href="#handling-with-fonts">handling with fonts</a></li>
+<li><a href="#web-colors">web colors</a></li>
+</ul></li>
+<li><a href="#getting-intimate-with-elements">Getting Intimate with Elements</a>
+<ul>
+<li><a href="#the-box-model">the box model</a></li>
+<li><a href="#select-by-id">select by id</a></li>
+<li><a href="#out-of-browser">out of browser</a></li>
+</ul></li>
+<li><a href="#advanced-web-construction">Advanced Web Construction</a>
+<ul>
+<li><a href="#identifying-the-logical-sections-div">identifying the logical sections &ndash; <code>&lt;div&gt;</code></a></li>
+<li><a href="#select-descendants">select descendants</a></li>
+<li><a href="#shortcut">shortcut</a></li>
+<li><a href="#span"><code>&lt;span&gt;</code></a></li>
+<li><a href="#for-a">for <code>&lt;a&gt;</code></a></li>
+<li><a href="#pseudo-class">Pseudo-class</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>It&rsquo;s learning abstract from <a href="http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf"><em>Head First HTML and CSS, 2nd Edition</em></a>.
+<img src="/post/!image/HTML&CSS.png" alt="HTML&CSS" width="100%" height="100%"></p>
+
+<p><center></p>
+
+<h1 id="relative-path-ht">Relative Path(HT)</h1>
+
+<p></center></p>
+
+<p>A relative path is a link that points to other files on your website relative to the web page you’re linking from.</p>
+
+<div class="admonition warning"><p class="admonition-title">warning</p>
+  <p>Blank space isn&rsquo;t permitted in the names of files and folders.</p>
+
+</div>
+
+<h2 id="for-html-file">for <code>.html</code> file</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;directions.html&#34;</span><span class="p">&gt;</span>detailed directions<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li><p><code>href</code> means hypertextreference.</p></li>
+
+<li><p>the <code>directions.html</code> file must be in the same parent file as the <code>.html</code> file.</p></li>
+
+<li><p>use dot dot <code>..</code> to trace the parent file.</p>
+
+<ul>
+<li><p>if you want to go up two folders, you’d type <code>../..</code> and so on.</p></li>
+
+<li><p>the limit to how far up you can go &ndash; the root of your website.</p></li>
+
+<li><p>in web pages you always use <code>/</code> (forward slash). Don’t use <code>\</code> (backslash).</p></li>
+</ul></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;../lounge.html&#34;</span><span class="p">&gt;</span> Back to the Lounge<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="for-images">for images</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;drinks.gif&#34;</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="admonition warning"><p class="admonition-title">warning</p>
+  <p>In <strong>blogdown</strong>/hugo, the root file is <code>public</code>. And the posts are in <code>public/post</code>.</p>
+
+</div>
+
+<p><center></p>
+
+<h1 id="web-page-construction">Web Page Construction</h1>
+
+<p></center></p>
+
+<h2 id="citation-quotation">citation/quotation</h2>
+
+<p>Some browsers use double quotes as the default style of citation, some use italics, and some use nothing at all. The only way to really determine how they’ll look is to style them yourself.</p>
+
+<h3 id="q"><code>&lt;q&gt;</code></h3>
+
+<ul>
+<li><p>The difference between <code>&lt;q&gt;</code> and double quotation marks <code>&quot;&quot;</code>.</p></li>
+
+<li><p><code>&lt;q&gt;</code> is applied in <strong>inline</strong> citation, as a part of one paragraph.</p></li>
+</ul>
+
+<h3 id="blockquote"><code>&lt;blockquote&gt;</code></h3>
+
+<ul>
+<li><p><code>&lt;blockquote&gt;</code> is applied in <strong>block</strong> citation, as another paragraph, which has the indent automatically.</p></li>
+
+<li><p><code>&lt;q&gt;</code> can be inserted in <code>&lt;blockquote&gt;</code>.</p></li>
+
+<li><p>Linebreak elements <code>&lt;br&gt;</code>(or<code>&lt;br/&gt;</code>) can be used in <code>&lt;blockquote&gt;</code>.</p></li>
+</ul>
+
+<h2 id="void-element">void element</h2>
+
+<p>Elements that don’t have any content by design are called void elements. When you need to use a void element, like <code>&lt;br&gt;</code> or <code>&lt;img&gt;</code>, you only use an opening tag. This is a convenient shorthand that reduces the amount of markup in your HTML.</p>
+
+<h2 id="list">list</h2>
+
+<p>Put each <strong>l</strong>ist <strong>i</strong>tem in an <code>&lt;li&gt;</code> element. eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Walla Walla, WA<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Magic City, ID<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Bountiful, UT<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Last Chance, CO<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Truth or Consequences, NM<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Why, AZ<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> </code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="ordered-list">ordered list</h3>
+
+<p>Enclose the list items with the <code>&lt;ol&gt;</code> element. eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Walla Walla, WA<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Magic City, ID<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Bountiful, UT<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Last Chance, CO<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Truth or Consequences, NM<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Why, AZ<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+      <li>Walla Walla, WA</li> 
+      <li>Magic City, ID</li> 
+      <li>Bountiful, UT</li>
+      <li>Last Chance, CO</li>
+      <li>Truth or Consequences, NM</li>
+      <li>Why, AZ</li> 
+</ol>
+
+<h3 id="unordered-list">unordered list</h3>
+
+<p>Enclose the list items with the <code>&lt;ul&gt;</code> element.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Walla Walla, WA<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Magic City, ID<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Bountiful, UT<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Last Chance, CO<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Truth or Consequences, NM<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Why, AZ<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+      <li>Walla Walla, WA</li> 
+      <li>Magic City, ID</li> 
+      <li>Bountiful, UT</li>
+      <li>Last Chance, CO</li>
+      <li>Truth or Consequences, NM</li>
+      <li>Why, AZ</li> 
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;disc&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>苹果<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>香蕉<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>柠檬<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>桔子<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>  
+
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;circle&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>苹果<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>香蕉<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>柠檬<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>桔子<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>  
+
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;square&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>苹果<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>香蕉<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>柠檬<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>桔子<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>  </code></pre></td></tr></table>
+</div>
+</div>
+<ul type="disc">
+ <li>苹果</li>
+ <li>香蕉</li>
+ <li>柠檬</li>
+ <li>桔子</li>
+</ul>  
+
+<ul type="circle">
+ <li>苹果</li>
+ <li>香蕉</li>
+ <li>柠檬</li>
+ <li>桔子</li>
+</ul>  
+
+<ul type="square">
+ <li>苹果</li>
+ <li>香蕉</li>
+ <li>柠檬</li>
+ <li>桔子</li>
+</ul> 
+
+<h3 id="nested-list">nested list</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>咖啡<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>茶
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>红茶<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>绿茶
+      <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>中国茶<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>非洲茶<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>牛奶<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+  <li>咖啡</li>
+  <li>茶
+    <ul>
+    <li>红茶</li>
+    <li>绿茶
+      <ul>
+      <li>中国茶</li>
+      <li>非洲茶</li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li>牛奶</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Charge Segway<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pack for trip
+ <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>cell phone<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>iPod<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>digital camera<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>a protein bar<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Call mom<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+ <li>Charge Segway</li>
+ <li>Pack for trip
+ <ul>
+ <li>cell phone</li>
+ <li>iPod</li>
+ <li>digital camera</li>
+ <li>a protein bar</li>
+ </ul>
+ </li>
+ <li>Call mom</li>
+</ol>
+
+<h3 id="definition-list">definition list</h3>
+
+<p>Each item in the list has definition terms <code>&lt;dt&gt;</code> and definition description <code>&lt;dd&gt;</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Burma Shave Signs<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Road signs common in the U.S. in
+the 1920s and 1930s advertising shaving
+products.<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Route 66<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Most famous road in the U.S. highway
+system.<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<dl>
+ <dt>Burma Shave Signs</dt>
+ <dd>Road signs common in the U.S. in
+the 1920s and 1930s advertising shaving
+products.</dd>
+ <dt>Route 66</dt>
+ <dd>Most famous road in the U.S. highway
+system.</dd>
+</dl>
+
+<h2 id="character-entity">character entity</h2>
+
+<p>for any character that is considered “special” or that you’d like to use in your web page, but that may not be a typeable character in your editor (like a copyright symbol), you just look up the abbreviation and then type it into your HTML. For example, the &gt; character’s abbreviation is <code>&amp;gt;</code> and the &lt; character’s is <code>&amp;lt;</code>.</p>
+
+<p>If you’d like to have an <code>&amp;</code> in your HTML content, use the character entity <code>&amp;amp;</code> instead of the <code>&amp;</code> character itself.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  The <span class="ni">&amp;lt;</span>html<span class="ni">&amp;gt;</span> element rocks. And <span class="ni">&amp;amp;</span>.</code></pre></td></tr></table>
+</div>
+</div>
+<p>The &lt;html&gt; element rocks. And &amp;.</p>
+
+<p>And other common ones are available at: <a href="http://www.w3schools.com/tags/ref_entities.asp">http://www.w3schools.com/tags/ref_entities.asp</a>. Or, for a more exhaustive list, use this URL: <a href="http://www.unicode.org/charts/">http://www.unicode.org/charts/</a>.</p>
+
+<h2 id="id">id</h2>
+
+<p><a href="#relative-path-ht">Back to top(the same web page)</a>. And before this, you should know the id of each point you want to arrive.</p>
+
+<p>Insert audio in website? You can use the two kind of links:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"> <span class="p">&lt;</span><span class="nt">a</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;索引&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/post/terrylin/index.html#索引&#34;</span><span class="p">&gt;</span>御龙将军（uncover）<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> 
+ or [御龙将军（cover）](https://hoas.xyz/post/terrylin/#索引).</code></pre></td></tr></table>
+</div>
+</div>
+<p><a target="_blank" title="索引" href="/post/terrylin/index.html#索引">御龙将军（uncover）</a> or <a href="https://hoas.xyz/post/terrylin/#索引">御龙将军（cover）</a>.</p>
+
+<p>If you give the name <code>_blank</code> to the targets in all your <code>&lt;a&gt;</code> elements, then each link will open in a new blank window. However, this is a good question because it brings up an important point: you don’t actually have to name your target <code>_blank</code>. If you give it another name, say, <code>coffee</code>, then all links with the target name <code>coffee</code> will open in the same window. The reason is that when you give your target a specific name, like <code>coffee</code>, you are really naming the new window that will be used to display the page at the link. <code>_blank</code> is a special case that tells the browser to always use a new window.</p>
+
+<h2 id="image">image</h2>
+
+<p>the <code>&lt;img&gt;</code> element is an inline element. To make links out of images, for example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.bilibili.com/video/av26844990?from=search&amp;seid=4942272683409810113&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/post/!image/terrylin.jpg&#34;</span>
+ <span class="na">alt</span><span class="o">=</span><span class="s">&#34;林志炫&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><a href="../terrylin/index.html#御龙将军">
+ <img src="../!image/terrylin.jpg"
+ alt="林志炫">
+</a></p>
+
+<p>In this example the link fails because <a href="https://github.com/fancyapps/fancybox"><code>fancybox = true</code></a>.</p>
+
+<p>A width of less than 800 pixels is a good rule of thumb for the size of photo images in a web page. And more details of different formats of images(JPEG,GIF,PNG) are in the book.</p>
+
+<p><center></p>
+
+<h1 id="getting-serious-with-html">Getting Serious with HTML</h1>
+
+<p></center></p>
+
+<p>When the browser sees: <code>&lt;!doctype html&gt;</code>, it assumes you’re using standard HTML. No more getting all hung up on version numbers or where the standard is located. If you insert the <code>&lt;!doctype html&gt;</code> in the <code>.html</code> file, this page will be updated to HTML5.</p>
+
+<h2 id="backwards-compatibility">backwards compatibility</h2>
+
+<p>Backwards compatibility means that we can keep adding new stuff to HTML, and the browsers will (eventually) support this new stuff, but they’ll also keep supporting the old stuff. So the HTML pages you’re writing today will keep working, even after new features have been added later.</p>
+
+<h2 id="the-w3c-validator">the W3C validator</h2>
+
+<p>There are three ways you can check your HTML/web by using <a href="https://validator.w3.org/">the W3C validator</a>:</p>
+
+<ul>
+<li><p>If your page is on the Web, then you can type in the URL here(Validate by URI) and click the Check button, and the service will retrieve your HTML and check it.</p></li>
+
+<li><p>You can choose the second tab(Validate by File Upload), and upload a file from your computer. When you’ve selected the file, click Check, and the browser will upload the page for the service to check.</p></li>
+
+<li><p>Or, choose the third tab(Validate by direct input), and copy and paste your
+HTML into the form on that tab. Then click Check and the service will check your HTML.</p></li>
+</ul>
+
+<h2 id="specify-the-character-encoding">specify the character encoding</h2>
+
+<p>Luckily, the world has now standardized on the Unicode character encoding. With Unicode, we can represent all languages with one type of encoding. But, given there are other encodings out there, we still need to tell the browser we’re using Unicode (or another encoding of your choice). To specify Unicode for your web pages, you’ll need a <code>&lt;meta&gt;</code> tag in your HTML that looks like this:</p>
+
+<p><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></p>
+
+<p>The <code>&lt;meta&gt;</code> tag belongs in the <code>&lt;head&gt;</code> element and you shoudl add this line above any other elements in the <code>&lt;head&gt;</code> element. And &ldquo;utf-8&rdquo; is the version we use for web pages.</p>
+
+<h2 id="why-do-we-need-that-alt-attribute-anyway">why do we need that alt attribute anyway?</h2>
+
+<ul>
+<li><p>If your image is broken for some reason (say, your image server goes down, or your connection is really slow), the alt attribute will (in most browsers) show the alt text you’ve specified in place of the image.</p></li>
+
+<li><p>For vision-impaired users who are using a screen reader to read the page, the screen reader will read the alt text to the user, which helps them understand the page better.</p></li>
+</ul>
+
+<p><center></p>
+
+<h1 id="adding-a-little-style">Adding a Little Style</h1>
+
+<p></center></p>
+
+<p>The basic construct of HTML is:</p>
+
+<p><img src="../!image/HTMLconstruct.png" alt="HTML&CSS" width="100%" height="100%"></p>
+
+<p>there are lots of properties that can be set on elements, certainly more than you’d want to memorize, in any case. So you can refer to <a href="http://file.allitebooks.com/20180505/CSS%20Pocket%20Reference,%205th%20Edition.pdf">http://file.allitebooks.com/20180505/CSS%20Pocket%20Reference,%205th%20Edition.pdf</a>.</p>
+
+<h2 id="p">p {}</h2>
+
+<p><code>p {}</code> select all the paragraphs in the same HTML. But the style of <code>&lt;q&gt;</code> element in paragraphs is not changed. eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Head First Lounge<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="nt">p</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">maroon</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="h1-h2">h1,h2 {}</h2>
+
+<p>To write a rule for more than one element, just put commas between the selectors, like “h1, h2”.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+ <span class="k">font-family</span><span class="p">:</span> <span class="kc">sans-serif</span><span class="p">;</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+ <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Separate and specify an other rule just for <code>&lt;h1&gt;</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+ <span class="k">font-family</span><span class="p">:</span> <span class="kc">sans-serif</span><span class="p">;</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h1</span> <span class="p">{</span>
+ <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">&lt;!</span><span class="nt">--An</span> <span class="err">`</span><span class="nt">underline</span><span class="err">`</span> <span class="nt">is</span> <span class="nt">only</span> <span class="nt">shown</span> <span class="nt">under</span> <span class="nt">the</span> <span class="nt">text</span> <span class="nt">itself</span><span class="o">.</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="css-file">CSS file</h2>
+
+<p>CSS file only contains CSS.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+ <span class="k">font-family</span><span class="p">:</span> <span class="kc">sans-serif</span><span class="p">;</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nt">h1</span> <span class="p">{</span>
+ <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">maroon</span><span class="p">;</span>
+ <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>To link a CSS file in HTML file:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Head First Lounge<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">link</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;lounge.css&#34;</span><span class="p">&gt;</span>
+ <span class="c">&lt;!--&lt;style&gt; No need!
+</span><span class="c"> &lt;/style&gt;--&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>To write a comment in your CSS, just enclose it between <code>/*</code> and <code>*/</code>.  eg.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* this rule will have no effect because it&#39;s in a comment:
+</span><span class="c">p { color: blue; } */</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="class">class</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">p</span><span class="p">.</span><span class="nc">greentea</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+ <span class="p">}</span>
+
+<span class="c">/* If you want all elements that are in the greentea class to have one style.*/</span>
+<span class="p">.</span><span class="nc">greentea</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+ <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;greentea&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../images/green.jpg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Green Tea&#34;</span><span class="p">&gt;</span>
+ Chock full of vitamins and minerals, this elixir combines the healthful benefits of green tea with a twist of chamomile blossoms and ginger root.
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!--Elements can be in more than one class.--&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;greentea raspberry blueberry&#34;</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="font-face"><code>@font-face</code></h2>
+
+<p>This rule allows you to define the name and location of a font that can then be used in your page. And the actual format used to store the fonts isn’t quite yet a standard. There are some common format:</p>
+
+<ul>
+<li><p>TrueType fonts: <code>.ttf</code></p></li>
+
+<li><p>OpenType fonts: <code>.otf</code></p></li>
+
+<li><p>Embedded OpenType fonts: <code>.eot</code></p></li>
+
+<li><p>SVG fonts: <code>.svg</code></p></li>
+
+<li><p>Web open font format: <code>.woff</code></p></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+    <span class="nt">font-family</span><span class="o">:</span> <span class="s2">&#34;Emblema One&#34;</span><span class="o">;</span>
+    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff&#34;</span><span class="o">),</span> 
+         <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf&#34;</span><span class="o">);</span> 
+<span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span>     <span class="n">Verdana</span><span class="p">,</span> <span class="n">Geneva</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span>       <span class="kc">small</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span>           <span class="mh">#cc6600</span><span class="p">;</span>
+  <span class="k">border-bottom</span><span class="p">:</span>   <span class="kc">thin</span> <span class="kc">dotted</span> <span class="mh">#888888</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span>     <span class="s2">&#34;Emblema One&#34;</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span>       <span class="mi">220</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span>       <span class="mi">130</span><span class="kt">%</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span>     <span class="kc">normal</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">blockquote</span> <span class="p">{</span>
+  <span class="k">font-style</span><span class="p">:</span>      <span class="kc">italic</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="handling-with-fonts">handling with fonts</h2>
+
+<p>Font server recommendation: <a href="http://www.fontsquirrel.com/">FontSquirrel</a>.</p>
+
+<p>Adjusting font sizes:</p>
+
+<ul>
+<li><p>px.</p></li>
+
+<li><p>%.</p></li>
+
+<li><p>em.</p></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+ <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/*Here we’ve specified a body font size in pixels, and a level-one heading as 150%. */</span>
+<span class="nt">h1</span> <span class="p">{</span>
+ <span class="k">font-size</span><span class="p">:</span> <span class="mi">150</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/*Your &lt;h2&gt; headings will be 1.2 times the font size of the parent element, which in this case is 1.2 times 14px, which is about 17px.*/</span>
+<span class="nt">h2</span> <span class="p">{</span>
+ <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.2</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/*More...
+</span><span class="c">xx-small
+</span><span class="c">x-small
+</span><span class="c">small
+</span><span class="c">medium
+</span><span class="c">large
+</span><span class="c">x-large
+</span><span class="c">xx-large*/</span>
+<span class="nt">body</span> <span class="p">{</span>
+ <span class="k">font-size</span><span class="p">:</span> <span class="kc">small</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+<span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+<span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+<span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+<span class="k">font-style</span><span class="p">:</span> <span class="kc">oblique</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="web-colors">web colors</h2>
+
+<ul>
+<li>Specify color by name.
+<br /></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+ <span class="k">background-color</span><span class="p">:</span> <span class="kc">silver</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>Specify color in red, green, and blue values.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+ <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">80</span><span class="kt">%</span><span class="p">,</span> <span class="mi">40</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span><span class="kt">%</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span>
+ <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">204</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>Specify color using hexadecimal(hex) codes.
+<br /></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+ <span class="k">background-color</span><span class="p">:</span> <span class="mh">#cc6600</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="admonition info"><p class="admonition-title">The two-minute guide to hex codes</p>
+  <p>Each set of two digits represents a number from 0 to 255.</p>
+
+<p><img src="/post/!image/hexrgb.png" alt="rgb" width="100%" height="100%">
+<img src="/post/!image/hexfinger.png" alt="finger" width="100%" height="100%">
+<img src="/post/!image/hexnumber.png" alt="number" width="100%" height="100%">
+<img src="/post/!image/hexsamenumber.png" alt="same number" width="100%" height="100%"></p>
+
+</div>
+
+<p><center></p>
+
+<h1 id="getting-intimate-with-elements">Getting Intimate with Elements</h1>
+
+<p></center></p>
+
+<h2 id="the-box-model">the box model</h2>
+
+<p>The box model is how CSS sees elements. CSS treats every single element as if it were represented by a box. Let’s see what that means.</p>
+
+<p><img src="/post/!image/boxmodel.png" alt="box model" width="100%" height="100%"></p>
+
+<p>The elements of the box model:</p>
+
+<ul>
+<li><p>content,</p></li>
+
+<li><p>padding,</p></li>
+
+<li><p>border,</p></li>
+
+<li><p>margin.</p></li>
+</ul>
+
+<p><img src="/post/!image/boxmodelconstruct.png" alt="box model construct" width="100%" height="100%"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"> <span class="p">.</span><span class="nc">guarantee</span> <span class="p">{</span>
+ <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.9</span><span class="kt">em</span><span class="p">;</span>
+ <span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
+ <span class="k">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="s2">&#34;Times New Roman&#34;</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="kc">serif</span><span class="p">;</span>
+ <span class="k">color</span><span class="p">:</span> <span class="mh">#444444</span><span class="p">;</span>
+ <span class="k">border-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+ <span class="k">border-width</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">border-style</span><span class="p">:</span> <span class="kc">solid</span><span class="p">;</span>
+ <span class="k">background-color</span><span class="p">:</span> <span class="mh">#a7cece</span><span class="p">;</span>
+ <span class="k">padding</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">margin</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">images/background.gif</span><span class="p">);</span>
+ <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
+ <span class="k">background-position</span><span class="p">:</span> <span class="kc">top</span> <span class="kc">left</span><span class="p">;</span>
+ <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>We refer to <a href="http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf"><em>Head First HTML and CSS, 2nd Edition</em></a> for more settings of border.</p>
+
+<h2 id="select-by-id">select by id</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;footer&#34;</span><span class="p">&gt;</span>Please steal this page, it isn&#39;t copyrighted in any way<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> </code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*This selects any element that has the id “footer”.*/</span>
+<span class="p">#</span><span class="nn">footer</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/*This selects a &lt;p&gt; element if it has the id “footer”.*/</span>
+<span class="nt">p</span><span class="p">#</span><span class="nn">footer</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>The difference of naming rules of id and class: Class names should begin with a letter, but id names can start with a number or a letter. Both id and class names can contain letters and numbers as well as the _ character, but no spaces.</p>
+
+<h2 id="out-of-browser">out of browser</h2>
+
+<p>If you want to tailor your page’s style to the type of device your page is being displayed on (desktops, laptops, tablets, smartphones, or even printed versions of your pages).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!--Here our query specifies anything with a screen (as opposed to, say, a printer, or 3D glasses, or a braille reader) and any device that has a width of at most 480 pixels. --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;lounge-mobile.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen and (max-device-width: 480px)&#34;</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Likewise, we could create a query that matches the device if it is a printer, like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!--The lounge-print.css file is only going to be used if the media type is “print”, which means we’re viewing it on a printer. --&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;lounge-print.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;print&#34;</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>There are a variety of propeties you can use in your queries, like <code>mindevice-width</code>, <code>max-device-width</code> (which we just used), and the <code>orientation</code> of the display (landscape or portrait), to name just a few. And keep in mind you can add as many <link> tags to your HTML as necessary to cover all the devices you need to.</p>
+
+<p>Add media queries right into your CSS:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*These rules will be used if the screen is wider than 480px*/</span>
+<span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-device-width</span><span class="o">:</span> <span class="nt">481px</span><span class="o">)</span> <span class="p">{</span>
+ <span class="p">#</span><span class="nn">guarantee</span> <span class="p">{</span>
+ <span class="k">margin-right</span><span class="p">:</span> <span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/*These rules will be used if the screen is 480px or less...*/</span>
+<span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+ <span class="p">#</span><span class="nn">guarantee</span> <span class="p">{</span>
+ <span class="k">margin-right</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">@</span><span class="k">media</span> <span class="nt">print</span> <span class="p">{</span>
+ <span class="nt">body</span> <span class="p">{</span>
+ <span class="k">font-family</span><span class="p">:</span> <span class="n">Times</span><span class="p">,</span> <span class="s2">&#34;Times New Roman&#34;</span><span class="p">,</span> <span class="kc">serif</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+<span class="nt">p</span><span class="p">.</span><span class="nc">specials</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><center></p>
+
+<h1 id="advanced-web-construction">Advanced Web Construction</h1>
+
+<p></center></p>
+
+<h2 id="identifying-the-logical-sections-div">identifying the logical sections &ndash; <code>&lt;div&gt;</code></h2>
+
+<p>Use, don’t abuse, <code>&lt;div&gt;</code>s in your pages. Add more structure where it helps you separate a page into logical sections for clarity and styling. Adding <code>&lt;div&gt;</code>s just for the sake of creating a lot of structure in your pages complicates them with no real benefit.</p>
+
+<p><img src="/post/!image/divstyle.png" alt="div style" width="100%" height="100%"></p>
+
+<p><img src="/post/!image/divaddsos.png" alt="adding structure on structure"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;elixirs&#34;</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> </code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">#</span><span class="nn">elixirs</span> <span class="p">{</span>
+ <span class="k">border-width</span><span class="p">:</span> <span class="kc">thin</span><span class="p">;</span>
+ <span class="k">border-style</span><span class="p">:</span> <span class="kc">solid</span><span class="p">;</span>
+ <span class="k">border-color</span><span class="p">:</span> <span class="mh">#007e7e</span><span class="p">;</span>
+ <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">padding-right</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">padding-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">margin-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+ <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span> <span class="c">/* `text-align` will align all the **inline content** in a block element.*/</span>
+ <span class="c">/* And the `text-align` property should be set on **block elements** only. */</span>
+ <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">images/cocktail.gif</span><span class="p">);</span>
+ <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">repeat</span><span class="o">-</span><span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="err">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="select-descendants">select descendants</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*This rule says to select any `&lt;h2&gt;` that is a descendant of a `&lt;div&gt;`, with space.*/</span>
+<span class="nt">div</span> <span class="nt">h2</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/*This rule says to select any `&lt;h2&gt;` that is a descendant of an element with the id “elixirs”.*/</span>
+<span class="p">#</span><span class="nn">elixirs</span> <span class="nt">h2</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="shortcut">shortcut</h2>
+
+<p><img src="/post/!image/shortcut1.png" alt="short cut2"></p>
+
+<p><img src="/post/!image/shortcut2.png" alt="short cut2"></p>
+
+<p>For fonts:</p>
+
+<p><img src="/post/!image/shortcut3.png" alt="short cut3"></p>
+
+<p><img src="/post/!image/shortcut4.png" alt="short cut4"></p>
+
+<h2 id="span"><code>&lt;span&gt;</code></h2>
+
+<p><code>&lt;span&gt;</code> elements give you a way to logically separate inline content in the same way that <code>&lt;div&gt;</code>s allow you to create logical separation for block-level content.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;cd&#34;</span><span class="p">&gt;</span>Buddha Bar<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>, <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;artist&#34;</span><span class="p">&gt;</span>Claude Challe<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>When It Falls, Zero 7<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Earth 7, L.T.J. Bukem<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Le Roi Est Mort, Vive Le Roi!, Enigma<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Music for Airports, Brian Eno<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">cd</span> <span class="p">{</span>
+ <span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">artist</span> <span class="p">{</span>
+ <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="for-a">for <code>&lt;a&gt;</code></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">a</span><span class="p">:</span><span class="nd">link</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">visited</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+ <span class="k">color</span><span class="p">:</span> <span class="kc">yellow</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Add these rules to the bottom of your “lounge.css” file and then save and reload “lounge.html”. Play around with the links to see them in each state. Note that you might have to clear your browser history to see the unvisited color (green).</p>
+
+<h2 id="pseudo-class">Pseudo-class</h2>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Hoas</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2019-01-22</span>
+  </p>
+  
+  
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/html/">HTML</a>
+          <a href="/tags/css/">CSS</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/oneline/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">一本线分差分析</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/terrylin/">
+            <span class="next-text nav-default">御龙将军</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  <span id="/post/getting-started-with-html-and-css/" class="leancloud_visitors" data-flag-title="Getting Started with HTML and CSS">
+    <span class="post-meta-item-text">访问量 </span>
+    <span class="leancloud-visitors-count"></span>
+    <p></p>
+  </span>
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '9eGPu02w5suACu27cIWo4ooD-gzGzoHsz',
+        appKey: 'b2caclfvUYabzOkVLxhpHDbx',
+        notify:  false , 
+        verify:  false , 
+        avatar:'mm', 
+        placeholder: '说点什么吧……Comment something here...',
+        visitor:  true 
+    });
+  </script>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1037938094@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hoasxyz" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.douban.com/people/168585963/" class="iconfont icon-douban" title="douban"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Hoas</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
+<script type="text/javascript" src="/dist/even.ece58db6.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: {equationNumbers: {autoNumber: "AMS"}},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

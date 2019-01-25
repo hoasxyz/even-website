@@ -1,0 +1,189 @@
+---
+title: The Difference Method(.Rmarkdown)
+author: Hoas
+date: '2019-01-07'
+slug: the-difference-method-rmarkdown
+categories:
+  - course
+tags:
+  - R
+  - RMarkdown
+lastmod: '2019-01-07T19:10:06+08:00'
+toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(reshape2)
+require(ggvis)
+require(kableExtra)
+```
+
+>The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express. This is my first report written in English and shaped by R with R Markdown!
+
+# Explicit Difference Method
+
+Flowing is the code chunk based on the explicit difference method, most codes of which are in a function named `calex` and you can call `calex` function to solve the problems with alternative different parameters. And you can change the parameters as you want.
+
+I use backward difference method because it is easily for codeing, comparing to central difference method which is mainly discussed in class. What you should do is just adding one column named *x = -1* in the initial data frame.
+
+```{r calex,warning = FALSE}
+# Backward Difference Method
+calex <- function(dx,dt,BOD,x = 8,u = 5,E = 2, k1 = 0.0151,t = 1,plot = FALSE) {
+  col <- x/dx+3; row <- t/dt+1; name <- c('t',seq(-1,x,dx))
+  alpha <- E*dt/dx^2; beta <- u*dt/dx-2*dt*E/dx^2-k1*dt; gamma <- 1-u*dt/dx+E*dt/dx^2
+  ex <- rep(0,row*col);attr(ex,"dim") <- c(row,col); ex <- as.tibble(ex)
+  ex[,1] <- seq(0.0,t,dt); ex[,2] <- BOD; ex[,3] <- BOD
+  if (dt*u/dx <= 1 && E*dt/dx^2<= 0.5) {
+    for (j in 1:(t/dt)) for (i in 1:(x/dx)) 
+      ex[j+1,i+3] <- alpha*ex[j,i+1]+beta*ex[j,i+2]+gamma*ex[j,i+3]
+    if (plot) {
+      names(ex) <- name
+      pex <- ex %>%
+        dplyr::filter(t != 0) %>%
+        melt(id = "t",variable.name = "x",value.name = "BOD") %>%
+        dplyr::filter(x != -1) %>%
+        ggvis(~x,~t) %>%
+        layer_points(size:=~factor(BOD*25))
+      return(list(ex,pex))
+    } else {
+      names(ex) <- name
+      return(ex)
+    }
+  } else return(cat("You should choose proper values for both dx and dt !"))
+}
+```
+
+And you can call this function with the specific paremeters:  
+**This is what the question requires:**
+```{r echo=TRUE}
+# This is what the question requires.
+knitr::kable(calex(1,0.2,20),"html",align = "c",table.attr = "class=\"table table-bordered\"") %>%
+  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
+  add_header_above(c("","x" = length(calex(1,0.2,20))-1))
+```
+
+In this function as we can see, *1* is the quantity of dx, *0.2* is the quantity of dt and *20* is the quantity of BOD. And in this table, the numeric row names means the value of x(Km). Pay attention to the *-1* column, this column is added for backward differece method.
+
+You can change them as you want:
+```{r}
+knitr::kable(calex(1,0.2,10),table.attr = "class=\"table table-bordered\"") %>%
+  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
+  add_header_above(c("","x" = length(calex(1,0.2,20))-1))
+```
+
+Sometimes you want to change the default value of, for example, x , k1 or t. You can do it because they are all parameters, which have default values perserved in the function beforehand. Just like this:
+```{r ,warning=FALSE}
+knitr::kable(calex(0.5,0.1,10,t = 2,x = 10),align = "c",
+             table.attr = "class=\"table table-bordered\"")
+```
+
+Error! But don't warry! Your values of dx and dt just fail to meet the condition. Change them like this:  
+
+  **And this is the same table as the corresponding example in our book:**
+
+```{r ,warning=FALSE}
+knitr::kable(calex(1,0.2,10,t = 2,x = 10),"html",align = "c",
+             table.attr = "class=\"table table-bordered\"") %>%
+  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
+  add_header_above(c("","x" = length(calex(1,0.2,10,t = 2,x = 10))-1))
+```
+
+Besides, the visualization of the result can be shown here:
+```{r}
+calex(1,0.2,10,t = 2,x = 10,plot = TRUE)[[2]]
+```
+As you can see, the size of each point means the quantity of the BOD value. And I ignore the  condition where x = *-1* and t = *0*.
+
+# Implicit Difference Method
+
+Next comes the implicit differece method based on `calim` function. You can call this function with different parameters to solve the specific problems. As you can see, the method is more complex and difficult than the last method.
+
+```{r calim}
+calim <- function(dx,dt,BOD,x = 8,u = 5,E = 2, k1 = 0.0151,t = 1,plot = FALSE) {
+  col <- x/dx+2; row <- t/dt+1; name <- c('t',seq(0,x,dx))
+  alpha <- -E/dx^2; beta <- 1/dt+2*E/dx^2+k1/2; gamma <- alpha
+  d2 <- 1/dt-u/dx; d1 <- u/dx-k1/2
+  im <- rep(0,row*col);attr(im,"dim") <- c(row,col); im <- as.tibble(im)
+  im[,1] <- seq(0.0,t,dt); im[,2] <- BOD
+  delta <- rep(0,(row-1)*(col-1-1)); attr(delta,'dim') <- c(row-1,col-1-1); delta <- as.tibble(delta)
+  g <- delta[1:(row-1),1:(col-1-1)]; omega <- delta[1:(row-1),1:(col-1-1-1)]
+  if(dt*u/dx > 1 | dt*u/dx <= 0.5) {
+    return(cat("You should choose proper values for both dx and dt !"))
+  } else {
+    for(j in 1:(t/dt)) {
+      delta[j,1] <- im[j,2]*d1+im[j,3]*d2
+      delta[j,1] <- delta[j,1]-alpha*im[j,2]
+      delta[j,2:(x/dx)] <- im[j,3:(x/dx+1)]*d1+im[j,4:(x/dx+2)]*d2
+      for(i in 1:(x/dx-2)) {
+        omega[j,1] <- gamma/beta; g[j,1] <- delta[j,1]/beta
+        g[j,i+1] <- (delta[j,i+1]-alpha*g[j,i])/(beta-alpha*omega[j,i])
+        omega[j,i+1] <- gamma/(beta-alpha*omega[j,i])
+      }
+      alphap <- alpha - gamma; betap <- beta + 2*gamma
+      g[j,x/dx] <- (delta[j,x/dx]-alphap*g[j,x/dx-1])/(betap-alphap*omega[j,x/dx-1])
+      im[j+1,x/dx+2] <- g[j,x/dx]
+      for(k in (x/dx+1):3) im[j+1,k] <- -im[j+1,k+1]*omega[j,k-2]+g[j,k-2]
+    }
+    if (plot) {
+      names(im) <- name
+      pim <- im %>%
+        dplyr::filter(t != 0) %>%
+        melt(id = "t",variable.name = "x",value.name = "BOD") %>%
+        dplyr::filter(x != 0) %>%
+        ggvis(~x,~t) %>%
+        layer_points(size:=~factor(BOD*25))
+      return(list(im,pim))
+    } else {
+      names(im) <- name
+      return(im)
+    }
+  }
+}
+```
+
+And you can call this function with the specific paremeters:  
+**This is what the question requires:**
+```{r}
+knitr::kable(calim(dx = 0.5,dt = 0.1, BOD = 20),"html",align = "c",
+             table.attr = "class=\"table table-bordered\"") %>%
+  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
+  add_header_above(c("","x" = length(calim(dx = 0.5,dt = 0.1, BOD = 20))-1)) %>%
+  scroll_box(width = "100%")
+```
+
+
+Similarly, you can change the parameters:  
+**And this is the same table as the corresponding example in our book:**
+```{r}
+knitr::kable(calim(dx = 0.5,dt = 0.1, BOD = 10, x = 8),"html",align = "c",
+             table.attr = "class=\"table table-bordered\"")%>%
+  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
+  add_header_above(c("","x" = length(calim(dx = 0.5,dt = 0.1, BOD = 10, x = 8))-1)) %>%
+  scroll_box(width = "100%")
+```
+
+Sometimes your values are not suitable:
+```{r ,warning=FALSE}
+knitr::kable(calim(dx = 1,dt = 0.1, BOD = 20),"html",align = "c",
+             table.attr = "class=\"table table-bordered\"")
+```
+And you can modify them until they are proper.
+
+The visualization of the result can be available in the same way:
+```{r}
+calim(dx = 0.5,dt = 0.1, BOD = 20,plot = TRUE)[[2]]
+```
+The condition where x = *0* and t = *0* are ignored.
+
+# Difference
+
+  So what's the differences between `.Rmd` file and `.Rmarkdown` file?
+  
+  * HTML widgets are not supported.
+  
+  * You cannot use Markdown features only supported by Pandoc, such as citations. Math expressions only work if you have installed the xaringan package (Xie 2018e) and applied the JavaScript solution mentioned in Section B.3.([See more](https://bookdown.org/yihui/blogdown/output-format.html))
+  
+  * The tabulate in `.Rmarkdown` file is similar to `.md` file, and toc can be generated in `.Rmarkdown` file.
+  
+  * The color of code block in `.Rmarkdown` file is similar to `.md` file.

@@ -6,6 +6,7 @@
     <description>Recent content in Theme preview on Website of Hoas.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>Hoas</copyright>
     <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="/tags/theme-preview/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +18,7 @@
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
       
       <guid>/post/preview/even-preview/</guid>
-      <description>&lt;p&gt;There are some brief usage about Markdown and even-theme.&lt;/p&gt;</description>
+      <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
     </item>
     
     <item>
@@ -91,6 +92,17 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;{{% /admonition %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/preview/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/preview/2015-07-23-r-rmarkdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>

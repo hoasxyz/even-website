@@ -5,14 +5,14 @@ lastmod: 2017-08-28T21:41:52+08:00
 draft: false
 menu: "main"
 weight: 5
-
+comment: false
 ---
 
 
 ## 1 About 
 
   Hello! You can call me Hoas. Hoas is now a stupid student in Wuhan University, being weighed down with pounds of homework and hard examinations with less time to build his own world. 
-  This is my personal website building for keeping a record of
+  This is his personal website building for keeping a record of
   
   * something plain but funny, 
   
@@ -22,15 +22,17 @@ weight: 5
   
   On the other hand, this website is for keeping 
   
-  * something fragmentary, which is unnecessary to remember but Hoas will use it elsewhere at some point and,
+  * something fragmentary, which is unnecessary to remember but Hoas will use it elsewhere at some point,
   
-  * debugging.
+  * debugging and,
   
-  And there are some blogs from the template Hoas have not deleted. They are named `Theme preview` in menu.
+  * something else.
+  
+  And there are some blogs from the template Hoas has not deleted. They are named `Theme preview` in menu.
   
 ## 2 Thanks
   
-  My website is created by [**blogdown**](https://bookdown.org/yihui/blogdown/) and [Hugo](https://gohugo.io/). Meanwhile I will appreciate two aces(Althought they always pretend to be amateurs...):
+  My website is created by [**blogdown**](https://bookdown.org/yihui/blogdown/) and [Hugo](https://gohugo.io/). Meanwhile I will appreciate two aces(Although they always pretend to be amateurs...):
   
   * [Yihui Xie](https://yihui.name/). The main author of **blogdown** package. He built [Capitial of Statistics](https://cosx.org/) when he was an excellent undergraduate in [Renmin University of China](https://www.ruc.edu.cn/). And now he is a software engineer working at [RStudio,Inc](https://www.rstudio.com/). When he was writting [*bookdown: Authoring Books and Technical Documents with R Markdown*](https://bookdown.org/yihui/bookdown/), he wrote:
   

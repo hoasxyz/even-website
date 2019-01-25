@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Cobalt Blue;
+$theme-color-config: 'Cobalt Blue';
 
 // Default theme color map
 $theme-color-map: (
@@ -190,7 +190,7 @@ $content-table-border-color: darken($deputy-color, 3%) !default;
 $code-color: #c7254e !default;
 
 // Font size of code.
-$code-font-size: 13px !default;
+$code-font-size: 0.9em !default;
 
 // Font family of the code.
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
@@ -232,6 +232,7 @@ $code-type-list: (
   language-ruby: "Ruby",
   language-sql: "SQL",
   language-shell: "Shell",
+  language-r: "R",
 
   language-erlang: "Erlang",
   language-go: "Go",

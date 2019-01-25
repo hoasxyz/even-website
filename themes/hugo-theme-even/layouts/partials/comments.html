@@ -53,6 +53,35 @@
   {{- end -}}
 
   <!-- gitment -->
+  {{- if .Site.Params.gitment.enable -}}
+  <div id="comments-gitment"></div>
+  <!--这里省略了部分代码-->
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+  {{- end }}
+<!-- valine -->
+  {{- if .Site.Params.valine.enable -}}
+  <!-- id 将作为查询条件 -->
+  <span id="{{ .URL | relURL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+    <span class="post-meta-item-text">访问量 </span>
+    <span class="leancloud-visitors-count"></span>
+    <p></p>
+  </span>
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '{{ .Site.Params.valine.appId }}',
+        appKey: '{{ .Site.Params.valine.appKey }}',
+        notify: {{ .Site.Params.valine.notify }}, 
+        verify: {{ .Site.Params.valine.verify }}, 
+        avatar:'{{ .Site.Params.valine.avatar }}', 
+        placeholder: '{{ .Site.Params.valine.placeholder }}',
+        visitor: {{ .Site.Params.valine.visitor }}
+    });
+  </script>
+  {{- end }}
   {{- if .Site.Params.gitment.owner -}}
     <div id="comments-gitment"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">

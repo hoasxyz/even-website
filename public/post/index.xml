@@ -6,10 +6,115 @@
     <description>Recent content in Posts on Website of Hoas.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0800</lastBuildDate>
+    <copyright>Hoas</copyright>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一本线分差分析</title>
+      <link>/post/oneline/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/oneline/</guid>
+      <description>某日，我正在办公室玩电脑，突然听见高三年级主任李老师的声音——以及朝我而来的脚步声。我知道李老师又要来开我找不到女朋友的玩笑了，但是久经沙场</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with HTML and CSS</title>
+      <link>/post/getting-started-with-html-and-css/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/getting-started-with-html-and-css/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s learning abstract from &lt;a href=&#34;http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf&#34;&gt;&lt;em&gt;Head First HTML and CSS, 2nd Edition&lt;/em&gt;&lt;/a&gt;.
+&lt;img src=&#34;/post/!image/HTML&amp;CSS.png&#34; alt=&#34;HTML&amp;CSS&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>御龙将军</title>
+      <link>/post/terrylin/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/terrylin/</guid>
+      <description>&lt;p&gt;每个人从开始接触音乐（现代歌曲）到现在都会有一些对音乐的体会。渐渐地，形成了自己的音乐欣赏体系，这里记录了我本人对音乐的理解。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>华山攻略</title>
+      <link>/post/huashan/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/huashan/</guid>
+      <description>&lt;p&gt;华山由险著称，声称是“天下第一险”，华山被评为&lt;a href=&#34;https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E5%8D%81%E5%A4%A7%E5%90%8D%E5%B1%B1/4047358&#34;&gt;中华十大名山&lt;/a&gt;，国家AAAAA级旅游景区。而本博文是一篇简要介绍自己身体力行过的冬（淡）季华山攻略，这里不是指南，而是一些小小的提示以及自己的感想。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2Xi&#39;an</title>
+      <link>/post/2xi-an/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2xi-an/</guid>
+      <description>移动端最好的阅读方式是桌面版网站模式。 要是我这里不写一点话，网站首页又要出现莫名其妙的代码了…….Rmd文件怎么提取摘要现在还不知道怎么做。</description>
+    </item>
+    
+    <item>
+      <title>Exploring!</title>
+      <link>/post/exploring/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/exploring/</guid>
+      <description>&lt;p&gt;Many Many problems&amp;hellip;
+  &lt;img src=&#34;http://www.makeraid.cn/wp-content/uploads/2017/09/36%E4%B8%AA%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98-%E5%A4%A7%E5%9B%BE.jpg&#34; alt=&#34;problem&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Difference Method(.Rmarkdown)</title>
+      <link>/post/the-difference-method-rmarkdown/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-difference-method-rmarkdown/</guid>
+      <description>The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express. This is my first report written in English and shaped by R with R Markdown!</description>
+    </item>
+    
+    <item>
+      <title>The Difference Method(.Rmd)</title>
+      <link>/post/the-difference-method/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-difference-method/</guid>
+      <description>var lodash = _.noConflict();The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express.</description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/post/ggplot2/</link>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ggplot2/</guid>
+      <description>There are brief notes about the usage of ggplot2.
+expression/annotate/Greek letters/title 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  t &amp;lt;- seq(1,4,0.1) qmp &amp;lt;- function(t) { 0.278*(98.92/t^0.65-2)*78 } q &amp;lt;- seq(500,2000,75) tao &amp;lt;- function(q) { 0.278*14.6/0.96/0.296/q^0.25 } library(cowplot) ggplot()+ geom_smooth(mapping = aes(x = t, y = qmp(t)),color = &amp;#34;red&amp;#34;)+ geom_smooth(mapping = aes(x = tao(q), y = q),color = &amp;#39;blue&amp;#39;,linetype = &amp;#34;dashed&amp;#34;,show.</description>
+    </item>
+    
+    <item>
+      <title>2018年度阅读书单</title>
+      <link>/post/2018%E5%B9%B4%E5%BA%A6%E9%98%85%E8%AF%BB%E4%B9%A6%E5%8D%95/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018%E5%B9%B4%E5%BA%A6%E9%98%85%E8%AF%BB%E4%B9%A6%E5%8D%95/</guid>
+      <description>今年的阅读主要集中在年初和年中，主要的类别还是推理类，也有读一些短篇小说和英文书。推理算是我大学生活中的一个思想阶段吧~今年算是一个转型，或</description>
+    </item>
+    
+    <item>
+      <title>武汉都下雪了</title>
+      <link>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</link>
+      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</guid>
+      <description>&lt;p&gt;你们呢？&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Theme preview</title>
@@ -17,7 +122,7 @@
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
       
       <guid>/post/preview/even-preview/</guid>
-      <description>&lt;p&gt;There are some brief usage about Markdown and even-theme.&lt;/p&gt;</description>
+      <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
     </item>
     
     <item>
@@ -100,6 +205,17 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;{{% /admonition %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/preview/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/preview/2015-07-23-r-rmarkdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>

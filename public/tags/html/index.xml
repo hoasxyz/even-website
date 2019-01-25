@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on Website of Hoas.</title>
+    <link>/tags/html/</link>
+    <description>Recent content in HTML on Website of Hoas.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Hoas</copyright>
+    <lastBuildDate>Fri, 18 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started with HTML and CSS</title>
+      <link>/post/getting-started-with-html-and-css/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/getting-started-with-html-and-css/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s learning abstract from &lt;a href=&#34;http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf&#34;&gt;&lt;em&gt;Head First HTML and CSS, 2nd Edition&lt;/em&gt;&lt;/a&gt;.
+&lt;img src=&#34;/post/!image/HTML&amp;CSS.png&#34; alt=&#34;HTML&amp;CSS&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

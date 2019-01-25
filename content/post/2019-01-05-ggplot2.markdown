@@ -1,0 +1,50 @@
+---
+title: ggplot2
+author: Hoas
+date: '2019-01-05'
+slug: ggplot2
+description: Hello!
+categories:
+  - fragmentray
+tags:
+  - R
+  - ggplot2
+lastmod: '2019-01-05T13:04:48+08:00'
+toc: yes
+---
+
+  There are brief notes about the usage of **ggplot2**.
+
+## expression/annotate/Greek letters/title
+
+
+```r
+t <- seq(1,4,0.1)
+qmp <- function(t) {
+  0.278*(98.92/t^0.65-2)*78
+}
+
+q <- seq(500,2000,75)
+tao <- function(q) {
+  0.278*14.6/0.96/0.296/q^0.25
+}
+
+library(cowplot)
+ggplot()+
+  geom_smooth(mapping = aes(x = t, y = qmp(t)),color = "red")+
+  geom_smooth(mapping = aes(x = tao(q), y = q),color = 'blue',linetype = "dashed",show.legend = TRUE)+
+  labs(title = "9-2",x = expression(paste(tau, "(h)")),y = expression(Q[mp](m^3/s)))+
+  theme(plot.title = element_text(hjust = 0.5))+
+  background_grid(major = "xy")+
+  annotate("text", x = c(1.5,2.6), y = c(1400,1500),
+           label = c(expression(paste(Q[mp],"~",tau)),expression(paste(tau,'~',Q[mp]))))
+```
+
+<img src="/post/2019-01-05-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+
+  As you can see, the figure generated in HTML is clearer than in RStudio... But I don't know why.
+  
+  More expressions in R are available by calling `demo(plotmath)` or referring to  https://stat.ethz.ch/R-manual/R-devel/library/grDevices/html/plotmath.html.
+  
+  And more Greek letters used in R can be acquired by referring to http://kestrel.nmt.edu/~raymond/software/howtos/greekscape.xhtml.
+

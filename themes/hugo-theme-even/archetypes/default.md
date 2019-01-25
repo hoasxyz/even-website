@@ -2,7 +2,7 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
-draft: true
+draft: false
 keywords: []
 description: ""
 tags: []
@@ -11,7 +11,7 @@ author: ""
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: true
 autoCollapseToc: false
 postMetaInFooter: false
@@ -19,9 +19,9 @@ hiddenFromHomePage: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
 contentCopyright: false
 reward: false
-mathjax: false
-mathjaxEnableSingleDollar: false
-mathjaxEnableAutoNumber: false
+mathjax: true
+mathjaxEnableSingleDollar: true
+mathjaxEnableAutoNumber: true
 
 # You unlisted posts you might want not want the header or footer to show
 hideHeaderAndFooter: false

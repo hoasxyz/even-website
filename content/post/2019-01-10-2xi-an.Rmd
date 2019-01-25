@@ -26,7 +26,7 @@ options(digits = 10)
 
 # 地图在手，天下我有！
 
-```{r map, echo=FALSE, message=FALSE, warning=FALSE}
+```{r map, echo=TRUE, message=FALSE, warning=FALSE}
 #Sys.setlocale('LC_ALL','C')
 xian <- read_xlsx("E:/1R/website/xian.xlsx")
 xian$property <- as.factor(xian$property)

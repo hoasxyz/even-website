@@ -107,3 +107,71 @@ title: "Welcome to our second slide!"
 # Communicating Using Markdown
 </center>
 
+## emoji
+
+  For more information about available emoji, see [this handy cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/). In most text fields on GitHub, you can type `:` and then begin to type the name of an emoji. A fuzzy search will bring up the 5 best guesses and let you select one.
+
+```markdown
+ what you see  | what you type   
+ :-------------: |:---------------:
+  :heart:       | :heart\:       
+  :heavy_exclamation_mark:          | :heavy_exclamation_mark\:        
+  :smile:       | :smile\:    
+  :sparkles:    | :sparkles\:  
+```
+
+ what you see  | what you type   
+ :-------------: |:---------------:
+  :heart:       | :heart\:       
+  :heavy_exclamation_mark:          | :heavy_exclamation_mark\:        
+  :smile:       | :smile\:    
+  :sparkles:    | :sparkles\: 
+
+## tables
+
+```markdown
+| _Colors_      | Fruits          | Vegetable         |
+| ------------- |:---------------:| -----------------:|
+| Red           | *Apple*         | [Pepper](#Tables) |
+| ~~Orange~~    | Oranges         | **Carrot**        |
+| Green         | ~~***Pears***~~ | Spinach           |
+```
+
+| _Colors_      | Fruits          | Vegetable         |
+| ------------- |:---------------:| -----------------:|
+| Red           | *Apple*         | [Pepper](#Tables) |
+| ~~Orange~~    | Oranges         | **Carrot**        |
+| Green         | ~~***Pears***~~ | Spinach           |
+
+  For more detail on formatting with tables, see "[Organizing information with tables](https://github.github.com/gfm/#tables-extension-)" in the GitHub Help.
+
+## summary dropdown
+
+  Most of the text in this issue is formatted in collapsible summary blocks. Here's how to make them with Markdown:
+
+```markdown
+<details>
+  <summary>Title</summary>
+
+  Content here
+
+</details>
+```
+
+<details>
+  <summary>Title</summary>
+
+  Content here
+
+</details>
+
+## more links in github
+
+  See: https://help.github.com/articles/autolinked-references-and-urls/.
+
+<center>
+# More
+</center>
+  For more courses in github, see:https://lab.github.com/courses.
+  
+![Congratulation!](https://camo.githubusercontent.com/2ca441ac2f206f16916ab83262ae9e74d5461931/68747470733a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f77656c636f6d65746f6361742e706e67)

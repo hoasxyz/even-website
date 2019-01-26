@@ -8,25 +8,6 @@ categories:
 tags:
   - github
 lastmod: '2019-01-25T20:02:16+08:00'
-keywords: []
-description: ''
-comment: yes
-toc: yes
-autoCollapseToc: no
-postMetaInFooter: no
-hiddenFromHomePage: no
-contentCopyright: no
-reward: no
-mathjax: yes
-mathjaxEnableSingleDollar: yes
-mathjaxEnableAutoNumber: yes
-hideHeaderAndFooter: no
-flowchartDiagrams:
-  enable: no
-  options: ''
-sequenceDiagrams:
-  enable: no
-  options: ''
 ---
 
 终于，我还是来到了全球最大的[~~同性~~交友网站](https://github.com/)，下次李老师可以问我有没有交到蓝朋友了……

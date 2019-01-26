@@ -7,6 +7,7 @@ enableRobotsTXT = true
 enableEmoji = true
 theme = "hugo-theme-even"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
@@ -54,6 +55,9 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
   since = "2018"            # Site creation time          # 站点建立时间
+
+  # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
+  gitRepo = "https://github.com/hoasxyz/even-website"
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Hoas"        # default: the title value    # 默认值: 上面设置的title值
@@ -123,7 +127,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   # Genate a json file include all of your posts, you should not enable this if have too many posts.
   generateIndex = false
   # Redirect to search engine
-  searchEngine = "https://www.google.com/search?q=site:yourdomian.com %s" # or false
+  searchEngine = "https://www.google.com/search?q=site:hoas.xyz %s" # or false
   
   # Display a message at the beginning of an article to warn the readers that it's content may be outdated.
   # 在文章开头显示提示信息，提醒读者文章内容可能过时。

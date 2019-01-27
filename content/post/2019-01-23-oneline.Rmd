@@ -153,7 +153,7 @@ hchart(intg,"column",hcaes(x = "分差", y = "人数", group = "科目")) %>%
            tickInterval = 4,tickAmount = 4)
 ```
 
-如果这里实在看不到图我也没办法了，只能移步：http://rpubs.com/Hoas_xyz/oneline
+如果这里实在看不到图我也没办法了，只能移步：http://rpubs.com/Hoas_xyz/oneline。
 
 # 数据分析
 

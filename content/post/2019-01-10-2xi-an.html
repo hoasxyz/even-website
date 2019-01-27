@@ -30,6 +30,46 @@ lastmod: '2019-01-17'
 <p>要是我这里不写一点话，网站首页又要出现莫名其妙的代码了……<code>.Rmd</code>文件怎么提取摘要现在还不知道怎么做。这个时候我就只能感叹blogdown是个完完全全的半完成品。More details需要你自己去解决，你不仅要懂RMarkdown，还要懂hugo……</p>
 <div class="section level1">
 <h1>地图在手，天下我有！</h1>
+<pre class="r"><code>#Sys.setlocale(&#39;LC_ALL&#39;,&#39;C&#39;)
+xian &lt;- read_xlsx(&quot;E:/1R/website/xian.xlsx&quot;)
+xian$property &lt;- as.factor(xian$property)
+
+getcolor &lt;- function(xian) {
+  sapply(xian$property, function(ppt){
+    if (ppt == &#39;景点&#39;) {
+      &quot;green&quot;
+    } else if(ppt == &#39;车站&#39;) {
+      &quot;red&quot;
+    } else{
+      &quot;blue&quot;
+    }
+  })
+}
+geticon &lt;- function(xian){
+  sapply(xian$property, function(ppt){
+    if (ppt == &#39;景点&#39;) {
+      &quot;eye&quot;
+    } else if(ppt == &#39;车站&#39;) {
+      &quot;playstation&quot;
+    } else{
+      &quot;beer&quot;
+    }
+  })
+}
+icons &lt;- awesomeIcons(
+  icon = geticon(xian),
+  iconColor = &#39;white&#39;,
+  library = &#39;ion&#39;,
+  markerColor = getcolor(xian)
+)
+
+leaflet(data = xian) %&gt;% 
+  addTiles() %&gt;%
+  addAwesomeMarkers(~Lon,~Lat,label = ~Place,
+             popup = ifelse(is.na(xian$Price),as.character(xian$property),
+                            paste(&quot;票价（成人）：&quot;,xian$Price,&quot;元&quot;,&#39;&lt;br&gt;&#39;,
+                                  &quot;时长参考：&quot;,xian$Hours,&quot;小时&quot;)),
+             icon = icons)</code></pre>
 <div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
 <script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addAwesomeMarkers","args":[[34.385896,34.277713,34.260881,34.252907,34.260853,34.219659,34.232595,34.296841,34.260917,34.261687,34.225809,34.364986,34.04953,34.213881,34.255761,34.248384,34.278577,34.376763,34.093817,34.265991,34.261357,34.256512,34.343121,34.323563,34.239635],[109.27378,108.942576,108.920225,108.942353,108.966977,108.959547,108.939712,108.95997,108.942403,108.938917,108.950486,109.207595,108.860818,108.969325,108.979379,108.979162,108.958194,108.934208,109.096066,108.936592,108.940453,108.937618,109.248595,109.054745,108.936638],{"icon":["eye","eye","eye","eye","eye","eye","eye","eye","eye","eye","eye","eye","eye","eye","eye","eye","playstation","playstation","playstation","beer","beer","beer","eye","eye","eye"],"markerColor":["green","green","green","green","green","green","green","green","green","green","green","green","green","green","green","green","red","red","red","blue","blue","blue","green","green","green"],"iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"ion"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["票价（成人）： 150 元 <br> 时长参考： 4 小时","票价（成人）： 54 元 <br> 时长参考： 2 小时","票价（成人）： 54 元 <br> 时长参考： 2 小时","票价（成人）： 54 元 <br> 时长参考： 2 小时","票价（成人）： 54 元 <br> 时长参考： 2 小时","票价（成人）： 50+30 元 <br> 时长参考： 3 小时","票价（成人）： 0 元 <br> 时长参考： 2 小时","票价（成人）： 60(50) 元 <br> 时长参考： 2 小时","票价（成人）： 30 元 <br> 时长参考： 0.5 小时","票价（成人）： 30 元 <br> 时长参考： 0.5 小时","票价（成人）： 30 元 <br> 时长参考： 4 小时","票价（成人）： 180 元 <br> 时长参考： 1 小时","票价（成人）： 50 元 <br> 时长参考： 5 小时","票价（成人）： 120 元 <br> 时长参考： 2 小时","票价（成人）： 0 元 <br> 时长参考： 2 小时","票价（成人）： 0 元 <br> 时长参考： 3 小时","车站","车站","车站","觅食","觅食","觅食","票价（成人）： 120 元 <br> 时长参考： 6 小时","票价（成人）： 30 元 <br> 时长参考： 2 小时","票价（成人）： 0 元 <br> 时长参考： 2 小时"],null,null,null,["秦始皇陵博物院","安远门","安定门","永宁门","长乐门","大雁塔","省美术博物馆","大明官","钟楼","鼓楼","陕西历史博物馆","华清宫","秦岭野生动物园","大唐芙蓉园","兴庆宫","西安交通大学","西安站","西安北站","西安南站","大皮院","回民街","大车家巷","骊山","长安塔","西安博物院"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.04953,34.385896],"lng":[108.860818,109.27378]}},"evals":[],"jsHooks":[]}</script>
 <p>欢迎来到西安——的地图。在这张地图里有三个标记：</p>

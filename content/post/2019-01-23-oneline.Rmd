@@ -8,7 +8,6 @@ categories:
 tags:
   - R
   - 中文
-lastmod: '2019-01-23T19:44:18+08:00'
 comment: yes
 ---
 ```{r setup, include=FALSE}
@@ -154,7 +153,7 @@ hchart(intg,"column",hcaes(x = "分差", y = "人数", group = "科目")) %>%
            tickInterval = 4,tickAmount = 4)
 ```
 
-如果这里实在看不到图我也没办法了，只能移步：https://www.rpubs.com/Hoas_xyz/460670
+如果这里实在看不到图我也没办法了，只能移步：http://rpubs.com/Hoas_xyz/oneline
 
 # 数据分析
 
@@ -163,3 +162,4 @@ percent <- 0.8*c(length(c$语文),length(m$数学),length(e$英语),length(s$理
 ```
 
 由图可知，语文指标大概是7分左右，英语大概是19分左右，数学9分左右，理综在11分左右。
+(以上是两年的数据分析。)

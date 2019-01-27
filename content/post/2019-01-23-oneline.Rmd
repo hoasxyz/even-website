@@ -16,6 +16,7 @@ require(readxl)
 require(plyr)
 require(reshape2)
 library("highcharter")
+require(widgetframe)
 ```
 
 某日，我正在办公室玩电脑，突然听见高三年级主任李老师的声音——以及朝我而来的脚步声。我知道李老师又要来开我找不到女朋友的玩笑了，但是久经沙场的我依旧镇静自若地玩电脑，直到李老师走到我面前后如获至宝版地对我说道：“你终于回来了啊！”我……
@@ -146,19 +147,23 @@ intg <- intg %>%
   melt(id = "分差") %>%
   plyr::rename(c("variable" = "科目", "value" = "人数"))
 
-hchart(intg,"column",hcaes(x = "分差", y = "人数", group = "科目")) %>%
+hc <- hchart(intg,"column",hcaes(x = "分差", y = "人数", group = "科目")) %>%
   hc_plotOptions(column= list(dataLabels = list(enabled =TRUE))) %>% 
   hc_title(text = "各科一本线分差分析图") %>%
   hc_yAxis(title = list(text = "人数",align = "middle"),
            tickInterval = 4,tickAmount = 4)
+hc
+htmlwidgets::saveWidget(hc,file = "oneline4.html", selfcontained = TRUE)
 ```
 
-如果这里实在看不到图我也没办法了，只能移步：http://rpubs.com/Hoas_xyz/oneline。
+如果这里实在看不到图我也没办法了，因为我自己不懂JavaScript，只能移步我的[RPubs](http://rpubs.com/Hoas_xyz/)：http://rpubs.com/Hoas_xyz/oneline。
 
 # 数据分析
 
-```{r echo=TRUE}
+```r
 percent <- 0.8*c(length(c$语文),length(m$数学),length(e$英语),length(s$理综))
+> percent
+[1] 435.2 280.0 302.4 152.0
 ```
 
 由图可知，语文指标大概是7分左右，英语大概是19分左右，数学9分左右，理综在11分左右。

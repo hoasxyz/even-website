@@ -1,8 +1,11 @@
+install.packages("widgetframe")
+
 require(readxl)
 require(cowplot)
 require(reprex)
 require(plyr)
 require(reshape2)
+require(widgetframe)
 library("highcharter")
 
 line15 <- c(113,91,117,195)
@@ -114,11 +117,13 @@ intg <- intg %>%
   melt(id = "分差") %>%
   plyr::rename(c("variable" = "科目", "value" = "人数"))
 
-hchart(intg,"column",hcaes(x = "分差", y = "人数", group = "科目")) %>%
+hc <- hchart(intg,"column",hcaes(x = "分差", y = "人数", group = "科目")) %>%
   hc_plotOptions(column= list(dataLabels = list(enabled =TRUE))) %>% 
   hc_title(text = "各科一本线分差分析图") %>%
   hc_yAxis(title = list(text = "人数",align = "middle"),
            tickInterval = 4,tickAmount = 4)
+hc
+htmlwidgets::saveWidget(hc,file = "oneline4.html", selfcontained = TRUE)
 
 # 2 -----------------------------------------------------------------------
 

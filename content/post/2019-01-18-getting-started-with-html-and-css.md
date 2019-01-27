@@ -833,3 +833,31 @@ a:hover {
   Add these rules to the bottom of your “lounge.css” file and then save and reload “lounge.html”. Play around with the links to see them in each state. Note that you might have to clear your browser history to see the unvisited color (green). 
   
 ## Pseudo-class
+
+  
+
+```css
+/*On these two, we’re setting the color. For unvisited links, a nice aquamarine… */
+#elixirs a:link {
+ color: #007e7e;
+}
+
+/*…and for visited links we’re using a dark gray. */
+#elixirs a:visited {
+ color: #333333;
+}
+
+/*Now for the really interesting rule. When the user is hovering over the link, we’re changing the background to red. This makes the link loo highlighted when you pass the mouse over it. Give it a try*/
+#elixirs a:hover {
+ background: #f88396;
+ color: #0d5353;
+}
+```
+
+## the cascade
+
+  Here’s just one last piece of information you need to understand the cascade. You already know about using multiple stylesheets to either better organize your styles or to support different types of devices. But there are actually some other stylesheets hanging around when your users visit your pages. Let’s take a look:
+  
+  <img src="/post/!image/cascade.png" alt="understanding for cascade" width="100%" height="100%">
+  
+   as the page authors, we can use multiple stylesheets with our HTML. And the user might also supply his own styles, and then the browser has its default styles, too. And on top of all that, we might have multiple selectors that apply to the same element. How do we figure out which styles an element gets?

@@ -861,3 +861,7 @@ a:hover {
   <img src="/post/!image/cascade.png" alt="understanding for cascade" width="100%" height="100%">
   
    as the page authors, we can use multiple stylesheets with our HTML. And the user might also supply his own styles, and then the browser has its default styles, too. And on top of all that, we might have multiple selectors that apply to the same element. How do we figure out which styles an element gets?
+   
+  That’s actually another way of asking what cascade does. The cascade is the way the browser decides, given a bunch of styles in a bunch of stylesheets, which style is going to be used. To answer that question, we need to bring everything together—all the various stylesheets hanging around, the rules, and the individual property declarations in those rules.
+   
+# Arranging Elements

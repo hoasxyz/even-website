@@ -1,8 +1,8 @@
 ---
-title: Getting Started with HTML and CSS
+title: Getting Started with HTML and CSS -- HTML
 author: Hoas
 date: '2019-01-18'
-slug: getting-started-with-html-and-css
+slug: getting-started-with-html-and-css-html
 categories:
   - fragmentray
 tags:
@@ -369,499 +369,485 @@ HTML into the form on that tab. Then click Check and the service will check your
   
   *  For vision-impaired users who are using a screen reader to read the page, the screen reader will read the alt text to the user, which helps them understand the page better.
 
-<center>
-# Adding a Little Style
-</center>
 
-  The basic construct of HTML is:
-  
-  <img src="../!image/HTMLconstruct.png" alt="HTML&CSS" width="100%" height="100%">
-  
-   there are lots of properties that can be set on elements, certainly more than you’d want to memorize, in any case. So you can refer to http://file.allitebooks.com/20180505/CSS%20Pocket%20Reference,%205th%20Edition.pdf.
-   
-## p {}
-
-  `p {}` select all the paragraphs in the same HTML. But the style of `<q>` element in paragraphs is not changed. eg.
-  
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Head First Lounge</title>
-<style>
-p {
- color: maroon;
-}
-</style>
-</style>
-</head>
-...
-</html>
-```
-  
-## h1,h2 {}
-
-  To write a rule for more than one element, just put commas between the selectors, like “h1, h2”.
-  
-```html
-<style>
-h1, h2 {
- font-family: sans-serif;
- color: gray;
- border-bottom: 1px solid black;
-}
-</style>
-```
-  
-  Separate and specify an other rule just for `<h1>`:
-  
-```html
-<style>
-h1, h2 {
- font-family: sans-serif;
- color: gray;
-}
-h1 {
- border-bottom: 1px solid black;
-}
-<!--An `underline` is only shown under the text itself. -->
-</style>
-```
-
-## CSS file
-
-  CSS file only contains CSS.
-  
-```css
-h1, h2 {
- font-family: sans-serif;
- color: gray;
- }
-h1 {
- border-bottom: 1px solid black;
- }
-p {
- color: maroon;
- }
-
-```
-
-  To link a CSS file in HTML file:
-  
-```html
-<!doctype html>
-<html>
- <head>
- <meta charset="utf-8">
- <title>Head First Lounge</title>
- <link type="text/css" rel="stylesheet" href="lounge.css">
- <!--<style> No need!
- </style>-->
- </head>
-...
-</html>
-```
-   To write a comment in your CSS, just enclose it between `/*` and `*/`.  eg.
-   
-```css
-/* this rule will have no effect because it's in a comment:
-p { color: blue; } */
-
-```
-
-## class
-
-```css
-p.greentea {
- color: green;
- }
-
-/* If you want all elements that are in the greentea class to have one style.*/
-.greentea {
- color: green;
- }
-```
-
-```html
-<p class="greentea">
- <img src="../images/green.jpg" alt="Green Tea">
- Chock full of vitamins and minerals, this elixir combines the healthful benefits of green tea with a twist of chamomile blossoms and ginger root.
-</p>
-
-<!--Elements can be in more than one class.-->
-<p class="greentea raspberry blueberry">
-```
-
-## `@font-face`
-
-  This rule allows you to define the name and location of a font that can then be used in your page. And the actual format used to store the fonts isn’t quite yet a standard. There are some common format:
-  
-  * TrueType fonts: `.ttf`
-  
-  * OpenType fonts: `.otf`
-  
-  * Embedded OpenType fonts: `.eot`
-  
-  * SVG fonts: `.svg`
-  
-  * Web open font format: `.woff`
-
-```css
-@font-face {
-	font-family: "Emblema One";
-	src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"), 
-	     url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"); 
-}
-body {
-  font-family:     Verdana, Geneva, Arial, sans-serif;
-  font-size:       small;
-}
-h1, h2 {
-  color:           #cc6600;
-  border-bottom:   thin dotted #888888;
-}
-h1 {
-  font-family:     "Emblema One", sans-serif;
-  font-size:       220%;
-}
-h2 {
-  font-size:       130%;
-  font-weight:     normal;
-}
-blockquote {
-  font-style:      italic;
-}
-```
-
-## handling with fonts
-
-  Font server recommendation: [FontSquirrel](http://www.fontsquirrel.com/).
-  
-  Adjusting font sizes:
-  
-  * px.
-  
-  * %.
-  
-  * em.
-
-```css
-body {
- font-size: 14px;
-}
-
-/*Here we’ve specified a body font size in pixels, and a level-one heading as 150%. */
-h1 {
- font-size: 150%;
-}
-
-/*Your <h2> headings will be 1.2 times the font size of the parent element, which in this case is 1.2 times 14px, which is about 17px.*/
-h2 {
- font-size: 1.2em;
-}
-
-/*More...
-xx-small
-x-small
-small
-medium
-large
-x-large
-xx-large*/
-body {
- font-size: small;
-}
-```
-
-```css
-h1 {
-font-weight: bold;
-font-style: italic;
-}
-h2 {
-font-weight: normal;
-font-style: oblique;
-}
-```
-
-## web colors
-
-  * Specify color by name.
-  
-```css
-body {
- background-color: silver;
-}
-```
-
-  * Specify color in red, green, and blue values.
-
-```css
-body {
- background-color: rgb(80%, 40%, 0%);
-}
-body {
- background-color: rgb(204, 102, 0);
-}
-```
-  
-  * Specify color using hexadecimal(hex) codes.
-  
-```css
-body {
- background-color: #cc6600;
-}
-```
-
-{{% admonition info "The two-minute guide to hex codes" %}}
-
-Each set of two digits represents a number from 0 to 255.
-
-<img src="/post/!image/hexrgb.png" alt="rgb" width="100%" height="100%">
-<img src="/post/!image/hexfinger.png" alt="finger" width="100%" height="100%">
-<img src="/post/!image/hexnumber.png" alt="number" width="100%" height="100%">
-<img src="/post/!image/hexsamenumber.png" alt="same number" width="100%" height="100%">
-{{% /admonition %}}
 
 <center>
-# Getting Intimate with Elements
+# Tabulate
 </center>
 
-## the box model
-
-  The box model is how CSS sees elements. CSS treats every single element as if it were represented by a box. Let’s see what that means.
-  
-  <img src="/post/!image/boxmodel.png" alt="box model" width="100%" height="100%">
- 
- The elements of the box model:
- 
- * content,
- 
- * padding,
- 
- * border,
- 
- * margin.
- 
-  <img src="/post/!image/boxmodelconstruct.png" alt="box model construct" width="100%" height="100%">
-  
-```css
- .guarantee {
- line-height: 1.9em;
- font-style: italic;
- font-family: Georgia, "Times New Roman", Times, serif;
- color: #444444;
- border-color: black;
- border-width: 1px;
- border-style: solid;
- background-color: #a7cece;
- padding: 25px;
- margin: 30px;
- background-image: url(images/background.gif);
- background-repeat: no-repeat;
- background-position: top left;
- }
-```
-
-  We refer to [*Head First HTML and CSS, 2nd Edition*](http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf) for more settings of border.
-  
-## select by id
-
 ```html
-<p id="footer">Please steal this page, it isn't copyrighted in any way</p> 
+ <table>
+  <caption>The cities I visited on my Segway'n USA travels</caption>
+ <tr class="cellcolor">
+ <th>City</th>
+ <th>Date</th>
+ <th>Temperature</th>
+ <th>Altitude</th>
+ <th>Population</th>
+ <th>Diner Rating</th>
+ </tr>
+ <tr>
+ <td class="right">Walla Walla, WA</td>
+ <td>June 15th</td>
+ <td>75</td>
+ <td>1,204 ft</td>
+ <td>29,686</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Magic City, ID</td>
+ <td>June 25th</td>
+ <td>74</td>
+ <td>5,312 ft</td>
+ <td>50</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Bountiful, UT</td>
+ <td>July 10th</td>
+ <td>91</td>
+ <td>4,226 ft</td>
+ <td>41,173</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Last Chance, CO</td>
+ <td>July 23rd</td>
+ <td class="right">102</td>
+ <td>4,780 ft</td>
+ <td>265</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Truth or Consequences, NM</td>
+ <td>August 9th</td>
+ <td>93</td>
+ <td>4,242 ft</td>
+ <td>7,289</td>
+ <td>5/5</td>
+ </tr>
+ <tr>
+ <td>Why, AZ</td>
+ <td>August 18th</td>
+ <td>104</td>
+ <td>860 ft</td>
+ <td>480</td>
+ <td>3/5</td>
+ </tr>
+ </table>
 ```
 
-```css
-/*This selects any element that has the id “footer”.*/
-#footer {
- color: red;
-}
-
-/*This selects a <p> element if it has the id “footer”.*/
-p#footer {
- color: red;
-}
-```
-
-  The difference of naming rules of id and class: Class names should begin with a letter, but id names can start with a number or a letter. Both id and class names can contain letters and numbers as well as the _ character, but no spaces.
-  
-## out of browser
-
-  If you want to tailor your page’s style to the type of device your page is being displayed on (desktops, laptops, tablets, smartphones, or even printed versions of your pages). 
-  
-```html
-<!--Here our query specifies anything with a screen (as opposed to, say, a printer, or 3D glasses, or a braille reader) and any device that has a width of at most 480 pixels. -->
-<link href="lounge-mobile.css" rel="stylesheet" media="screen and (max-device-width: 480px)">
-```
-
-  Likewise, we could create a query that matches the device if it is a printer, like this:
-  
-```html
-<!--The lounge-print.css file is only going to be used if the media type is “print”, which means we’re viewing it on a printer. -->
-<link href="lounge-print.css" rel="stylesheet" media="print">
-```
-
-  There are a variety of propeties you can use in your queries, like `mindevice-width`, `max-device-width` (which we just used), and the `orientation` of the display (landscape or portrait), to name just a few. And keep in mind you can add as many <link> tags to your HTML as necessary to cover all the devices you need to. 
-  
-  Add media queries right into your CSS:
-
-```css
-/*These rules will be used if the screen is wider than 480px*/
-@media screen and (min-device-width: 481px) {
- #guarantee {
- margin-right: 250px;
- }
-}
-
-/*These rules will be used if the screen is 480px or less...*/
-@media screen and (max-device-width: 480px) {
- #guarantee {
- margin-right: 30px;
- }
-}
-@media print {
- body {
- font-family: Times, "Times New Roman", serif;
- }
-}
-p.specials {
- color: red;
-}
-```
+ <table>
+  <caption>The cities I visited on my Segway'n USA travels</caption>
+ <tr class="cellcolor">
+ <th>City</th>
+ <th>Date</th>
+ <th>Temperature</th>
+ <th>Altitude</th>
+ <th>Population</th>
+ <th>Diner Rating</th>
+ </tr>
+ <tr>
+ <td class="right">Walla Walla, WA</td>
+ <td>June 15th</td>
+ <td>75</td>
+ <td>1,204 ft</td>
+ <td>29,686</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Magic City, ID</td>
+ <td>June 25th</td>
+ <td>74</td>
+ <td>5,312 ft</td>
+ <td>50</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Bountiful, UT</td>
+ <td>July 10th</td>
+ <td>91</td>
+ <td>4,226 ft</td>
+ <td>41,173</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Last Chance, CO</td>
+ <td>July 23rd</td>
+ <td class="right">102</td>
+ <td>4,780 ft</td>
+ <td>265</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Truth or Consequences, NM</td>
+ <td>August 9th</td>
+ <td>93</td>
+ <td>4,242 ft</td>
+ <td>7,289</td>
+ <td>5/5</td>
+ </tr>
+ <tr>
+ <td>Why, AZ</td>
+ <td>August 18th</td>
+ <td>104</td>
+ <td>860 ft</td>
+ <td>480</td>
+ <td>3/5</td>
+ </tr>
+ </table>
+ 
 <center>
-# Advanced Web Construction
+# Interactive
 </center>
 
-## identifying the logical sections -- `<div>`
+## different inputs
 
-  Use, don’t abuse, `<div>`s in your pages. Add more structure where it helps you separate a page into logical sections for clarity and styling. Adding `<div>`s just for the sake of creating a lot of structure in your pages complicates them with no real benefit.
+  One simple form:
 
-  <img src="/post/!image/divstyle.png" alt="div style" width="100%" height="100%">
+```html
+<form action="https://www.douban.com/"
+ method="POST">
+ <p>Just type in your name (and click Submit) to
+ enter the contest: <br>
+ First name: <input type="text" name="firstname" value=""> <br>
+ Last name: <input type="text" name="lastname" value=""> <br>
+ <input type="submit">
+ </p>
+ </form>
+```
 
-  <img src="/post/!image/divaddsos.png" alt="adding structure on structure">
+<form action="https://www.douban.com/"
+ method="POST">
+ <p>Just type in your name (and click Submit) to
+ enter the contest: <br>
+ First name: <input type="text" name="firstname" value=""> <br>
+ Last name: <input type="text" name="lastname" value=""> <br>
+ <input type="submit">
+ </p>
+ </form>
+ 
+  What can go in a form?
+  
+  - text input
   
 ```html
-<div id="elixirs">
-...
-</div> 
+  <input type="text" name="fullname">
 ```
-
-```css
-#elixirs {
- border-width: thin;
- border-style: solid;
- border-color: #007e7e;
- width: 200px;
- padding-right: 20px;
- padding-bottom: 20px;
- padding-left: 20px;
- margin-left: 20px;
- text-align: center; /* `text-align` will align all the **inline content** in a block element.*/
- /* And the `text-align` property should be set on **block elements** only. */
- background-image: url(images/cocktail.gif);
- background-repeat: repeat-x;
-}
-
-}
-```
-
-## select descendants
+  <input type="text" name="fullname">
   
-```css
-/*This rule says to select any `<h2>` that is a descendant of a `<div>`, with space.*/
-div h2 {
- color: black;
-}
-
-/*This rule says to select any `<h2>` that is a descendant of an element with the id “elixirs”.*/
-#elixirs h2 {
- color: black;
-}
-```
-
-## shortcut
-
-  <img src="/post/!image/shortcut1.png" alt="short cut2">
-
-  <img src="/post/!image/shortcut2.png" alt="short cut2">
-  
-  For fonts:
-  
-  <img src="/post/!image/shortcut3.png" alt="short cut3">
-  
-  <img src="/post/!image/shortcut4.png" alt="short cut4">
-  
-## `<span>`
-
-  `<span>` elements give you a way to logically separate inline content in the same way that `<div>`s allow you to create logical separation for block-level content. 
+  - submit input
   
 ```html
-<ul>
-<li><span class="cd">Buddha Bar</span>, <span class="artist">Claude Challe</span></li>
-<li>When It Falls, Zero 7</li>
-<li>Earth 7, L.T.J. Bukem</li>
-<li>Le Roi Est Mort, Vive Le Roi!, Enigma</li>
-<li>Music for Airports, Brian Eno</li>
-</ul>
+<input type="submit" value="Submit">
 ```
 
-```css
-.cd {
- font-style: italic;
-}
-
-.artist {
- font-weight: bold;
-}
+<input type="submit" value="Submit">
+  
+  - radio input
+  
+```html
+<input type="radio" name="hotornot" value="hot">
+<input type="radio" name="hotornot" value="not">
 ```
 
-## for `<a>`
+<input type="radio" name="hotornot" value="hot"> hot
 
-```css
-a:link {
- color: green;
-}
-a:visited {
- color: red;
-}
-a:hover {
- color: yellow;
-}
+<input type="radio" name="hotornot" value="not"> not
+
+  - checkbox input
+  
+```html
+<input type="checkbox" name="spice" value="Salt">
+<input type="checkbox" name="spice" value="Pepper">
+<input type="checkbox" name="spice" value="Garlic">
 ```
 
-  Add these rules to the bottom of your “lounge.css” file and then save and reload “lounge.html”. Play around with the links to see them in each state. Note that you might have to clear your browser history to see the unvisited color (green). 
+<input type="checkbox" name="spice" value="Salt"> Salt
+
+<input type="checkbox" name="spice" value="Pepper"> Pepper
+
+<input type="checkbox" name="spice" value="Garlic"> Garlic
+
+  - textarea
   
-## Pseudo-class
+```html
+<textarea name="comments" rows="10" cols="48"></textarea>
+```
+Customer feedback:
 
+<textarea name="comments" rows="10" cols="48"></textarea>
+
+  - select&option
   
-
-```css
-/*On these two, we’re setting the color. For unvisited links, a nice aquamarine… */
-#elixirs a:link {
- color: #007e7e;
-}
-
-/*…and for visited links we’re using a dark gray. */
-#elixirs a:visited {
- color: #333333;
-}
-
-/*Now for the really interesting rule. When the user is hovering over the link, we’re changing the background to red. This makes the link loo highlighted when you pass the mouse over it. Give it a try*/
-#elixirs a:hover {
- background: #f88396;
- color: #0d5353;
-}
+```html
+<select name="characters">
+ <option value="Buckaroo">Buckaroo Banzai</option>
+ <option value="Tommy">Perfect Tommy</option>
+ <option value="Penny">Penny Priddy</option>
+ <option value="Jersey">New Jersey</option>
+ <option value="John">John Parker</option>
+</select>
 ```
 
-## the cascade
+<select name="characters">
+ <option value="Buckaroo">Buckaroo Banzai</option>
+ <option value="Tommy">Perfect Tommy</option>
+ <option value="Penny">Penny Priddy</option>
+ <option value="Jersey">New Jersey</option>
+ <option value="John">John Parker</option>
+</select>
 
-  Here’s just one last piece of information you need to understand the cascade. You already know about using multiple stylesheets to either better organize your styles or to support different types of devices. But there are actually some other stylesheets hanging around when your users visit your pages. Let’s take a look:
+  - number input
   
-  <img src="/post/!image/cascade.png" alt="understanding for cascade" width="100%" height="100%">
+```html
+<input type="number" min="0" max="20">
+```
+
+<input type="number" min="0" max="20">
+
+  - range input
   
-   as the page authors, we can use multiple stylesheets with our HTML. And the user might also supply his own styles, and then the browser has its default styles, too. And on top of all that, we might have multiple selectors that apply to the same element. How do we figure out which styles an element gets?
-   
-  That’s actually another way of asking what cascade does. The cascade is the way the browser decides, given a bunch of styles in a bunch of stylesheets, which style is going to be used. To answer that question, we need to bring everything together—all the various stylesheets hanging around, the rules, and the individual property declarations in those rules.
-   
-# Arranging Elements
+```html
+<input type="range" min="0" max="20" step="5">
+```
+
+<input type="range" min="0" max="20" step="5">
+
+  - color input
+  
+```html
+<input type="color">
+```
+
+<input type="color">
+
+  - date input
+  
+```html
+<input type="date">
+```
+
+Date: <input type="date">
+
+  - email input
+  
+```html
+<input type="email">
+```
+
+Email: <input type="email">
+
+  - tel input
+  
+```html
+<input type="tel">
+```
+
+Tel: <input type="tel">
+
+  - url input
+  
+```html
+<input type="url">
+```
+
+URL: <input type="url">
+
+## integrate
+
+```html
+<form action="http://starbuzzcoffee.com/processorder.php" method="post">
+ <div class="tableRow">
+ <p>
+ Choose your beans:
+ </p>
+ <p>
+ <select name="beans">
+ <option value="House Blend">House Blend</option>
+ <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+ <option value="Guatemala">Organic Guatemala</option>
+ <option value="Kenya">Kenya</option>
+ </select>
+ </p>
+ </div>
+ <div class="tableRow">
+ <p> Type: </p>
+ <p>
+ <input type="radio" name="beantype" value="whole"> Whole bean<br>
+ <input type="radio" name="beantype" value="ground" checked> Ground
+ </p>
+ </div>
+ <div class="tableRow">
+ <p> Number of bags: </p>
+ <p> <input type="number" name="bags" min="1" max="10"> </p>
+ </div>
+ <div class="tableRow label">
+ <p> Must arrive by date: </p>
+ <p> <input type="date" name="date"> </p>
+ </div>
+ <div class="tableRow">
+ <p> Extras:  </p>
+ 
+ <p> PAY ATTENTION TO `extras[]`!</p>
+ <p>
+ <input type="checkbox" name="extras[]" value="giftwrap"> Gift wrap<br>
+ <input type="checkbox" name="extras[]" value="catalog" checked>
+ Include catalog with order
+ </p>
+ </div>
+ <div class="tableRow">
+ <p class="heading"> Ship to </p>
+ <p></p>
+ </div>
+ <div class="tableRow">
+ <p> Name: </p>
+ <p> <input type="text" name="name" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Address: </p>
+ <p> <input type="text" name="address" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> City: </p>
+ <p> <input type="text" name="city" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> State: </p>
+ <p> <input type="text" name="state" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Zip: </p>
+ <p> <input type="text" name="zip" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Phone: </p>
+ <p> <input type="tel" name="phone" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Customer Comments: </p>
+ <p>
+ <textarea name="comments" rows="10" cols="48"></textarea>
+ </p>
+ </div>
+ <div class="tableRow">
+ <p></p>
+ <p> <input type="submit" value="Order Now"> </p>
+ </div>
+</form>
+```
+
+<form action="http://starbuzzcoffee.com/processorder.php" method="post">
+ <div class="tableRow">
+ <p>
+ Choose your beans:
+ </p>
+ <p>
+ <select name="beans">
+ <option value="House Blend">House Blend</option>
+ <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+ <option value="Guatemala">Organic Guatemala</option>
+ <option value="Kenya">Kenya</option>
+ </select>
+ </p>
+ </div>
+ <div class="tableRow">
+ <p> Type: </p>
+ <p>
+ <input type="radio" name="beantype" value="whole"> Whole bean<br>
+ <input type="radio" name="beantype" value="ground" checked> Ground
+ </p>
+ </div>
+ <div class="tableRow">
+ <p> Number of bags: </p>
+ <p> <input type="number" name="bags" min="1" max="10"> </p>
+ </div>
+ <div class="tableRow label">
+ <p> Must arrive by date: </p>
+ <p> <input type="date" name="date"> </p>
+ </div>
+ <div class="tableRow">
+ <p> Extras:  </p>
+ 
+ <p> PAY ATTENTION TO `extras[]`!</p>
+ <p>
+ <input type="checkbox" name="extras[]" value="giftwrap"> Gift wrap<br>
+ <input type="checkbox" name="extras[]" value="catalog" checked>
+ Include catalog with order
+ </p>
+ </div>
+ <div class="tableRow">
+ <p class="heading"> Ship to </p>
+ <p></p>
+ </div>
+ <div class="tableRow">
+ <p> Name: </p>
+ <p> <input type="text" name="name" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Address: </p>
+ <p> <input type="text" name="address" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> City: </p>
+ <p> <input type="text" name="city" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> State: </p>
+ <p> <input type="text" name="state" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Zip: </p>
+ <p> <input type="text" name="zip" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Phone: </p>
+ <p> <input type="tel" name="phone" value=""> </p>
+ </div>
+ <div class="tableRow">
+ <p> Customer Comments: </p>
+ <p>
+ <textarea name="comments" rows="10" cols="48"></textarea>
+ </p>
+ </div>
+ <div class="tableRow">
+ <p></p>
+ <p> <input type="submit" value="Order Now"> </p>
+ </div>
+</form>
+
+  Reload the page, fill in the text inputs, and submit the form. When you do that, the browser will package up the data and send it to the URL in the action attribute, which is at starbuzzcoffee.com. And if you want your customers to get their form, you can set `method` to `GET`.
+  
+## extra elements
+
+  - fieldsheet
+
+```html
+<fieldset>
+ <legend>Condiments</legend>
+ <input type="checkbox" name="spice" value="salt">
+ Salt <br>
+ <input type="checkbox" name="spice" value="pepper">
+ Pepper <br>
+ <input type="checkbox" name="spice" value="garlic">
+ Garlic
+</fieldset>
+```
+
+<fieldset>
+ <legend>Condiments</legend>
+ <input type="checkbox" name="spice" value="salt">
+ Salt <br>
+ <input type="checkbox" name="spice" value="pepper">
+ Pepper <br>
+ <input type="checkbox" name="spice" value="garlic">
+ Garlic
+</fieldset>
+
+  - passwords
+  
+```html
+<input type="password" name="secret">
+```
+
+<input type="password" name="secret">

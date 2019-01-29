@@ -30,7 +30,7 @@ sequenceDiagrams:
   options: ''
 ---
   Learning abstract from [*Head First HTML and CSS, 2nd Edition*](http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf).
-<img src="/post/!image/HTML&CSS.png" alt="HTML&CSS" width="100%" height="100%">
+<img src="https://www.cfideas.com/wp-content/uploads/2018/08/html5-css3.png" alt="HTML&CSS" width="100%" height="100%">
 <!--more-->
 
 <center>

@@ -11,6 +11,25 @@ tags:
   - JavaScript
   - 中文
 lastmod: '2019-01-30T14:05:26+08:00'
+keywords: []
+description: ''
+comment: yes
+toc: yes
+autoCollapseToc: no
+postMetaInFooter: yes
+hiddenFromHomePage: no
+contentCopyright: no
+reward: no
+mathjax: yes
+mathjaxEnableSingleDollar: yes
+mathjaxEnableAutoNumber: yes
+hideHeaderAndFooter: no
+flowchartDiagrams:
+  enable: no
+  options: ''
+sequenceDiagrams:
+  enable: no
+  options: ''
 ---
 [《HTML、CSS、JavaScript网页制作从入门到精通 第3版 (刘西杰)》](https://www.jianshu.com/p/0b7542f5c1fe)学习摘要，也是对head first中学习的补充。
 <img src="https://www.juicymedia.co.uk/application/files/4615/1838/4923/html_css_js.png" alt="HTML&CSS&JS" width="100%" height="100%">

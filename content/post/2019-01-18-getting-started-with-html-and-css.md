@@ -785,9 +785,10 @@ URL: <input type="url">
 </center>
 
 ```html
- <table>
+ <table border="5" bordercolor="#66CCFF" cellspacing="6" cellpadding="5" bgcolor="#FFCCFF">
   <caption>The cities I visited on my Segway'n USA travels</caption>
- <tr class="cellcolor">
+ <thead bgcolor="#FF33FF">
+ <tr>
  <th>City</th>
  <th>Date</th>
  <th>Temperature</th>
@@ -795,6 +796,8 @@ URL: <input type="url">
  <th>Population</th>
  <th>Diner Rating</th>
  </tr>
+ </thead>
+ <tbody bgcolor="#CC99FF">
  <tr>
  <td class="right">Walla Walla, WA</td>
  <td>June 15th</td>
@@ -843,6 +846,12 @@ URL: <input type="url">
  <td>480</td>
  <td>3/5</td>
  </tr>
+ </tbody>
+ <tfoot bgcolor="#FFCCFF">
+ <tr>
+ <td colspan="6" align="center">biubiubiu</td>
+ </tr>
+ </tfoot>
  </table>
 ```
 

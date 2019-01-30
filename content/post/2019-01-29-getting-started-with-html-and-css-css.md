@@ -393,6 +393,7 @@ p.specials {
  color: red;
 }
 ```
+
 <center>
 # Advanced Web Construction
 </center>
@@ -527,6 +528,70 @@ a:hover {
    as the page authors, we can use multiple stylesheets with our HTML. And the user might also supply his own styles, and then the browser has its default styles, too. And on top of all that, we might have multiple selectors that apply to the same element. How do we figure out which styles an element gets?
    
   That’s actually another way of asking what cascade does. The cascade is the way the browser decides, given a bunch of styles in a bunch of stylesheets, which style is going to be used. To answer that question, we need to bring everything together—all the various stylesheets hanging around, the rules, and the individual property declarations in those rules.
+
+<center>
+# HTML5 Markup
+</center>
+
+  There are many new markups that can substitute `<div>`.
+  
+## navigation
+
+```html
+<header>
+  <nav>
+ <ul>
+ <li><a href="index.html">HOME</a></li>
+ <li class="selected"><a href="blog.html">BLOG</a></li>
+ <li><a href="">INVENTIONS</a></li>
+ <li><a href="">RECIPES</a></li>
+ <li><a href="">LOCATIONS</a></li>
+ </ul>
+ </nav>
+</header>
+```
+
+  And you should add CSS style:
+  
+```css
+nav {
+ background-color: #efe5d0;
+ margin: 10px 10px 0px 10px;
+}
+nav ul {
+ margin: 0px;
+ list-style-type: none;
+ padding: 5px 0px 5px 0px;
+}
+nav ul li {
+ display: inline;
+ padding: 5px 10px 5px 10px;
+}
+nav ul li a:link, nav ul li a:visited {
+ color: #954b4b;
+ border-bottom: none;
+ font-weight: bold;
+}
+nav ul li.selected {
+ background-color: #c8b99c;
+}
+```
+
+## video
+
+  <img src="/post/!image/video1.png" alt="How does the video element work?" width="100%" height="100%">
+  
+  How to juggle all those video formats? In either case, you can use one `<source>` element (not to be confused with the src attribute) per format inside a `<video>` element to provide a set of videos, each with its own format, and let the browser pick the first one it supports. Like this:
+
+```html 
+<video controls autoplay width="512" height="288"
+ ~~src="video/tweetsip.mp4"~~>
+ <source src="video/tweetsip.mp4">
+ <source src="video/tweetsip.webm">
+ <source src="video/tweetsip.ogv">
+ <p>Sorry, your browser doesn't support the video element</p>
+</video>
+```
 
 <center>
 # Arranging Elements
@@ -689,70 +754,4 @@ a:hover {
  top: 300px;
  left: 100px;
 }
-```
-
-<center>
-# HTML5 markup
-</center>
-
-## new markup
-
-  There are many new markups that can substitute `<div>`.
-  
-## navigation
-
-```html
-<header>
-  <nav>
- <ul>
- <li><a href="index.html">HOME</a></li>
- <li class="selected"><a href="blog.html">BLOG</a></li>
- <li><a href="">INVENTIONS</a></li>
- <li><a href="">RECIPES</a></li>
- <li><a href="">LOCATIONS</a></li>
- </ul>
- </nav>
-</header>
-```
-
-  And you should add CSS style:
-  
-```css
-nav {
- background-color: #efe5d0;
- margin: 10px 10px 0px 10px;
-}
-nav ul {
- margin: 0px;
- list-style-type: none;
- padding: 5px 0px 5px 0px;
-}
-nav ul li {
- display: inline;
- padding: 5px 10px 5px 10px;
-}
-nav ul li a:link, nav ul li a:visited {
- color: #954b4b;
- border-bottom: none;
- font-weight: bold;
-}
-nav ul li.selected {
- background-color: #c8b99c;
-}
-```
-
-## insert video
-
-  <img src="/post/!image/video1.png" alt="How does the video element work?" width="100%" height="100%">
-  
-  How to juggle all those video formats? In either case, you can use one `<source>` element (not to be confused with the src attribute) per format inside a `<video>` element to provide a set of videos, each with its own format, and let the browser pick the first one it supports. Like this:
-
-```html 
-<video controls autoplay width="512" height="288"
- ~~src="video/tweetsip.mp4"~~>
- <source src="video/tweetsip.mp4">
- <source src="video/tweetsip.webm">
- <source src="video/tweetsip.ogv">
- <p>Sorry, your browser doesn't support the video element</p>
-</video>
 ```

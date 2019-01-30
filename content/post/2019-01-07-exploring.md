@@ -33,15 +33,7 @@ toc: yes
   
   * add [Strike-Type lines](https://blog.csdn.net/u012111465/article/details/81148353)?
   
-  * insert photographs?
-  
   * create one site with multistyle?
-  
-  * [rebuild](https://github.com/olowolo) after change the content of `.css` file? `Hugo.exe` is necessary?
-  
-  * host in [GitHub](https://github.com/hoasxyz)?
-  
-  * automatically change the time of last modification(lastmod) in both `.Rmd` file and `.md` file?
   
   * Something may appear sometime somewhere...
   
@@ -64,8 +56,6 @@ toc: yes
 ```
  
  * Too add [annotation](https://www.imooc.com/article/23400) in markdown, [underline](https://blog.olowolo.com/post/hugo-even-preview/index.md) in markdown and add [footnotes](http://www.ghostchina.com/markdown-guide/) in markdown.
- 
- * When you are compiling your post, please deploy your website in [netlify](https://app.netlify.com/) first!!!
  
  * Insert audios in website. See <a target="_blank" title="索引" href="/post/terrylin/index.html#索引">御龙将军（uncover）</a> or [御龙将军（cover）](https://hoas.xyz/post/terrylin/#索引).
  

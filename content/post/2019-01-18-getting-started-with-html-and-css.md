@@ -13,7 +13,7 @@ keywords: []
 description: ''
 comment: yes
 toc: yes
-autoCollapseToc: true
+autoCollapseToc: no
 postMetaInFooter: true
 lastmod: '2019-01-22'
 ---
@@ -102,13 +102,31 @@ In **blogdown**/hugo, the root file is `public`. And the posts are in `public/po
       <li>Truth or Consequences, NM</li>
       <li>Why, AZ</li> 
 ```
-
-### ordered list
+---
+  - ordered list
 
   Enclose the list items with the `<ol>` element. eg.
   
 ```html
-<ol>
+<ol start="5">
+      <li>Walla Walla, WA</li> 
+      <li>Magic City, ID</li> 
+      <li>Bountiful, UT</li>
+      <li>Last Chance, CO</li>
+      <li>Truth or Consequences, NM</li>
+      <li>Why, AZ</li> 
+</ol>
+
+<ol type="a"> <!--or `A`-->
+      <li>Walla Walla, WA</li> 
+      <li>Magic City, ID</li> 
+      <li>Bountiful, UT</li>
+      <li>Last Chance, CO</li>
+      <li>Truth or Consequences, NM</li>
+      <li>Why, AZ</li> 
+</ol>
+
+<ol type="i"> <!--or `I`-->
       <li>Walla Walla, WA</li> 
       <li>Magic City, ID</li> 
       <li>Bountiful, UT</li>
@@ -118,7 +136,7 @@ In **blogdown**/hugo, the root file is `public`. And the posts are in `public/po
 </ol>
 ```
 
-<ol>
+<ol start="5">
       <li>Walla Walla, WA</li> 
       <li>Magic City, ID</li> 
       <li>Bountiful, UT</li>
@@ -127,7 +145,27 @@ In **blogdown**/hugo, the root file is `public`. And the posts are in `public/po
       <li>Why, AZ</li> 
 </ol>
 
-### unordered list
+<ol type="a">
+      <li>Walla Walla, WA</li> 
+      <li>Magic City, ID</li> 
+      <li>Bountiful, UT</li>
+      <li>Last Chance, CO</li>
+      <li>Truth or Consequences, NM</li>
+      <li>Why, AZ</li> 
+</ol>
+
+<ol type="i"> <!--or `I`-->
+      <li>Walla Walla, WA</li> 
+      <li>Magic City, ID</li> 
+      <li>Bountiful, UT</li>
+      <li>Last Chance, CO</li>
+      <li>Truth or Consequences, NM</li>
+      <li>Why, AZ</li> 
+</ol> 
+
+---
+
+  - unordered list
 
   Enclose the list items with the `<ul>` element.
   
@@ -195,7 +233,9 @@ In **blogdown**/hugo, the root file is `public`. And the posts are in `public/po
  <li>桔子</li>
 </ul> 
 
-### nested list
+---
+
+  - nested list
 
 ```html
 <ul>
@@ -259,7 +299,9 @@ In **blogdown**/hugo, the root file is `public`. And the posts are in `public/po
  <li>Call mom</li>
 </ol>
 
-### definition list
+---
+
+  - definition list
 
   Each item in the list has definition terms `<dt>` and definition description `<dd>`.
 
@@ -363,140 +405,12 @@ HTML into the form on that tab. Then click Check and the service will check your
   
   The `<meta>` tag belongs in the `<head>` element and you shoudl add this line above any other elements in the `<head>` element. And "utf-8" is the version we use for web pages.
   
-## why do we need that alt attribute anyway?
+## alt attribute
 
   *  If your image is broken for some reason (say, your image server goes down, or your connection is really slow), the alt attribute will (in most browsers) show the alt text you’ve specified in place of the image.
   
   *  For vision-impaired users who are using a screen reader to read the page, the screen reader will read the alt text to the user, which helps them understand the page better.
-
-
-
-<center>
-# Tabulate
-</center>
-
-```html
- <table>
-  <caption>The cities I visited on my Segway'n USA travels</caption>
- <tr class="cellcolor">
- <th>City</th>
- <th>Date</th>
- <th>Temperature</th>
- <th>Altitude</th>
- <th>Population</th>
- <th>Diner Rating</th>
- </tr>
- <tr>
- <td class="right">Walla Walla, WA</td>
- <td>June 15th</td>
- <td>75</td>
- <td>1,204 ft</td>
- <td>29,686</td>
- <td>4/5</td>
- </tr>
- <tr>
- <td>Magic City, ID</td>
- <td>June 25th</td>
- <td>74</td>
- <td>5,312 ft</td>
- <td>50</td>
- <td>3/5</td>
- </tr>
- <tr>
- <td>Bountiful, UT</td>
- <td>July 10th</td>
- <td>91</td>
- <td>4,226 ft</td>
- <td>41,173</td>
- <td>4/5</td>
- </tr>
- <tr>
- <td>Last Chance, CO</td>
- <td>July 23rd</td>
- <td class="right">102</td>
- <td>4,780 ft</td>
- <td>265</td>
- <td>3/5</td>
- </tr>
- <tr>
- <td>Truth or Consequences, NM</td>
- <td>August 9th</td>
- <td>93</td>
- <td>4,242 ft</td>
- <td>7,289</td>
- <td>5/5</td>
- </tr>
- <tr>
- <td>Why, AZ</td>
- <td>August 18th</td>
- <td>104</td>
- <td>860 ft</td>
- <td>480</td>
- <td>3/5</td>
- </tr>
- </table>
-```
-
- <table>
-  <caption>The cities I visited on my Segway'n USA travels</caption>
- <tr class="cellcolor">
- <th>City</th>
- <th>Date</th>
- <th>Temperature</th>
- <th>Altitude</th>
- <th>Population</th>
- <th>Diner Rating</th>
- </tr>
- <tr>
- <td class="right">Walla Walla, WA</td>
- <td>June 15th</td>
- <td>75</td>
- <td>1,204 ft</td>
- <td>29,686</td>
- <td>4/5</td>
- </tr>
- <tr>
- <td>Magic City, ID</td>
- <td>June 25th</td>
- <td>74</td>
- <td>5,312 ft</td>
- <td>50</td>
- <td>3/5</td>
- </tr>
- <tr>
- <td>Bountiful, UT</td>
- <td>July 10th</td>
- <td>91</td>
- <td>4,226 ft</td>
- <td>41,173</td>
- <td>4/5</td>
- </tr>
- <tr>
- <td>Last Chance, CO</td>
- <td>July 23rd</td>
- <td class="right">102</td>
- <td>4,780 ft</td>
- <td>265</td>
- <td>3/5</td>
- </tr>
- <tr>
- <td>Truth or Consequences, NM</td>
- <td>August 9th</td>
- <td>93</td>
- <td>4,242 ft</td>
- <td>7,289</td>
- <td>5/5</td>
- </tr>
- <tr>
- <td>Why, AZ</td>
- <td>August 18th</td>
- <td>104</td>
- <td>860 ft</td>
- <td>480</td>
- <td>3/5</td>
- </tr>
- </table>
- 
+  
 <center>
 # Interactive
 </center>
@@ -654,6 +568,20 @@ Tel: <input type="tel">
 
 URL: <input type="url">
 
+  - reset
+  
+```html
+<input type="reset" name="submit2" value="重置">
+```
+
+<input type="reset" name="submit2" value="重置">
+
+  - file
+  
+  - image
+  
+  - hidden
+
 ## integrate
 
 ```html
@@ -689,7 +617,7 @@ URL: <input type="url">
  <div class="tableRow">
  <p> Extras:  </p>
  
- <p> PAY ATTENTION TO `extras[]`!</p>
+ <p> PAY ATTENTION TO extras[]!</p>
  <p>
  <input type="checkbox" name="extras[]" value="giftwrap"> Gift wrap<br>
  <input type="checkbox" name="extras[]" value="catalog" checked>
@@ -851,3 +779,139 @@ URL: <input type="url">
 ```
 
 <input type="password" name="secret">
+
+<center>
+# Tabulate
+</center>
+
+```html
+ <table>
+  <caption>The cities I visited on my Segway'n USA travels</caption>
+ <tr class="cellcolor">
+ <th>City</th>
+ <th>Date</th>
+ <th>Temperature</th>
+ <th>Altitude</th>
+ <th>Population</th>
+ <th>Diner Rating</th>
+ </tr>
+ <tr>
+ <td class="right">Walla Walla, WA</td>
+ <td>June 15th</td>
+ <td>75</td>
+ <td>1,204 ft</td>
+ <td>29,686</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Magic City, ID</td>
+ <td>June 25th</td>
+ <td>74</td>
+ <td>5,312 ft</td>
+ <td>50</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Bountiful, UT</td>
+ <td>July 10th</td>
+ <td>91</td>
+ <td>4,226 ft</td>
+ <td>41,173</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Last Chance, CO</td>
+ <td>July 23rd</td>
+ <td class="right">102</td>
+ <td>4,780 ft</td>
+ <td>265</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Truth or Consequences, NM</td>
+ <td>August 9th</td>
+ <td>93</td>
+ <td>4,242 ft</td>
+ <td>7,289</td>
+ <td>5/5</td>
+ </tr>
+ <tr>
+ <td>Why, AZ</td>
+ <td>August 18th</td>
+ <td>104</td>
+ <td>860 ft</td>
+ <td>480</td>
+ <td>3/5</td>
+ </tr>
+ </table>
+```
+
+ <table border="5" bordercolor="#66CCFF" cellspacing="6" cellpadding="5" bgcolor="#FFCCFF">
+  <caption>The cities I visited on my Segway'n USA travels</caption>
+ <thead bgcolor="#FF33FF">
+ <tr>
+ <th>City</th>
+ <th>Date</th>
+ <th>Temperature</th>
+ <th>Altitude</th>
+ <th>Population</th>
+ <th>Diner Rating</th>
+ </tr>
+ </thead>
+ <tbody bgcolor="#CC99FF">
+ <tr>
+ <td class="right">Walla Walla, WA</td>
+ <td>June 15th</td>
+ <td>75</td>
+ <td>1,204 ft</td>
+ <td>29,686</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Magic City, ID</td>
+ <td>June 25th</td>
+ <td>74</td>
+ <td>5,312 ft</td>
+ <td>50</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Bountiful, UT</td>
+ <td>July 10th</td>
+ <td>91</td>
+ <td>4,226 ft</td>
+ <td>41,173</td>
+ <td>4/5</td>
+ </tr>
+ <tr>
+ <td>Last Chance, CO</td>
+ <td>July 23rd</td>
+ <td class="right">102</td>
+ <td>4,780 ft</td>
+ <td>265</td>
+ <td>3/5</td>
+ </tr>
+ <tr>
+ <td>Truth or Consequences, NM</td>
+ <td>August 9th</td>
+ <td>93</td>
+ <td>4,242 ft</td>
+ <td>7,289</td>
+ <td>5/5</td>
+ </tr>
+ <tr>
+ <td>Why, AZ</td>
+ <td>August 18th</td>
+ <td>104</td>
+ <td>860 ft</td>
+ <td>480</td>
+ <td>3/5</td>
+ </tr>
+ </tbody>
+ <tfoot bgcolor="#FFCCFF">
+ <tr>
+ <td colspan="6" align="center">biubiubiu</td>
+ </tr>
+ </tfoot>
+ </table>
+ 

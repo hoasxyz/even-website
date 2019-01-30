@@ -37,6 +37,8 @@ sequenceDiagrams:
 # Adding a Little Style
 </center>
 
+  The priority level of CSS is:https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity#%E4%BC%98%E5%85%88%E7%BA%A7%E6%98%AF%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E7%9A%84%EF%BC%9F.
+
   The basic construct of HTML is:
   
   <img src="../!image/HTMLconstruct.png" alt="HTML&CSS" width="100%" height="100%">

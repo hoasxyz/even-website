@@ -3,7 +3,8 @@ title: ggplot2
 author: Hoas
 date: '2019-01-05'
 slug: ggplot2
-description: Hello!
+keywords: [ggplot2,笔记,R语言]
+description: "ggplot2的一些笔记整理"
 categories:
   - fragmentray
 tags:

@@ -9,8 +9,8 @@ tags:
   - CSS
   - HTML
 lastmod: '2019-01-29T21:55:28+08:00'
-keywords: []
-description: ''
+keywords: [HTML,CSS]
+description: 'Learning CSS.'
 comment: yes
 toc: yes
 autoCollapseToc: true

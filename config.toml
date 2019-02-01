@@ -1,4 +1,4 @@
-baseURL = "http://localhost:hoas/"
+baseURL = "http://localhost:1313/"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "Website of Hoas."
@@ -7,7 +7,7 @@ enableRobotsTXT = true
 enableEmoji = true
 theme = "hugo-theme-even"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
@@ -125,7 +125,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   [params.search]
   enable = true
   # Genate a json file include all of your posts, you should not enable this if have too many posts.
-  generateIndex = false
+  generateIndex = true
   # Redirect to search engine
   searchEngine = "https://www.google.com/search?q=site:hoas.xyz %s" # or false
   

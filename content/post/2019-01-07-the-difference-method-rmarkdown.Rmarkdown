@@ -10,6 +10,8 @@ tags:
   - RMarkdown
 lastmod: '2019-01-07T19:10:06+08:00'
 toc: yes
+keywords: [水环境保护,显式差分,隐式差分,差分,R语言,ggvis,kableExtra]
+description: "水环境保护课程中的显式、隐式差分R语言代码"
 ---
 
 ```{r setup, include=FALSE}

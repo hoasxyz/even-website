@@ -3,7 +3,7 @@ title: ggplot2
 author: Hoas
 date: '2019-01-05'
 slug: ggplot2
-description: Hello!
+description: "ggplot的一些笔记整理"
 categories:
   - fragmentray
 tags:
@@ -11,6 +11,7 @@ tags:
   - ggplot2
 lastmod: '2019-01-05T13:04:48+08:00'
 toc: yes
+keywords: [ggplot2，笔记]
 ---
 
   There are brief notes about the usage of **ggplot2**.

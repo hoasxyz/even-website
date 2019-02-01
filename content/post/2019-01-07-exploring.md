@@ -11,6 +11,8 @@ tags:
   - RMarkdown
 lastmod: '2019-01-18T16:36:05+08:00'
 toc: yes
+keywords: [explore,hugo,R Markdown,website,R]
+description: "Exploring for many problems occured in blogdown."
 ---
 
   Many Many problems...

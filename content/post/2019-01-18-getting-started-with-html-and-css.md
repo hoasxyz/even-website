@@ -9,8 +9,8 @@ tags:
   - HTML
   - CSS
 draft: false
-keywords: []
-description: ''
+keywords: [HTML,CSS]
+description: 'HTML learning.'
 comment: yes
 toc: yes
 autoCollapseToc: no

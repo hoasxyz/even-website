@@ -7,6 +7,8 @@ categories:
   - fragmentray
 tags:
   - 中文
+keywords: [安卓,WiFi密码,破解]
+description: "OPPO R9无root查看WiFi密码教程。"
 ---
 
 教程当记录写在这里，虽然平常用得不多，但是要找的时候就很麻烦。

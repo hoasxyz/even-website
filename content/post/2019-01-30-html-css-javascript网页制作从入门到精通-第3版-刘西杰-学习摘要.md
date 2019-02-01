@@ -11,8 +11,8 @@ tags:
   - JavaScript
   - 中文
 lastmod: '2019-01-30T14:05:26+08:00'
-keywords: []
-description: ''
+keywords: [HTML,CSS,JS]
+description: '《HTML、CSS、JavaScript网页制作从入门到精通 第3版 (刘西杰)》学习摘要'
 comment: yes
 toc: yes
 autoCollapseToc: no

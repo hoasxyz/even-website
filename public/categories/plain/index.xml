@@ -2,42 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>plain on Website of Hoas.</title>
-    <link>/categories/plain/</link>
+    <link>http://localhost:1313/categories/plain/</link>
     <description>Recent content in plain on Website of Hoas.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Hoas</copyright>
     <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/plain/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/categories/plain/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>一本线分差分析</title>
-      <link>/post/oneline/</link>
+      <title>四年一本线差分析</title>
+      <link>http://localhost:1313/post/oneline4/</link>
       <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/oneline/</guid>
-      <description>某日，我正在办公室玩电脑，突然听见高三年级主任李老师的声音——以及朝我而来的脚步声。我知道李老师又要来开我找不到女朋友的玩笑了，但是久经沙场</description>
+      <guid>http://localhost:1313/post/oneline4/</guid>
+      <description>&lt;p&gt;某日，我正在办公室玩电脑，突然听见高三年级主任李老师的声音——以及朝我而来的脚步声。我知道李老师又要来开我找不到女朋友的玩笑了，但是久经沙场的我依旧镇静自若地玩电脑，直到李老师走到我面前后如获至宝版地对我说道：“你终于回来了啊！”我……&lt;/p&gt;
+
+&lt;p&gt;“……这个东西学校计算机老师不会搞，你能不能搞啊？……哎！不是计算机专业的没关系……”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pic.36krcnd.com/201802/27112556/l57o5cb4lzuzn7e1.jpg!1200&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>御龙将军</title>
-      <link>/post/terrylin/</link>
+      <link>http://localhost:1313/post/terrylin/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/terrylin/</guid>
+      <guid>http://localhost:1313/post/terrylin/</guid>
       <description>&lt;p&gt;每个人从开始接触音乐（现代歌曲）到现在都会有一些对音乐的体会。渐渐地，形成了自己的音乐欣赏体系，这里记录了我本人对音乐的理解。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>武汉都下雪了</title>
-      <link>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</link>
+      <link>http://localhost:1313/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</guid>
+      <guid>http://localhost:1313/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</guid>
       <description>&lt;p&gt;你们呢？&lt;/p&gt;</description>
     </item>
     

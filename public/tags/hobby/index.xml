@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hobby on Website of Hoas.</title>
-    <link>/tags/hobby/</link>
+    <link>http://localhost:1313/tags/hobby/</link>
     <description>Recent content in hobby on Website of Hoas.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Hoas</copyright>
     <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>御龙将军</title>
-      <link>/post/terrylin/</link>
+      <link>http://localhost:1313/post/terrylin/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/terrylin/</guid>
+      <guid>http://localhost:1313/post/terrylin/</guid>
       <description>&lt;p&gt;每个人从开始接触音乐（现代歌曲）到现在都会有一些对音乐的体会。渐渐地，形成了自己的音乐欣赏体系，这里记录了我本人对音乐的理解。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

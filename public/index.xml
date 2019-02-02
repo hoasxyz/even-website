@@ -2,172 +2,215 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Website of Hoas.</title>
-    <link>/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Website of Hoas.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Hoas</copyright>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>肢解hugo</title>
+      <link>http://localhost:1313/post/%E8%82%A2%E8%A7%A3hugo/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E8%82%A2%E8%A7%A3hugo/</guid>
+      <description>&lt;p&gt;终于走到了这一步，要重新去审视hugo生成的每个东西都是来干什么的了——只有这样才能去customize自己的style——这也是我接下来想做的。
+&lt;img src=&#34;http://img.phperz.com/data/img/20180127/1516983944_9143.png&#34; alt=&#34;hugo&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>1 About Hello! You can call me Hoas. Hoas is now a stupid student in Wuhan University, being weighed down with pounds of homework and hard examinations with less time to build his own world. This is his personal website building for keeping a record of something plain but funny, something brilliant and indispensibly, something shadowy. On the other hand, this website is for keeping something fragmentary, which is unnecessary</description>
     </item>
     
     <item>
-      <title>一本线分差分析</title>
-      <link>/post/oneline/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      <title>《HTML、CSS、JavaScript网页制作从入门到精通 第3版 (刘西杰)》学习摘要</title>
+      <link>http://localhost:1313/post/html-css-javascript%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-%E7%AC%AC3%E7%89%88-%E5%88%98%E8%A5%BF%E6%9D%B0-%E5%AD%A6%E4%B9%A0%E6%91%98%E8%A6%81/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/oneline/</guid>
-      <description>某日，我正在办公室玩电脑，突然听见高三年级主任李老师的声音——以及朝我而来的脚步声。我知道李老师又要来开我找不到女朋友的玩笑了，但是久经沙场</description>
+      <guid>http://localhost:1313/post/html-css-javascript%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-%E7%AC%AC3%E7%89%88-%E5%88%98%E8%A5%BF%E6%9D%B0-%E5%AD%A6%E4%B9%A0%E6%91%98%E8%A6%81/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.jianshu.com/p/0b7542f5c1fe&#34;&gt;《HTML、CSS、JavaScript网页制作从入门到精通 第3版 (刘西杰)》&lt;/a&gt;学习摘要，也是对head first中学习的补充。
+&lt;img src=&#34;https://www.juicymedia.co.uk/application/files/4615/1838/4923/html_css_js.png&#34; alt=&#34;HTML&amp;CSS&amp;JS&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Getting Started with HTML and CSS</title>
-      <link>/post/getting-started-with-html-and-css/</link>
+      <title>Getting Started with HTML and CSS -- CSS</title>
+      <link>http://localhost:1313/post/getting-started-with-html-and-css-css/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/getting-started-with-html-and-css-css/</guid>
+      <description>&lt;p&gt;Learning abstract from &lt;a href=&#34;http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf&#34;&gt;&lt;em&gt;Head First HTML and CSS, 2nd Edition&lt;/em&gt;&lt;/a&gt;.
+&lt;img src=&#34;https://www.cfideas.com/wp-content/uploads/2018/08/html5-css3.png&#34; alt=&#34;HTML&amp;CSS&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OPPO R9无root查看WiFi密码教程</title>
+      <link>http://localhost:1313/post/oppo-r9%E6%97%A0root%E6%9F%A5%E7%9C%8Bwifi%E5%AF%86%E7%A0%81%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/oppo-r9%E6%97%A0root%E6%9F%A5%E7%9C%8Bwifi%E5%AF%86%E7%A0%81%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;p&gt;教程当记录写在这里，虽然平常用得不多，但是要找的时候就很麻烦。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting Started on GitHub with My Sidekick</title>
+      <link>http://localhost:1313/post/getting-started-on-github-with-my-sidekick/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/getting-started-on-github-with-my-sidekick/</guid>
+      <description>&lt;p&gt;终于，我还是来到了全球最大的&lt;a href=&#34;https://github.com/&#34;&gt;&lt;del&gt;同性&lt;/del&gt;交友网站&lt;/a&gt;，下次李老师可以问我有没有交到蓝朋友了……
+&lt;img src=&#34;https://github.githubassets.com/images/modules/explore/social.jpg&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>四年一本线差分析</title>
+      <link>http://localhost:1313/post/oneline4/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/oneline4/</guid>
+      <description>&lt;p&gt;某日，我正在办公室玩电脑，突然听见高三年级主任李老师的声音——以及朝我而来的脚步声。我知道李老师又要来开我找不到女朋友的玩笑了，但是久经沙场的我依旧镇静自若地玩电脑，直到李老师走到我面前后如获至宝版地对我说道：“你终于回来了啊！”我……&lt;/p&gt;
+
+&lt;p&gt;“……这个东西学校计算机老师不会搞，你能不能搞啊？……哎！不是计算机专业的没关系……”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pic.36krcnd.com/201802/27112556/l57o5cb4lzuzn7e1.jpg!1200&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with HTML and CSS -- HTML</title>
+      <link>http://localhost:1313/post/getting-started-with-html-and-css-html/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/getting-started-with-html-and-css/</guid>
+      <guid>http://localhost:1313/post/getting-started-with-html-and-css-html/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s learning abstract from &lt;a href=&#34;http://file.allitebooks.com/20150518/Head%20First%20HTML%20and%20CSS,%202nd%20Edition.pdf&#34;&gt;&lt;em&gt;Head First HTML and CSS, 2nd Edition&lt;/em&gt;&lt;/a&gt;.
-&lt;img src=&#34;/post/!image/HTML&amp;CSS.png&#34; alt=&#34;HTML&amp;CSS&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+&lt;img src=&#34;http://localhost:1313/post/!image/HTML&amp;CSS.png&#34; alt=&#34;HTML&amp;CSS&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>御龙将军</title>
-      <link>/post/terrylin/</link>
+      <link>http://localhost:1313/post/terrylin/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/terrylin/</guid>
+      <guid>http://localhost:1313/post/terrylin/</guid>
       <description>&lt;p&gt;每个人从开始接触音乐（现代歌曲）到现在都会有一些对音乐的体会。渐渐地，形成了自己的音乐欣赏体系，这里记录了我本人对音乐的理解。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/!image/terrylin.jpg&#34; alt=&#34;林志炫&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>华山攻略</title>
-      <link>/post/huashan/</link>
+      <link>http://localhost:1313/post/huashan/</link>
       <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/huashan/</guid>
+      <guid>http://localhost:1313/post/huashan/</guid>
       <description>&lt;p&gt;华山由险著称，声称是“天下第一险”，华山被评为&lt;a href=&#34;https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E5%8D%81%E5%A4%A7%E5%90%8D%E5%B1%B1/4047358&#34;&gt;中华十大名山&lt;/a&gt;，国家AAAAA级旅游景区。而本博文是一篇简要介绍自己身体力行过的冬（淡）季华山攻略，这里不是指南，而是一些小小的提示以及自己的感想。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2Xi&#39;an</title>
-      <link>/post/2xi-an/</link>
+      <link>http://localhost:1313/post/2xi-an/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/2xi-an/</guid>
+      <guid>http://localhost:1313/post/2xi-an/</guid>
       <description>移动端最好的阅读方式是桌面版网站模式。 要是我这里不写一点话，网站首页又要出现莫名其妙的代码了…….Rmd文件怎么提取摘要现在还不知道怎么做。</description>
     </item>
     
     <item>
       <title>Exploring!</title>
-      <link>/post/exploring/</link>
+      <link>http://localhost:1313/post/exploring/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/exploring/</guid>
+      <guid>http://localhost:1313/post/exploring/</guid>
       <description>&lt;p&gt;Many Many problems&amp;hellip;
   &lt;img src=&#34;http://www.makeraid.cn/wp-content/uploads/2017/09/36%E4%B8%AA%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98-%E5%A4%A7%E5%9B%BE.jpg&#34; alt=&#34;problem&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The Difference Method(.Rmarkdown)</title>
-      <link>/post/the-difference-method-rmarkdown/</link>
+      <link>http://localhost:1313/post/the-difference-method-rmarkdown/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/the-difference-method-rmarkdown/</guid>
-      <description>The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express. This is my first report written in English and shaped by R with R Markdown!</description>
+      <guid>http://localhost:1313/post/the-difference-method-rmarkdown/</guid>
+      <description>The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express. This is my first report written in English and shaped by</description>
     </item>
     
     <item>
       <title>The Difference Method(.Rmd)</title>
-      <link>/post/the-difference-method/</link>
+      <link>http://localhost:1313/post/the-difference-method/</link>
       <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/the-difference-method/</guid>
+      <guid>http://localhost:1313/post/the-difference-method/</guid>
       <description>var lodash = _.noConflict();The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express.</description>
     </item>
     
     <item>
       <title>ggplot2</title>
-      <link>/post/ggplot2/</link>
+      <link>http://localhost:1313/post/ggplot2/</link>
       <pubDate>Sat, 05 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/ggplot2/</guid>
-      <description>There are brief notes about the usage of ggplot2.
-expression/annotate/Greek letters/title 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  t &amp;lt;- seq(1,4,0.1) qmp &amp;lt;- function(t) { 0.278*(98.92/t^0.65-2)*78 } q &amp;lt;- seq(500,2000,75) tao &amp;lt;- function(q) { 0.278*14.6/0.96/0.296/q^0.25 } library(cowplot) ggplot()+ geom_smooth(mapping = aes(x = t, y = qmp(t)),color = &amp;#34;red&amp;#34;)+ geom_smooth(mapping = aes(x = tao(q), y = q),color = &amp;#39;blue&amp;#39;,linetype = &amp;#34;dashed&amp;#34;,show.</description>
+      <guid>http://localhost:1313/post/ggplot2/</guid>
+      <description>There are brief notes about the usage of ggplot2. expression/annotate/Greek letters/title 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 t &amp;lt;- seq(1,4,0.1) qmp &amp;lt;- function(t) { 0.278*(98.92/t^0.65-2)*78 } q &amp;lt;- seq(500,2000,75) tao &amp;lt;- function(q) { 0.278*14.6/0.96/0.296/q^0.25 } library(cowplot) ggplot()+ geom_smooth(mapping = aes(x = t, y = qmp(t)),color = &amp;#34;red&amp;#34;)+ geom_smooth(mapping = aes(x = tao(q), y = q),color = &amp;#39;blue&amp;#39;,linetype</description>
     </item>
     
     <item>
       <title>2018年度阅读书单</title>
-      <link>/post/2018%E5%B9%B4%E5%BA%A6%E9%98%85%E8%AF%BB%E4%B9%A6%E5%8D%95/</link>
+      <link>http://localhost:1313/post/2018%E5%B9%B4%E5%BA%A6%E9%98%85%E8%AF%BB%E4%B9%A6%E5%8D%95/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018%E5%B9%B4%E5%BA%A6%E9%98%85%E8%AF%BB%E4%B9%A6%E5%8D%95/</guid>
+      <guid>http://localhost:1313/post/2018%E5%B9%B4%E5%BA%A6%E9%98%85%E8%AF%BB%E4%B9%A6%E5%8D%95/</guid>
       <description>今年的阅读主要集中在年初和年中，主要的类别还是推理类，也有读一些短篇小说和英文书。推理算是我大学生活中的一个思想阶段吧~今年算是一个转型，或</description>
     </item>
     
     <item>
       <title>武汉都下雪了</title>
-      <link>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</link>
+      <link>http://localhost:1313/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</guid>
+      <guid>http://localhost:1313/post/%E6%AD%A6%E6%B1%89%E9%83%BD%E4%B8%8B%E9%9B%AA%E4%BA%86/</guid>
       <description>&lt;p&gt;你们呢？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Theme preview</title>
-      <link>/post/preview/even-preview/</link>
+      <link>http://localhost:1313/post/preview/even-preview/</link>
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
       
-      <guid>/post/preview/even-preview/</guid>
+      <guid>http://localhost:1313/post/preview/even-preview/</guid>
       <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
     </item>
     
     <item>
-      <title>This is a hidden post.</title>
-      <link>/post/preview/hidden-post/</link>
-      <pubDate>Thu, 08 Mar 2018 17:40:19 +0800</pubDate>
-      
-      <guid>/post/preview/hidden-post/</guid>
-      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>[English] Creating a New Theme</title>
-      <link>/post/preview/english-preview/</link>
+      <link>http://localhost:1313/post/preview/english-preview/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>/post/preview/english-preview/</guid>
+      <guid>http://localhost:1313/post/preview/english-preview/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>[中文] 《长恨歌》</title>
-      <link>/post/preview/chinese-preview/</link>
+      <link>http://localhost:1313/post/preview/chinese-preview/</link>
       <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
       
-      <guid>/post/preview/chinese-preview/</guid>
+      <guid>http://localhost:1313/post/preview/chinese-preview/</guid>
       <description>《长恨歌》是中国唐朝诗人白居易的一首长篇叙事诗。 第一段：贵妃受宠爱 汉皇重色思倾国，御宇多年求不得。杨家有女初长成，养在深闺人未识。 天生丽质难</description>
     </item>
     
     <item>
       <title>Shortcodes</title>
-      <link>/post/preview/shortcodes/</link>
+      <link>http://localhost:1313/post/preview/shortcodes/</link>
       <pubDate>Tue, 30 Aug 2016 16:01:23 +0800</pubDate>
       
-      <guid>/post/preview/shortcodes/</guid>
+      <guid>http://localhost:1313/post/preview/shortcodes/</guid>
       <description>&lt;h1 id=&#34;admonition&#34;&gt;Admonition&lt;/h1&gt;
 
 &lt;div class=&#34;admonition note&#34;&gt;&lt;p class=&#34;admonition-title&#34;&gt;I&amp;#39;m title!&lt;/p&gt;
@@ -218,10 +261,10 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     
     <item>
       <title>Hello R Markdown</title>
-      <link>/post/preview/2015-07-23-r-rmarkdown/</link>
+      <link>http://localhost:1313/post/preview/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/post/preview/2015-07-23-r-rmarkdown/</guid>
+      <guid>http://localhost:1313/post/preview/2015-07-23-r-rmarkdown/</guid>
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>

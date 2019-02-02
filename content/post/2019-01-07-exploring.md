@@ -76,3 +76,5 @@ yarn install
 
 yarn build
 ```
+
+* [output Markdown format](https://blog.olowolo.com/post/hugo-quick-start/#%E7%BB%B4%E5%8C%85%E5%AD%90%E4%BB%80%E4%B9%88%E9%83%BD%E7%9F%A5%E9%81%93).

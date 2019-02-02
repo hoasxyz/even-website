@@ -1,5 +1,8 @@
 install.packages("widgetframe")
 
+options(blogdown.generator.server = TRUE)
+blogdown::serve_site()
+
 require(readxl)
 require(cowplot)
 require(reprex)

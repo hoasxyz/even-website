@@ -199,7 +199,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
 #    p-rpubs = "https://rpubs.com/Hoas_xyz"
 
 [params.rss]
-    enable = true
+    enable = false
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]

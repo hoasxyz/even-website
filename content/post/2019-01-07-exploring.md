@@ -62,3 +62,17 @@ description: "Exploring for many problems occured in blogdown."
  * Insert audios in website. See <a target="_blank" title="索引" href="/post/terrylin/index.html#索引">御龙将军（uncover）</a> or [御龙将军（cover）](https://hoas.xyz/post/terrylin/#索引).
  
  * Add one [comment area](https://www.smslit.top/2018/07/08/hugo-valine/) in hugo.
+ 
+ * If you changed any file under `/src/`, you need to rebuild.
+
+```cmd
+In cmd.exe:
+
+C:\Users\Hoas>E:
+
+E:\>CD 1r/website/themes/hugo-theme-even/src/css
+
+yarn install
+
+yarn build
+```

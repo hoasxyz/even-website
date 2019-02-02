@@ -198,6 +198,9 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
 #    o-bilibili = "http://localhost:1313"
 #    p-rpubs = "https://rpubs.com/Hoas_xyz"
 
+[params.rss]
+    enable = true
+
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
   [privacy.googleAnalytics]
@@ -210,15 +213,15 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
 [mediaTypes]
   [mediaTypes."text/plain"]
     suffixes = ["md"]
-#
-#[outputFormats.MarkDown]
-#  mediaType = "text/plain"
-#  isPlainText = true
-#  isHTML = false
-#
-#[outputs]
-#  home = ["HTML", "RSS"]
-#  page = ["HTML", "MarkDown"]
-#  section = ["HTML", "RSS"]
-#  taxonomy = ["HTML", "RSS"]
-#  taxonomyTerm = ["HTML"]
+
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]

@@ -100,7 +100,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
 
   livereUID = ""            # LiveRe UID                  # 来必力
 
-  baiduPush = false        # baidu push                  # 百度
+  baiduPush = true        # baidu push                  # 百度
   baiduAnalytics = ""      # Baidu Analytics
   baiduVerification = ""   # Baidu Verification
   googleVerification = ""  # Google Verification         # 谷歌
@@ -108,7 +108,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []
-  customJS = []
+  customJS = ['canvas-nest.mod.js']
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = true

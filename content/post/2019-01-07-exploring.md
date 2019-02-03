@@ -77,4 +77,14 @@ yarn install
 yarn build
 ```
 
-* [output Markdown format](https://blog.olowolo.com/post/hugo-quick-start/#%E7%BB%B4%E5%8C%85%E5%AD%90%E4%BB%80%E4%B9%88%E9%83%BD%E7%9F%A5%E9%81%93).
+* [Output Markdown format](https://blog.olowolo.com/post/hugo-quick-start/#%E7%BB%B4%E5%8C%85%E5%AD%90%E4%BB%80%E4%B9%88%E9%83%BD%E7%9F%A5%E9%81%93).
+
+* Add [canvas-nest.js](https://github.com/hustcc/canvas-nest.js) in website. Create new folder `js/` in your `static/` file, copying the js file in `js/` and add one command in your `config.toml`:
+
+```toml
+  customJS = ['canvas-nest.mod.js']
+  
+  # Advice: if you change the color of the theme, you are supposed to modify the color of canvas-nest in `canvas-nest.mod.js` file.
+```
+
+* Add [comment.js add-in](https://blog.yuanbin.me/posts/2018-08/2018-08-19_16-59-31/) in [even](https://github.com/olOwOlo/hugo-theme-even).

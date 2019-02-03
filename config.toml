@@ -102,8 +102,15 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
 
   baiduPush = true        # baidu push                  # 百度
   baiduAnalytics = ""      # Baidu Analytics
-  baiduVerification = ""   # Baidu Verification
-  googleVerification = ""  # Google Verification         # 谷歌
+  baiduVerification = "NKDvxV2ilt"   # Baidu Verification
+  googleVerification = "hdRpVeF8MrEsu-RXevqb4_JbpudJru4gTsiotLA7NZY"  # Google Verification         # 谷歌
+    
+  [params.Search]
+    enable = true    # true or false
+    type = 'algolia'  # lunr or algolia
+    index = 'algolia_index'  # algolia enabled
+    appID = 'algolia_application_id' # algolia enabled
+    searchKey = 'algolia_search_only_key' # algolia enabled
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
@@ -220,7 +227,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   isHTML = false
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]

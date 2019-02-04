@@ -2,6 +2,10 @@
 // Post content
 // ==============================
 
+body {cursor: url(/cursor/cursor_7.png), auto;}
+/** 链接指针样式**/
+a:hover{cursor:url(/cursor/cursor_7.cur), pointer;}
+
 .post-content {
   word-wrap: break-word;
 

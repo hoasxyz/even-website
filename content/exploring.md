@@ -1,5 +1,5 @@
 ---
-title: Exploring!
+title: Exploring
 author: Hoas
 date: '2019-01-07'
 slug: exploring
@@ -11,6 +11,9 @@ tags:
   - RMarkdown
 lastmod: '2019-01-18T16:36:05+08:00'
 toc: yes
+comment: no
+weight: 5
+menu: "main"
 keywords: [explore,hugo,R Markdown,website,R]
 description: "Exploring for many problems occured in blogdown."
 ---
@@ -70,7 +73,7 @@ In cmd.exe:
 
 C:\Users\Hoas>E:
 
-E:\>CD 1r/website/themes/hugo-theme-even/src/css
+E:\>cd E:\1R\website\themes\hugo-theme-even\src\css
 
 yarn install
 
@@ -88,3 +91,12 @@ yarn build
 ```
 
 * Add [comment.js add-in](https://blog.yuanbin.me/posts/2018-08/2018-08-19_16-59-31/) in [even](https://github.com/olOwOlo/hugo-theme-even).
+
+* Change the style of cursor in website. In `_content.scss` file, add these in the file, but only the latter effects. More knowledge about cursor:https://css-tricks.com/almanac/properties/c/cursor/#browser-support ; http://www.w3school.com.cn/cssref/pr_class_cursor.asp.
+
+```css
+body {cursor: url(/cursor/cursor_7.png), auto;}
+/** 链接指针样式**/
+a:hover{cursor:url(/cursor/cursor_7.cur), pointer;}
+```
+

@@ -27,7 +27,7 @@
         color: inherit;
 
         &::before {
-          content: '·';
+          content: '';
         }
 
         &:hover {
@@ -38,7 +38,7 @@
 
     .more-meta {
       &::before {
-        content: '·';
+        content: '';
       }
     }
 

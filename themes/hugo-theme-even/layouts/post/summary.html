@@ -2,17 +2,18 @@
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="{{ .URL }}">{{ .Title }}</a></h1>
     <div class="post-meta">
-      <span class="post-time"> {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} </span>
+      <span class="post-time"> <i class="iconfont">&#xe664;</i>  {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} </span>
       {{ with .Params.categories -}}
         <div class="post-category">
           {{ range . -}}
+          &nbsp;   <i class="iconfont">&#xe68b;</i>
             <a href="{{ "categories" | relLangURL }}/{{ . | urlize }}/"> {{ . }} </a>
           {{ end -}}
         </div>
       {{- end }}
       {{- if .Site.Params.moreMeta }}
-        <span class="more-meta"> {{ T "wordCount" .WordCount }} </span>
-        <span class="more-meta"> {{ T "readingTime" .ReadingTime }} </span>
+        <span class="more-meta"> &nbsp; <i class="iconfont">&#xe75c;</i>  {{ T "wordCount" .WordCount }} </span>
+        <span class="more-meta"> &nbsp; <i class="iconfont">&#xe686;</i>  {{ T "readingTime" .ReadingTime }} </span>
       {{- end }}
     </div>
   </header>

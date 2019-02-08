@@ -16,10 +16,10 @@
       word-break: break-all;
 
       &::before {
-        content: '#';
+        content: "";
       }
     }
-  }
+  } 
 
   .post-nav {
     margin: 1em 0;
@@ -45,7 +45,7 @@
     }
 
     .next {
-      float: right;
+      float:   right;
 
       &:hover {
         color: $theme-color;

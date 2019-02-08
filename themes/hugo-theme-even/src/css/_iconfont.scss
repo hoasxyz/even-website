@@ -12,6 +12,16 @@
   url('../fonts/iconfont/iconfont.svg#iconfont') format('svg');
 }
 
+@font-face {
+  font-family: 'iconfont';  /* project id 1039822 */
+  src: url('//at.alicdn.com/t/font_1039822_ndzwog2io3l.eot');
+  src: url('//at.alicdn.com/t/font_1039822_ndzwog2io3l.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1039822_ndzwog2io3l.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1039822_ndzwog2io3l.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1039822_ndzwog2io3l.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1039822_ndzwog2io3l.svg#iconfont') format('svg');
+}
+
 %base-iconfont {
   font-family: "iconfont" !important;
   speak: none;
@@ -37,6 +47,7 @@
 .iconfont {
   @extend %base-iconfont;
 }
+
 
 /* Social Icon */
 .icon-bilibili:before {
@@ -121,6 +132,7 @@
   top: 2px;
 }
 
+
 /* Generic Icon */
 .icon-heart:before {
   content: "\e608";
@@ -140,6 +152,7 @@
 .icon-link:before {
   content: "\e909";
 }
+
 
 /* Admonition Icon */
 /*

@@ -48,6 +48,8 @@ description: "Exploring for many problems occured in blogdown."
   
     - Demo: https://infinum.co/the-capsized-eight/progress-bar-in-rails
   
+  * add live 2D model in hugo website? In hexo: https://yq.aliyun.com/articles/653992/.
+  
   * Something may appear sometime somewhere...
   
 # Continent Found!
@@ -97,3 +99,41 @@ a:hover{cursor:url(/cursor/cursor_7.cur), pointer;}
 ```
 
 * Change the type of scroll bars: https://blog.csdn.net/zh_rey/article/details/72473284 ; http://www.webhek.com/post/scrollbar.html.
+
+* Add `timeago.js` in `footer.html` file: http://www.nov.im/456.html. And the duration of one web page: https://my.oschina.net/softsky/blog/228681 ; https://blog.csdn.net/superit401/article/details/72900792.
+
+```html
+<span class="author">
+{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}
+<center>
+<span id="showsectime"></span>
+<script type="text/javascript">
+function NewDate(str) { 
+str = str.split('-'); 
+var date = new Date(); 
+date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
+date.setUTCHours(0, 0, 0, 0); 
+return date; 
+} 
+function showsectime() {
+var birthDay =NewDate("2018-12-30");
+var today=new Date();
+var timeold=today.getTime()-birthDay.getTime();
+var sectimeold=timeold/1000
+var secondsold=Math.floor(sectimeold);
+var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+var daysold=Math.floor(e_daysold);
+var e_hrsold=(daysold-e_daysold)*-24;
+var hrsold=Math.floor(e_hrsold);
+var e_minsold=(hrsold-e_hrsold)*-60;
+var minsold=Math.floor((hrsold-e_hrsold)*-60); 
+var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+document.getElementById("showsectime").innerHTML = "本站已安全运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+setTimeout(showsectime, 1000);
+}showsectime();
+</script>
+    </span>
+</center>
+  </span>
+</div>
+```

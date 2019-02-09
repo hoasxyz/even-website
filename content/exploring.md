@@ -32,9 +32,7 @@ description: "Exploring for many problems occured in blogdown."
   
   * add abstract to one blog shaped by `.Rmd` file?
   
-  * switch the different websites? For example, [Chinese&English web](http://dapengde.com/archives/15265)?
-  
-  * add [Strike-Type lines](https://blog.csdn.net/u012111465/article/details/81148353)?
+  * switch to different websites? For example, [Chinese&English web](http://dapengde.com/archives/15265)?
   
   * create one site with multistyle?
   

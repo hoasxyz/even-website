@@ -1,8 +1,8 @@
 ---
-title: Use Icon with Iconfont
+title: Use Icons with Iconfont
 author: Hoas
 date: '2019-02-08'
-slug: use-icon-with-iconfont
+slug: use-icons-with-iconfont
 categories:
   - fragmentray
 tags:
@@ -10,8 +10,8 @@ tags:
   - CSS
   - HTML
 lastmod: '2019-02-08T21:09:28+08:00'
-keywords: []
-description: ''
+keywords: [iconfont,hugo]
+description: 'Use icons with iconfont'
 comment: yes
 toc: yes
 autoCollapseToc: no
@@ -32,11 +32,11 @@ hideHeaderAndFooter: no
 
 # Steps
 
-  First, there are lots of fancy icons that attract you in iconfont. And you can "purchase"" some freely for [one project](https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=1039822) in your shopping cart.
+  First, there are lots of fancy icons that attract you in iconfont. And you can "purchase some freely for [one project](https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=1039822) in your shopping cart.
   
   To quote as Unicode, its application steps are:
 
-  - Generate the code and click to duplicate the code. Paste after the source code of the template in `_iconfont.scss` file:
+  - Generate the code and click to duplicate the code. Paste them after the source code of the template in `_iconfont.scss` file:
 
 ```scss
 @font-face {
@@ -90,7 +90,7 @@ hideHeaderAndFooter: no
 }
 ```
 
-  - Copy the individual code of icon into pages -- `single.html` and `summy.html`.
+  - Copy the individual code of icon into pages -- `single.html` and `summary.html`.
 
 {{< highlight go-html-template "linenos=table,hl_lines=6 10 16 17,linenostart=3" >}}
 <!--header in single.html-->

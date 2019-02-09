@@ -142,7 +142,7 @@ hideHeaderAndFooter: no
 
   Thanks for the help of warmhearted [yixuju](https://www.yixuju.cn/)! Without his help, I cannot decorate my website with many cute icons.
   
-# Other Index
+# Index
 
 - More `@font-face` in `.css` file: https://codeday.me/bug/20170905/66080.html.
 

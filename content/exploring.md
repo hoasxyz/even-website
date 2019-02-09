@@ -38,6 +38,16 @@ description: "Exploring for many problems occured in blogdown."
   
   * use the icons in [iconfont](https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a)?
   
+  * add page scroll progress indicator in posts?
+  
+    - Without Js: https://codepen.io/MadeByMike/pen/ZOrEmr ; https://www.w3cplus.com/css/pure-css-create-scroll-indicator.html.
+    
+    - With Js: https://codepen.io/derekjp/pen/pJzpxB
+    
+    - https://webdesign.tutsplus.com/tutorials/how-to-build-a-page-scroll-progress-indicator-with-jquery-and-svg--cms-20881
+  
+    - Demo: https://infinum.co/the-capsized-eight/progress-bar-in-rails
+  
   * Something may appear sometime somewhere...
   
 # Continent Found!

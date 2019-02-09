@@ -57,6 +57,7 @@
       <i class="iconfont icon-heart"></i>
     </span>
     <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
+    <span>
     <center>
 <span id="showsectime"></span>
 <script type="text/javascript">
@@ -80,9 +81,11 @@ var hrsold=Math.floor(e_hrsold);
 var e_minsold=(hrsold-e_hrsold)*-60;
 var minsold=Math.floor((hrsold-e_hrsold)*-60); 
 var seconds=Math.floor((minsold-e_minsold)*-60).toString();
-document.getElementById("showsectime").innerHTML = "本站已安全运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+document.getElementById("showsectime").innerHTML = "本站已快乐运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
 setTimeout(showsectime, 1000);
 }showsectime();
 </script>
+</center>
+</span>
   </span>
 </div>

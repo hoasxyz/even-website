@@ -49,7 +49,9 @@
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}<center>
+    <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
+  </span>
+  <center>
 <span id="showsectime"></span>
 <script type="text/javascript">
 function NewDate(str) { 
@@ -76,6 +78,5 @@ document.getElementById("showsectime").innerHTML = "本站已快乐运行"+dayso
 setTimeout(showsectime, 1000);
 }showsectime();
 </script>
-</center></span>
-  </span>
+</center>
 </div>

@@ -40,7 +40,7 @@
   {{- end }}
 
   <span class="copyright-year">
-    <span>{{- $current := now.Format "2006" -}}&copy;&nbsp;{{- if ne .Site.Params.since $current -}}{{- .Site.Params.since -}}&nbsp;-&nbsp;{{- $current -}}{{- end -}}&nbsp;</span><span><i class="heart iconfont icon-heart">&nbsp;</i></span><span class="author">{{ if .Site.Copyright -}}{{- .Site.Copyright | safeHTML -}}{{- else -}}{{- .Site.Author.name | safeHTML -}}{{- end -}}</span>
+    <span>{{- $current := now.Format "2006" -}}&copy;&nbsp;{{- if ne .Site.Params.since $current -}}{{- .Site.Params.since -}}&nbsp;-&nbsp;{{- $current -}}{{- end -}}&nbsp;</span><span><i class="heart iconfont icon-heart">&nbsp;</i> </span><span class="author">{{ if .Site.Copyright -}}{{- .Site.Copyright | safeHTML -}}{{- else -}}{{- .Site.Author.name | safeHTML -}}{{- end -}}</span>
   </span>
   <center>
 <span id="showsectime"></span>

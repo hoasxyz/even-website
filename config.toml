@@ -108,7 +108,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []
-  customJS = ['canvas-nest.mod.js']
+  customJS = ['canvas-nest.mod.js','TweenMax.min.js']
 
 #  [params.algolia]
 #   vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]

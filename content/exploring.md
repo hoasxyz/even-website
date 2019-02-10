@@ -100,7 +100,7 @@ a:hover{cursor:url(/cursor/cursor_7.cur), pointer;}
 
 * Change the type of scroll bars: https://blog.csdn.net/zh_rey/article/details/72473284 ; http://www.webhek.com/post/scrollbar.html.
 
-* Add `timeago.js` in `footer.html` file: http://www.nov.im/456.html. And the duration of one web page: https://my.oschina.net/softsky/blog/228681 ; https://blog.csdn.net/superit401/article/details/72900792.
+* Add `timeago` in `footer.html` file: http://www.nov.im/456.html. And the duration of one web page: https://my.oschina.net/softsky/blog/228681 ; https://blog.csdn.net/superit401/article/details/72900792.
 
 ```html
 <span class="author">

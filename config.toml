@@ -108,11 +108,11 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []
-  customJS = ['canvas-nest.mod.js','text-effect.js']
+  customJS = ['canvas-nest.mod.js']
 
-  [params.algolia]
-   vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-   params = ["categories", "tags", "home", "archives"]
+#  [params.algolia]
+#   vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+#   params = ["categories", "tags", "home", "archives"]
 
 #  [params.Search]
 #    enable = true    # true or false
@@ -133,12 +133,12 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
     sequenceDiagramsCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">'
     sequenceDiagramsJS = '<script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>'
   
-  [params.search]
-  enable = false
-  # Genate a json file include all of your posts, you should not enable this if have too many posts.
-  generateIndex = true
-  # Redirect to search engine
-  searchEngine = "https://www.google.com/search?q=site:hoas.xyz %s" # or false
+#  [params.search]
+#  enable = false
+#  # Genate a json file include all of your posts, you should not enable this if have too many posts.
+#  generateIndex = true
+#  # Redirect to search engine
+#  searchEngine = "https://www.google.com/search?q=site:hoas.xyz %s" # or false
   
   # Display a message at the beginning of an article to warn the readers that it's content may be outdated.
   # 在文章开头显示提示信息，提醒读者文章内容可能过时。
@@ -209,7 +209,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
 #    o-bilibili = "http://localhost:1313"
 #    p-rpubs = "https://rpubs.com/Hoas_xyz"
 
-[params.rss]
+  [params.rss]
     enable = false
 
 # See https://gohugo.io/about/hugo-and-gdpr/

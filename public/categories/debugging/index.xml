@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debugging on Hoas</title>
+    <link>https://hoas.xyz/categories/debugging/</link>
+    <description>Recent content in debugging on Hoas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Hoas</copyright>
+    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hoas.xyz/categories/debugging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring</title>
+      <link>https://hoas.xyz/exploring/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hoas.xyz/exploring/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.makeraid.cn/wp-content/uploads/2017/09/36%E4%B8%AA%E9%AB%98%E9%A2%91%E9%97%AE%E9%A2%98-%E5%A4%A7%E5%9B%BE.jpg&#34; alt=&#34;problem&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

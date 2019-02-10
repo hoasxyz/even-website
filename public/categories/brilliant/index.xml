@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brilliant on Hoas</title>
+    <link>https://hoas.xyz/categories/brilliant/</link>
+    <description>Recent content in brilliant on Hoas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Hoas</copyright>
+    <lastBuildDate>Tue, 15 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hoas.xyz/categories/brilliant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>华山攻略</title>
+      <link>https://hoas.xyz/post/huashan/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hoas.xyz/post/huashan/</guid>
+      <description>&lt;p&gt;华山由险著称，声称是“天下第一险”，华山被评为&lt;a href=&#34;https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E5%8D%81%E5%A4%A7%E5%90%8D%E5%B1%B1/4047358&#34;&gt;中华十大名山&lt;/a&gt;，国家AAAAA级旅游景区。而本博文是一篇简要介绍自己身体力行过的冬（淡）季华山攻略，这里不是指南，而是一些小小的提示以及自己的感想。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2Xi&#39;an</title>
+      <link>https://hoas.xyz/post/2xi-an/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hoas.xyz/post/2xi-an/</guid>
+      <description>移动端最好的阅读方式是桌面版网站模式。 要是我这里不写一点话，网站首页又要出现莫名其妙的代码了…….Rmd文件怎么提取摘要现在还不知道怎么做。</description>
+    </item>
+    
+  </channel>
+</rss>

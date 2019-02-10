@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Hoas</title>
+    <link>https://hoas.xyz/tags/javascript/</link>
+    <description>Recent content in JavaScript on Hoas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Hoas</copyright>
+    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hoas.xyz/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Algolia</title>
+      <link>https://hoas.xyz/post/algolia/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hoas.xyz/post/algolia/</guid>
+      <description>&lt;p&gt;本来想用这个来给自己的网站添加搜索的，但是折腾了很长时间都失败了，想想还是算了吧……
+&lt;img src=&#34;https://www.algolia.com/static_assets/images/v3/shared/logos/algolia/logo-algolia-nebula-blue-whitespaces-bf76438c.svg&#34; alt=&#34;Algolia&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;create-you-first-index&#34;&gt;Create you first index&lt;/h2&gt;
+
+&lt;p&gt;An index is an entity within Algolia where you import the data you want to search (indexing) and perform queries against (search). There are 3 main ways to synchronize your data …&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;API Clients. For those who love to build things by themselves, you can use our API clients to interact with the Algolia REST API.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Plugins &amp;amp; Extensions. If you&amp;rsquo;re using a CMS or a platform for your service, you can simply use one of our plugins and integrations to easily implement Algolia.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Algolia Dashboard. The dashboard is the easiest way to upload your data and get your first experience with Algolia. Simply drag and drop your JSON or CSV files.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>《HTML、CSS、JavaScript网页制作从入门到精通 第3版 (刘西杰)》学习摘要</title>
+      <link>https://hoas.xyz/post/html-css-javascript%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-%E7%AC%AC3%E7%89%88-%E5%88%98%E8%A5%BF%E6%9D%B0-%E5%AD%A6%E4%B9%A0%E6%91%98%E8%A6%81/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hoas.xyz/post/html-css-javascript%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A-%E7%AC%AC3%E7%89%88-%E5%88%98%E8%A5%BF%E6%9D%B0-%E5%AD%A6%E4%B9%A0%E6%91%98%E8%A6%81/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.jianshu.com/p/0b7542f5c1fe&#34;&gt;《HTML、CSS、JavaScript网页制作从入门到精通 第3版 (刘西杰)》&lt;/a&gt;学习摘要，也是对head first中学习的补充。
+&lt;img src=&#34;https://www.juicymedia.co.uk/application/files/4615/1838/4923/html_css_js.png&#34; alt=&#34;HTML&amp;CSS&amp;JS&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

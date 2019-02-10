@@ -44,10 +44,12 @@
         {{- $current := now.Format "2006" -}}
       &copy;&nbsp;
       {{- if ne .Site.Params.since $current -}}
-        {{- .Site.Params.since -}} - {{- $current -}}
+        {{- .Site.Params.since -}}&nbsp; - &nbsp;{{- $current -}}
       {{- end -}}
     </span>
+    <span>
     <i class="heart iconfont icon-heart"></i>
+    </span>
     <span class="author">
       {{- if .Site.Copyright -}}
         {{- .Site.Copyright | safeHTML -}}

@@ -1,34 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>course on Hoas</title>
-    <link>https://hoas.xyz/categories/course/</link>
-    <description>Recent content in course on Hoas</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Hoas</copyright>
-    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://hoas.xyz/categories/course/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>The Difference Method(.Rmarkdown)</title>
-      <link>https://hoas.xyz/post/the-difference-method-rmarkdown/</link>
-      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://hoas.xyz/post/the-difference-method-rmarkdown/</guid>
-      <description>The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express. This is my first report written in English and shaped by</description>
-    </item>
-    
-    <item>
-      <title>The Difference Method(.Rmd)</title>
-      <link>https://hoas.xyz/post/the-difference-method/</link>
-      <pubDate>Sun, 06 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://hoas.xyz/post/the-difference-method/</guid>
-      <description>var lodash = _.noConflict();The question is solved with R and this report is made by R Markdown. One of the reasons is that they are both in RStudio, which is new to me and I want to try. In R Markdown, the Chinese characters are so ugly and glare so I decided to use English to convey what I want to express.</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -97,7 +97,7 @@ yarn build
 ```css
 body {cursor: url(/cursor/cursor_7.png), auto;}
 /** 链接指针样式**/
-a:hover{cursor:url(/cursor/cursor_7.cur), pointer;}
+a:hover{cursor:url(/cursor/cursor_8.png), pointer;}
 ```
 
 * Change the type of scroll bars: https://blog.csdn.net/zh_rey/article/details/72473284 ; http://www.webhek.com/post/scrollbar.html.

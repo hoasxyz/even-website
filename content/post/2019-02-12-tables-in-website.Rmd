@@ -37,9 +37,9 @@ library(htmlTable)
 # [kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_html_cn.html)
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-knitr::kable(head(mtcars))
+knitr::kable(head(mtcars),"html")
 
-knitr::kable(head(mtcars)) %>%
+knitr::kable(head(mtcars),"html") %>%
   kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
   scroll_box(width = "500px", height = "200px")
 ```
@@ -47,11 +47,7 @@ knitr::kable(head(mtcars)) %>%
 # [DT](https://rstudio.github.io/DT/)
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-datatable(iris, options = list(
-  searching = FALSE,
-  pageLength = 5,
-  lengthMenu = c(5, 10, 15, 20)
-))
+datatable(iris)
 ```
 
 # [htmlTable](https://cran.r-project.org/web/packages/htmlTable/vignettes/tables.html)

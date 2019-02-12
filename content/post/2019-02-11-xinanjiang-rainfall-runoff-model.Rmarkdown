@@ -23,7 +23,7 @@ mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
   三水源新安江模型R语言解决代码。
-![Xinanjiang Rainfall-Runoff Model](https://www.google.com.hk/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjpjKej67PgAhUDM30KHeGhAxoQjRx6BAgBEAU&url=http%3A%2F%2Fwww.yunqishui.com%2Fpages%2Fg%2FgamePost.shtml%3Fview%3Dtrue%26postId%3D141%26u%3D99999&psig=AOvVaw1LfxnA4zyp9SZQq97asN7m&ust=1549979775073607)
+![Xinanjiang Rainfall-Runoff Model](http://www.yunqishui.com/assets/1/users/s15168/6347f565cf974be7859b0e7ae6dbd029.png)
 <!--more-->
 
 ```{r setup, include=FALSE}
@@ -252,23 +252,15 @@ for (i in seq_along(hh)) {
 }
 
 thrlay
-knitr::kable(thrlay,"html",align = "c") %>%
-  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
-  scroll_box(width = "100%", height = "500px")
+knitr::kable(head(thrlay),"html",align = "c")
 
 thrwat
-knitr::kable(thrwat,"html") %>%
-  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
-  scroll_box(width = "100%", height = "500px")
+knitr::kable(head(thrwat),"html")
 
 xhh
-knitr::kable(xhh,"html",align = "c",table.attr = "class=\"table table-bordered\"") %>%
-  kable_styling(bootstrap_options = c("striped","hover","responsive")) %>%
-  scroll_box(width = "100%", height = "500px")
+knitr::kable(head(xhh),"html",align = "c")
 
-kable(cbind(mtcars, mtcars), "html") %>%
-  kable_styling() %>%
-  scroll_box(width = "500px", height = "200px")
+kable(head(cbind(mtcars, mtcars)), "html")
 ```
 
 ```r
@@ -277,4 +269,4 @@ openxlsx::write.xlsx(hh,"洪号1.xlsx")
 xhh %>%
   openxlsx::write.xlsx("整体.xlsx")
 ```
-  Rmd在网站上生成的表格还不知道如何定制，比如上例就是rmd直接生成的文件中的[表格](https://haozhu233.github.io/kableExtra/awesome_table_in_html_cn.html)和网页上的不一样。
+  Rmd在网站上生成的表格还不知道如何定制，比如上例就是rmd直接生成的文件中的[表格](https://haozhu233.github.io/kableExtra/awesome_table_in_html_cn.html)和网页上的不一样，这是因为使用了别的package，如果只用knitr::kable的话会更好。

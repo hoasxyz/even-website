@@ -509,27 +509,27 @@ Besides, the visualization of the result can be shown here:
 calex(1,0.2,10,t = 2,x = 10,plot = TRUE)[[2]]
 ```
 
-<!--html_preserve--><div id="plot_id834516137-container" class="ggvis-output-container">
-<div id="plot_id834516137" class="ggvis-output"></div>
+<!--html_preserve--><div id="plot_id611341960-container" class="ggvis-output-container">
+<div id="plot_id611341960" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id834516137_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id834516137" data-renderer="svg">SVG</a>
+<a id="plot_id611341960_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id611341960" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id834516137_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id834516137" data-renderer="canvas">Canvas</a>
+<a id="plot_id611341960_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id611341960" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id834516137_download" class="ggvis-download" data-plot-id="plot_id834516137">Download</a>
+<a id="plot_id611341960_download" class="ggvis-download" data-plot-id="plot_id611341960">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id834516137_spec = {
+var plot_id611341960_spec = {
   "data": [
     {
       "name": ".0",
@@ -648,7 +648,7 @@ var plot_id834516137_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id834516137").parseSpec(plot_id834516137_spec);
+ggvis.getPlot("plot_id611341960").parseSpec(plot_id611341960_spec);
 </script><!--/html_preserve-->
 As you can see, the size of each point means the quantity of the BOD value. And I ignore the  condition where x = *-1* and t = *0*.
 
@@ -1251,27 +1251,27 @@ The visualization of the result can be available in the same way:
 calim(dx = 0.5,dt = 0.1, BOD = 20,plot = TRUE)[[2]]
 ```
 
-<!--html_preserve--><div id="plot_id998453784-container" class="ggvis-output-container">
-<div id="plot_id998453784" class="ggvis-output"></div>
+<!--html_preserve--><div id="plot_id479604662-container" class="ggvis-output-container">
+<div id="plot_id479604662" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id998453784_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id998453784" data-renderer="svg">SVG</a>
+<a id="plot_id479604662_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id479604662" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id998453784_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id998453784" data-renderer="canvas">Canvas</a>
+<a id="plot_id479604662_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id479604662" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id998453784_download" class="ggvis-download" data-plot-id="plot_id998453784">Download</a>
+<a id="plot_id479604662_download" class="ggvis-download" data-plot-id="plot_id479604662">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id998453784_spec = {
+var plot_id479604662_spec = {
   "data": [
     {
       "name": ".0",
@@ -1390,7 +1390,7 @@ var plot_id998453784_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id998453784").parseSpec(plot_id998453784_spec);
+ggvis.getPlot("plot_id479604662").parseSpec(plot_id479604662_spec);
 </script><!--/html_preserve-->
 The condition where x = *0* and t = *0* are ignored.
 

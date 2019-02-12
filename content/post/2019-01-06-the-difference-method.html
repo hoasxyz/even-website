@@ -8,6 +8,8 @@ categories:
 tags:
   - R
 lastmod: '2019-01-06T12:42:37+08:00'
+keywords: [水环境保护,显式差分,隐式差分,差分,R语言,ggvis,kableExtra]
+description: "水环境保护课程中的显式、隐式差分R语言代码"
 ---
 
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
@@ -1112,27 +1114,27 @@ t
 </table>
 <p>Besides, the visualization of the result can be shown here:</p>
 <pre class="r"><code>calex(1,0.2,10,t = 2,x = 10,plot = TRUE)[[2]]</code></pre>
-<p><div id="plot_id106138960-container" class="ggvis-output-container">
-<div id="plot_id106138960" class="ggvis-output"></div>
+<p><div id="plot_id512252480-container" class="ggvis-output-container">
+<div id="plot_id512252480" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id106138960_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id106138960" data-renderer="svg">SVG</a>
+<a id="plot_id512252480_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id512252480" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id106138960_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id106138960" data-renderer="canvas">Canvas</a>
+<a id="plot_id512252480_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id512252480" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id106138960_download" class="ggvis-download" data-plot-id="plot_id106138960">Download</a>
+<a id="plot_id512252480_download" class="ggvis-download" data-plot-id="plot_id512252480">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id106138960_spec = {
+var plot_id512252480_spec = {
   "data": [
     {
       "name": ".0",
@@ -1251,7 +1253,7 @@ var plot_id106138960_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id106138960").parseSpec(plot_id106138960_spec);
+ggvis.getPlot("plot_id512252480").parseSpec(plot_id512252480_spec);
 </script> As you can see, the size of each point means the quantity of the BOD value. And I ignore the condition where x = <em>-1</em> and t = <em>0</em>.</p>
 </div>
 <div id="implicit-difference-method" class="section level1">
@@ -2702,27 +2704,27 @@ t
 <p>And you can modify them until they are proper.</p>
 <p>The visualization of the result can be available in the same way:</p>
 <pre class="r"><code>calim(dx = 0.5,dt = 0.1, BOD = 20,plot = TRUE)[[2]]</code></pre>
-<p><div id="plot_id947932444-container" class="ggvis-output-container">
-<div id="plot_id947932444" class="ggvis-output"></div>
+<p><div id="plot_id774841924-container" class="ggvis-output-container">
+<div id="plot_id774841924" class="ggvis-output"></div>
 <div class="plot-gear-icon">
 <nav class="ggvis-control">
 <a class="ggvis-dropdown-toggle" title="Controls" onclick="return false;"></a>
 <ul class="ggvis-dropdown">
 <li>
 Renderer: 
-<a id="plot_id947932444_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id947932444" data-renderer="svg">SVG</a>
+<a id="plot_id774841924_renderer_svg" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id774841924" data-renderer="svg">SVG</a>
  | 
-<a id="plot_id947932444_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id947932444" data-renderer="canvas">Canvas</a>
+<a id="plot_id774841924_renderer_canvas" class="ggvis-renderer-button" onclick="return false;" data-plot-id="plot_id774841924" data-renderer="canvas">Canvas</a>
 </li>
 <li>
-<a id="plot_id947932444_download" class="ggvis-download" data-plot-id="plot_id947932444">Download</a>
+<a id="plot_id774841924_download" class="ggvis-download" data-plot-id="plot_id774841924">Download</a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <script type="text/javascript">
-var plot_id947932444_spec = {
+var plot_id774841924_spec = {
   "data": [
     {
       "name": ".0",
@@ -2841,7 +2843,7 @@ var plot_id947932444_spec = {
   },
   "handlers": null
 };
-ggvis.getPlot("plot_id947932444").parseSpec(plot_id947932444_spec);
+ggvis.getPlot("plot_id774841924").parseSpec(plot_id774841924_spec);
 </script> The condition where x = <em>0</em> and t = <em>0</em> are ignored.</p>
 </div>
 <div id="see-more" class="section level1">

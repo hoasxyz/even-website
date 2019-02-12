@@ -32,6 +32,7 @@ require(readxl)
 require(tsdecomp)
 require(reshape2)
 require(kableExtra)
+require(DT)
 ```
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}

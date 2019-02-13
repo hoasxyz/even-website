@@ -37,6 +37,7 @@ library(htmlTable)
 
 # [kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_html_cn.html)
 
+  [Save Tables and Use them as Images.](https://haozhu233.github.io/kableExtra/save_kable_and_as_image.html)
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
 knitr::kable(head(mtcars),"html")
 

@@ -5,3 +5,8 @@
 options(blogdown.generator.server = TRUE)
 blogdown::serve_site()
 ```
+  Build command in [Netlify](https://app.netlify.com/account/sites) is:
+  
+```cmd
+hugo --gc --enableGitInfo
+```

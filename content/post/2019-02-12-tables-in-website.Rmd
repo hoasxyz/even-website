@@ -15,6 +15,7 @@ description: 'Tables in Website with R.'
 comment: yes
 toc: yes
 autoCollapseToc: no
+exclude_jquery: true
 postMetaInFooter: yes
 hiddenFromHomePage: no
 contentCopyright: no

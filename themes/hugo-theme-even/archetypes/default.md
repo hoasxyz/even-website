@@ -16,6 +16,7 @@ toc: true
 autoCollapseToc: false
 postMetaInFooter: true
 hiddenFromHomePage: false
+exclude_jquery: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
 contentCopyright: false
 reward: false

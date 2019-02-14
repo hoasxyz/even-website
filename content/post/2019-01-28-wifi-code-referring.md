@@ -34,8 +34,6 @@ description: "OPPO R9无root查看WiFi密码教程已经win10查看WiFi密码。
   
 # win10查看WiFi密码
 
-## 正在使用的WiFi密码
-
   1. `设置`/`网络和internet`/`更改适配器选项`
   
   2. 右键`wifi`-`状态`-`无线属性`-`安全`

@@ -139,3 +139,24 @@ setTimeout(showsectime, 1000);
   </span>
 </div>
 ```
+- Another way to add icons similar in Github: https://shields.io/category/coverage.
+
+```markdown
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+```
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
+- Another way to add your personal image:
+
+```markdown
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://hoas.xyz/"><img src="https://github.com/hoasxyz/MarkdownPhotos/blob/master/Terry%20Lin/%E7%82%AB%E7%82%AB.jpg?raw=true" width="100px;" alt="Terry Lin"/><br /><sub><b>Terry Lin</b></sub></a><br /><a href="https://github.com/XSLiuLab/Beacon/commits?author=ShixiangWang" title="Code">💻</a> <a href="#ideas-ShixiangWang" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-ShixiangWang" title="Maintenance">🚧</a></td></tr></table>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+```
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://hoas.xyz/"><img src="https://github.com/hoasxyz/MarkdownPhotos/blob/master/Terry%20Lin/%E7%82%AB%E7%82%AB.jpg?raw=true" width="100px;" alt="Terry Lin"/><br /><sub><b>Terry Lin</b></sub></a><br /><a href="https://github.com/XSLiuLab/Beacon/commits?author=ShixiangWang" title="Code">💻</a> <a href="#ideas-ShixiangWang" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-ShixiangWang" title="Maintenance">🚧</a></td></tr></table>
+<!-- ALL-CONTRIBUTORS-LIST:END -->

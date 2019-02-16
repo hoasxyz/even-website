@@ -21,4 +21,4 @@ library(rvest)
 
 url<-'https://hoas.xyz/post/%E7%94%A8github%E5%81%9A%E5%9B%BE%E5%BA%8A%E7%9A%84%E5%B0%9D%E8%AF%95/'
 web<-read_html(url,encoding="utf-8") #读取数据，规定编码
-position<-web %>% html_nodes("div.post-content") %>% html_text()
+position<-web %>% html_nodes("div.highlight") %>% html_text()

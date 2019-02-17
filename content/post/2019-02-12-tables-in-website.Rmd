@@ -37,8 +37,12 @@ library(htmlTable)
 
 # [kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_html_cn.html)
 
-  [Save Tables and Use them as Images.](https://haozhu233.github.io/kableExtra/save_kable_and_as_image.html)
+- [Save Tables and Use them as Images](https://haozhu233.github.io/kableExtra/save_kable_and_as_image.html)
+  
+- [Using kableExtra in Radix](https://haozhu233.github.io/kableExtra/using_kableExtra_in_radix.html)
+
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
+options(kableExtra.html.bsTable = T)  
 knitr::kable(head(mtcars),"html")
 
 knitr::kable(head(mtcars),"html") %>%
@@ -71,5 +75,11 @@ htmlTable(output,
           n.cgroup = c(2,2), 
           caption="Basic table with both column spanners (groups) and row groups",
           tfoot="&dagger; A table footer commment")
+```
+
+# rmarkdown::paged_table()
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+rmarkdown::paged_table(iris)
 ```
 

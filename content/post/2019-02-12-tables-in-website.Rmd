@@ -25,13 +25,14 @@ mathjaxEnableSingleDollar: yes
 mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
+Many ways of building tables in website based on different packages.
 
-<!--more-->
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 require(knitr)
 require(kableExtra)
 require(DT)
+require(rmarkdown)
 library(htmlTable)
 ```
 
@@ -58,6 +59,7 @@ datatable(iris)
 
 # [htmlTable](https://cran.r-project.org/web/packages/htmlTable/vignettes/tables.html)
 
+  Another index: https://cran.r-project.org/web/packages/htmlTable/vignettes/general.html.
 ```{r}
 output <- 
   matrix(paste("Content", LETTERS[1:16]), 

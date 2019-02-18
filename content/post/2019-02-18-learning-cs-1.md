@@ -2,7 +2,7 @@
 title: Learning C# 1 - .NET与C#基础
 author: Hoas
 date: '2019-02-18'
-slug: learning-c-1
+slug: learning-cs-1
 categories:
   - course
 tags:

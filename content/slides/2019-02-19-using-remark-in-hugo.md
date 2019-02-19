@@ -3,6 +3,7 @@ title: Using Remark in Hugo
 author: Hoas
 date: '2019-02-19'
 slug: using-remark-in-hugo
+url: "/slides/"
 ---
 class: center, middle
 count: false

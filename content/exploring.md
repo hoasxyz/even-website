@@ -47,9 +47,13 @@ description: "Exploring for many problems occured in blogdown."
   
 # Continent Found!
   
-  * Go-html-template learning: https://www.cnblogs.com/f-ck-need-u/p/10053124.html#%E5%8E%BB%E9%99%A4%E7%A9%BA%E7%99%BD ; https://cloud.tencent.com/developer/section/1145004.
+* Go-html-template learning:
   
-  * Keeping navigating!
+  - https://www.cnblogs.com/f-ck-need-u/p/10053124.html#%E5%8E%BB%E9%99%A4%E7%A9%BA%E7%99%BD ;
+  
+  - https://cloud.tencent.com/developer/section/1145004.
+  
+* Keeping navigating!
   
 # Treasure
 
@@ -155,3 +159,11 @@ setTimeout(showsectime, 1000);
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 - One fast and free [CDN](http://raw.githack.com/) can be used with github!
+
+- Embed Slides in Your Blog: 
+
+  - https://timmastny.rbind.io/blog/embed-slides-knitr-blogdown/;
+  
+  - https://portfolio.peter-baumgartner.net/2018/07/21/presentations-with-xaringan/;
+  
+  - https://stackoverflow.com/questions/51459120/blogdown-xaringan-does-not-work-after-using-chakra-option.

@@ -61,6 +61,12 @@ hideHeaderAndFooter: no
 ## 命名空间（namespace）
 
 起组成程序的作用，一般新建项目后C#会自动生成一个和项目名称名相同的命名空间。既用作程序的“内部”组织系统又用作向“外部”公开的组织系统（一种向其他程序公开自己拥有的程序元素的方法）。如果要调用某个命名空间中的类或者别的东西比如方法，需要用`using`指令在开头引入命名空间，这样的话就可以直接使用，这就像R中的`library()`函数。
+
+今天看yihui的[xaringan](http://slides.yihui.name/xaringan/zh-CN.html)后：
+```r
+if (!requireNamespace("xaringan"))
+  devtools::install_github("yihui/xaringan")
+```
   
 ## 类（class）
 

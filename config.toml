@@ -40,15 +40,20 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
+  name = "Categories"
+  weight = 3
+  identifier = "categories"
+  url = "/categories/"
+[[menu.main]]
   name = "Tags"
   weight = 4
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "Categories"
-  weight = 3
-  identifier = "categories"
-  url = "/categories/"
+  name = "Slides"
+  weight = 5
+  identifier = "slides"
+  url = "/slides/"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update

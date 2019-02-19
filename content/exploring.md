@@ -3,16 +3,9 @@ title: Exploring
 author: Hoas
 date: '2019-01-07'
 slug: exploring
-categories:
-  - debugging
-tags:
-  - R
-  - hugo
-  - RMarkdown
-lastmod: '2019-01-18T16:36:05+08:00'
 toc: yes
 comment: no
-weight: 5
+weight: 69
 menu: "main"
 keywords: [explore,hugo,R Markdown,website,R]
 description: "Exploring for many problems occured in blogdown."
@@ -161,4 +154,4 @@ setTimeout(showsectime, 1000);
 <table><tr><td align="center"><a href="https://hoas.xyz/"><img src="https://github.com/hoasxyz/MarkdownPhotos/blob/master/Terry%20Lin/%E7%82%AB%E7%82%AB.jpg?raw=true" width="100px;" alt="Terry Lin"/><br /><sub><b>Terry Lin</b></sub></a><br /><a href="https://github.com/XSLiuLab/Beacon/commits?author=ShixiangWang" title="Code">💻</a> <a href="#ideas-ShixiangWang" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-ShixiangWang" title="Maintenance">🚧</a></td></tr></table>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-- One fast and free [CDN](http://raw.githack.com/) can be used with github! For example:https: //hoas.xyz/post/oneline4/#%E8%A7%A3%E5%86%B3%E6%96%B9%E5%BC%8F.
+- One fast and free [CDN](http://raw.githack.com/) can be used with github!

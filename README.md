@@ -18,7 +18,3 @@ hugo --gc --enableGitInfo
 biu biu biu.
 {{% /admonition %}}
 ```
-
-{{% admonition warning warning %}}
-biu biu biu.
-{{% /admonition %}}

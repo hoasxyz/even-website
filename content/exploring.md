@@ -167,3 +167,4 @@ setTimeout(showsectime, 1000);
   - https://portfolio.peter-baumgartner.net/2018/07/21/presentations-with-xaringan/;
   
   - https://stackoverflow.com/questions/51459120/blogdown-xaringan-does-not-work-after-using-chakra-option.
+

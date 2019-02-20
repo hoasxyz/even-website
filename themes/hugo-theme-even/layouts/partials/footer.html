@@ -50,7 +50,7 @@
       <i class="iconfont icon-heart"></i>
     </span>
     <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
-    <center>
+<center>
 <span id="showsectime"></span>
 <script type="text/javascript">
 function NewDate(str) { 
@@ -75,7 +75,15 @@ var minsold=Math.floor((hrsold-e_hrsold)*-60);
 var seconds=Math.floor((minsold-e_minsold)*-60).toString();
 document.getElementById("showsectime").innerHTML = "本站已快乐运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
 setTimeout(showsectime, 1000);
-}showsectime();
+}
+showsectime();
+</script>
+<p class="solarlunar"></p>
+<script type="text/javascript">
+$(function () {
+ var lunar = calendar.solar2lunar();
+ $(".solarlunar").html("阳历："+lunar.cYear + "年" +lunar.cMonth +  "月" + lunar.cDay +"日（"+lunar.astro+"）<br />农历："+lunar.lYear+"年"+lunar.IMonthCn+lunar.IDayCn+"，"+lunar.gzYear+"年"+lunar.gzMonth+"月"+lunar.gzDay+"日（"+lunar.Animal+"年）");
+});
 </script>
 </center>
   </span>

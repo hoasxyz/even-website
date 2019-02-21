@@ -13,9 +13,94 @@ require(reprex)
 require(plyr)
 require(reshape2)
 require(widgetframe)
+library(lubridate)
 library("highcharter")
-library(gsubfn)
+library(data.table)
 library(rvest)
+library(curl)
+
+# 0 -----------------------------------------------------------------------
+
+url <- "https://data.weather.gov.hk/gts/time/conversion1_text_c.htm/"
+t <- read_html(url)
+read_html(curl('http://google.com', handle = curl::new_handle("useragent" = "Mozilla/5.0")))
+tb <- read.table("https://data.weather.gov.hk/gts/time/calendar/text/T1901e.txt",
+                 header = FALSE, sep = ' ', skip = 2, fill = TRUE, encoding = "UTF-8")
+
+# t <- read.csv2("./Excel/T2019c.txt",
+#               header = FALSE, sep = " ", skip = 3, fileEncoding = "BIG5")
+
+# year <- fread("https://data.weather.gov.hk/gts/time/calendar/text/T2019e.txt",
+#              fill = TRUE, header = FALSE, skip = 2)[,1] %>%
+#   rename("year" = "V1")
+
+# 读取数据以及初步处理
+wd_zh <- read.table("./Excel/T2019c.txt",
+                 header = FALSE, sep = ' ', skip = 3, fill = TRUE, fileEncoding = "BIG5") %>%
+  select(V9:V11,V17:V19)
+
+wd_en <- read.table("https://data.weather.gov.hk/gts/time/calendar/text/T2019e.txt",
+                    header = FALSE, sep = ' ', skip = 2, fill = TRUE) %>%
+  select(V9:V11)
+
+year <- read.table("https://data.weather.gov.hk/gts/time/calendar/text/T2019e.txt",
+                      header = FALSE, sep = ' ', skip = 2, fill = TRUE) %>%
+  select(V1) %>%
+  rename(solar = V1)
+
+year$year <- ymd(year$year)
+
+# 中文更改数据格式
+wd_zh$V9 <- as.character(wd_zh$V9)
+wd_zh$V10 <- as.character(wd_zh$V10)
+wd_zh$V11 <- as.character(wd_zh$V11)
+wd_zh$V17 <- as.character(wd_zh$V17)
+wd_zh$V18 <- as.character(wd_zh$V18)
+wd_zh$V19 <- as.character(wd_zh$V19)
+
+# 英文更改数据格式
+wd_en$V9 <- as.character(wd_en$V9)
+wd_en$V10 <- as.character(wd_en$V10)
+wd_en$V11 <- as.character(wd_en$V11)
+
+# 中文空白合并以及合并后处理
+for(i in seq_along(wd_zh[[1]])){
+  if(wd_zh[[1]][i] == ""){
+    if(wd_zh[[2]][i] != ""){
+      wd_zh[[1]][i] <- wd_zh[[2]][i]
+    }else
+    wd_zh[[1]][i] <- wd_zh[[3]][i]
+  }else
+    wd_zh[[1]][i] <- wd_zh[[1]][i]
+  
+  if(wd_zh[[4]][i] == ""){
+    if(wd_zh[[5]][i] != ""){
+      wd_zh[[4]][i] <- wd_zh[[5]][i]
+    }else
+      wd_zh[[4]][i] <- wd_zh[[6]][i]
+  }else
+    wd_zh[[4]][i] <- wd_zh[[4]][i]
+}
+wd_zh <- wd_zh %>%
+  select(V9,V17) %>%
+  rename(lunar_zh = V9, week_zh = V17)
+
+# 英文空白合并以及合并后处理
+for(i in seq_along(wd_en[[1]])){
+  if(wd_en[[1]][i] == ""){
+    if(wd_en[[2]][i] != ""){
+      wd_en[[1]][i] <- wd_en[[2]][i]
+    }else
+      wd_en[[1]][i] <- wd_en[[3]][i]
+  }else
+    wd_en[[1]][i] <- wd_en[[1]][i]
+}
+wd_en <- wd_en %>%
+  select(V9) %>%
+  rename(lunar_en = V9)
+
+tbl <- cbind(year,wd_en,wd_zh)
+
 
 # 1 -----------------------------------------------------------------------
 
@@ -125,13 +210,14 @@ cre <- g %>%
     课程总数 = n(),
     学分总数 = sum(学分)
   )
+sum(cre$学分总数)
   
 future <- read_xlsx("./Excel/hoasgrade.xlsx",1,"A8:J85") %>%
   dplyr::filter(is.na(成绩))
 
 sum(future$学分)
   
-  
+(sum(future$学分)*4.0+sum(cre$学分总数)*sp1)/(sum(future$学分)+sum(cre$学分总数)) - sp1
   
   
   

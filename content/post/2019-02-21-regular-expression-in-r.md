@@ -24,7 +24,7 @@ mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
 
-A copy of _R for data science_.
+A copy from _R for data science_.
 <center>
 <img src="https://github.com/tidyverse/stringr/raw/master/man/figures/logo.png">
 </center>

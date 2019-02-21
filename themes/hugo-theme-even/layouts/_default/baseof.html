@@ -12,7 +12,6 @@
     {{- end -}}
   </title>
   {{ partial "head.html" . }}
-  {{ partial "scripts.html" . }}
 </head>
 <body>
   {{ partial "slideout.html" . }}
@@ -31,6 +30,8 @@
         {{ partial "comments.html" . }}
       </div>
     </main>
+    
+  {{ partial "scripts.html" . }}
 
     {{ if not .Params.hideHeaderAndFooter -}}
     <footer id="footer" class="footer">
@@ -42,6 +43,5 @@
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  
 </body>
 </html>

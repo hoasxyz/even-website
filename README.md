@@ -11,10 +11,16 @@ blogdown::serve_site()
 ```cmd
 hugo --gc --enableGitInfo
 ```
-- use shortcodes:
+- Use shortcodes:
 
 ```markdown
 {{% admonition warning warning %}}
 biu biu biu.
 {{% /admonition %}}
+```
+
+- Inquiring the version of R package:
+
+```r
+packageVersion("snow")
 ```

@@ -1,6 +1,5 @@
 .libPaths("E:/R-3.5.2/library")
-remotes::install_github("ThinkR-open/remedy")
-install.packages("rmd")
+install.packages("purrr")
 library(rmd)
 install.packages('recharts',
                  repos = c('http://yihui.name/xran', 'http://cran.rstudio.com'))
@@ -18,7 +17,7 @@ library("highcharter")
 library(data.table)
 library(rvest)
 library(curl)
-
+library(stringr)
 # 0 -----------------------------------------------------------------------
 
 url <- "https://data.weather.gov.hk/gts/time/conversion1_text_c.htm/"

@@ -675,4 +675,4 @@ There are three other functions you can use instead of `regex()`:
 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/samsung/78/smiling-face-with-open-mouth-and-smiling-eyes_1f604.png">
 
 To be continued
-<center>
+</center>

@@ -187,7 +187,7 @@ Gregorian date    Lunar date              Day-of-week    Solar terms
 2024/7/3          28                      Wednesday                          
 2024/7/4          29                      Thursday                           
 2024/7/5          30                      Friday                             
-2024/7/6          6th Lunar Month         Saturday       ModerateHeat       
+2024/7/6          6th Lunar Month         Saturday             
 2024/7/7          2                       Sunday                             
 2024/7/8          3                       Monday                             
 2024/7/9          4                       Tuesday                            

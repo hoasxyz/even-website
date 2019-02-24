@@ -74,4 +74,57 @@ for(i in 2019:2025){
   wd <- rbind(wd,wd_en)
 }
 
+wd <- wd %>%
+  rename(solar = V1, lunar = V2, week = V3) %>%
+  as_tibble() %>%
+  mutate(month = NA)
 
+for(i in seq_along(wd[[1]])){
+  if(str_detect(wd[[2]][i],"[td]")){
+    wd[[3]][i] <- wd[[5]][i]
+    wd[[2]][i] <- str_replace(wd[[2]][i],"(.d)|(th)|(st)","/1")
+    wd$month[i] <- as.numeric(str_split(wd[[2]][i], "/", simplify = TRUE)[1])
+    wd$lunar[i] <- str_split(wd[[2]][i], "/", simplify = TRUE)[2]
+  }
+}
+
+wd <- wd %>%
+  select(1:3,month) %>%
+  mutate(year = 0)
+
+j <- 0; k <- 0; l <- length(wd[[1]])
+for(i in seq_along(wd[[1]])){
+  if(!is.na(wd[[4]][i])){
+    j <- i - 1
+    if(wd[[4]][i]-1 < 1){
+      wd[[4]][k:j] <- 12
+    }else{
+      wd[[4]][k:j] <- wd[[4]][i]-1
+    }
+    k <- i + 1
+  }else if((i == l)&(is.na(wd[[4]][i]))){
+    wd[[4]][k:l] <- wd[[4]][k-1]
+  }
+}
+
+# 英文最终整理
+j <- 0
+for(i in seq_along(wd[[1]])){
+  if(wd$month[i] == 1){
+    j <- i
+    wd$year[j:length(wd[[1]])] <- as.numeric(str_split(wd$solar,"/",simplify = TRUE)[1])
+    break
+  }
+}
+wd$year[1:(j-1)] <- as.numeric(str_split(wd$solar,"/",simplify = TRUE)[1])-1
+
+wd$month <- as.character(wd$month)
+
+# 2-29显示不出来！！！
+wd$lunar <- str_c(as.character(wd$year),
+                  "-",
+                  as.character(wd$month),
+                  "-",
+                  wd$lunar)
+
+wd$solar <- lubridate::ymd(wd$solar)

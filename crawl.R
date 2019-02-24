@@ -56,10 +56,17 @@ hs <- read.csv("深圳二手房.csv", fileEncoding = "UTF-8") %>%
 
 # 2 -----------------------------------------------------------------------
 
+for(i in 1901:2100){
+  url <- paste("https://data.weather.gov.hk/gts/time/calendar/text/T", i,"e.txt", sep = "")
+  name <- paste("T", i, "e.txt", sep = "")
+  download(url = url, destfile = name)
+}
+
+
 wd <- tibble()
 
 for(i in 2019:2020){
-  url <- paste("https://data.weather.gov.hk/gts/time/calendar/text/T", i,"e.txt", sep = "")
+  url <- paste("https://hoas.xyz/txt/T", i,"e.txt", sep = "")
   
   wd_en <- fread(url, fill = TRUE, header = FALSE, skip = 2, select = 1:5, nrows = 365) %>%
     as_tibble()

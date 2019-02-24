@@ -671,6 +671,42 @@ There are three other functions you can use instead of `regex()`:
 
 - [`word()`](https://stringr.tidyverse.org/reference/word.html)
 
+# More
+
+- http://yphuang.github.io/blog/2016/03/15/regular-expression-and-strings-processing-in-R/
+
+- https://blog.csdn.net/sinat_26917383/article/details/51122043
+
+## R预定义字符组
+
+| 代码      | 含义说明                                  |
+| :--------: | :----------------------------------------: |
+| `[:digit:]` | 数字：0-9                                 |
+| `[:lower:]` | 小写字母：a-z                             |
+| `[:upper:]` | 大写字母：A-Z                             |
+| `[:alpha:]` | 字母：a-z 及 A-Z                            |
+| `[:alnum:]` | 所有字母及数字                            |
+| `[:punct:]` | 标点符号，如`. , ;`等                       |
+| `[:graph:]` | Graphical characters,即`[:alnum:]`和`[:punct:]` |
+| `[:blank:]` | 空字符，即：Space和Tab                    |
+| `[:space:]` | Space，Tab，newline，及其他space characters |
+| `[:print:]` | 可打印的字符，即：`[:alnum:]`，`[:punct:]`和`[:space:]` |
+
+## 代表字符组的特殊符号
+
+| 代码 |         含义说明          |
+| :--: | :-----------------------: |
+| `\w` | 字符串，等价于`[:alnum:]` |
+| `\W` | 非字符串，等价于`[^[:alnum:]]` |
+| `\s` | 空格字符，等价于`[:blank:]` |
+| `\S` | 非空格字符，等价于`[^[:blank:]]` |
+| `\d` |  数字，等价于`[:digit:]`  |
+| `\D` | 非数字，等价于`[^[:digit:]]` |
+| `\b` | Word edge（单词开头或结束的位置） |
+| `\B` | No Word edge（非单词开头或结束的位置） |
+| `\<` | Word beginning（单词开头的位置） |
+| `\>` | Word end（单词结束的位置） |
+
 <center>
 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/samsung/78/smiling-face-with-open-mouth-and-smiling-eyes_1f604.png">
 

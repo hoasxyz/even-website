@@ -1,5 +1,5 @@
 .libPaths("E:/R-3.5.2/library")
-install.packages("purrr")
+install.packages("downloader")
 library(rmd)
 install.packages('recharts',
                  repos = c('http://yihui.name/xran', 'http://cran.rstudio.com'))

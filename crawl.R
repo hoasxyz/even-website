@@ -1,6 +1,7 @@
 rm(list=ls())
 library("xml2")
 library("rvest")
+library("downloader")
 
 # 1 -----------------------------------------------------------------------
 
@@ -60,7 +61,7 @@ wd <- tibble()
 for(i in 2019:2020){
   url <- paste("https://data.weather.gov.hk/gts/time/calendar/text/T", i,"e.txt", sep = "")
   
-  wd_en <- fread(url, fill = TRUE, header = FALSE, skip = 2, select = 1:5) %>%
+  wd_en <- fread(url, fill = TRUE, header = FALSE, skip = 2, select = 1:5, nrows = 365) %>%
     as_tibble()
   
   wd <- rbind(wd,wd_en)

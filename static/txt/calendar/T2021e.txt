@@ -249,7 +249,7 @@ Gregorian date    Lunar date              Day-of-week    Solar terms
 2021/9/4          28                      Saturday                           
 2021/9/5          29                      Sunday                             
 2021/9/6          30                      Monday                             
-2021/9/7          8th Lunar Month         Tuesday        White Dew           
+2021/9/7          8th Lunar Month         Tuesday        WhiteDew           
 2021/9/8          2                       Wednesday                          
 2021/9/9          3                       Thursday                           
 2021/9/10         4                       Friday                             

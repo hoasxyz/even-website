@@ -234,7 +234,7 @@ Gregorian date    Lunar date              Day-of-week    Solar terms
 2025/8/20         27                      Wednesday                          
 2025/8/21         28                      Thursday                           
 2025/8/22         29                      Friday                             
-2025/8/23         7th Lunar Month         Saturday       End of Heat         
+2025/8/23         7th Lunar Month         Saturday       EndofHeat         
 2025/8/24         2                       Sunday                             
 2025/8/25         3                       Monday                             
 2025/8/26         4                       Tuesday                            

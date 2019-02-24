@@ -29,7 +29,7 @@ hideHeaderAndFooter: no
  
 ## 使用 __rvest__ 爬取文章
 
-```
+```r
 library(rvest)
 url<-'https://hoas.xyz/post/%E7%94%A8github%E5%81%9A%E5%9B%BE%E5%BA%8A%E7%9A%84%E5%B0%9D%E8%AF%95/'
 web<-read_html(url,encoding="utf-8") #读取数据，规定编码
@@ -50,7 +50,7 @@ position<-web %>% html_nodes("div.highlight") %>% html_text()
 
 ## 使用 __jiebaR__ 进行分词，统计词频
 
-```
+```r
 library(jiebaR)
 engine_s<-worker(stop_word = "stopwords.txt")#初始化分词引擎并加载停用词。
 seg<-segment(position,engine_s)#分词

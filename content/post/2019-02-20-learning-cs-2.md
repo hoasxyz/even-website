@@ -3,7 +3,6 @@ title: Learning C# 2 - C#语言基础
 author: Hoas
 date: '2019-02-20'
 slug: learning-cs-2
-draft: false
 categories:
   - course
 tags:

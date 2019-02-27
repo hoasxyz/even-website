@@ -34,6 +34,8 @@ hideHeaderAndFooter: no
 - 方法就是实体的行为，可以根据实体们不同的属性进行重载。
 
 而面向对象的程序设计最重要的就是多态，多态的实现不依赖于抽象类，而是依赖于抽象类和接口。多态机制中将抽象类定义为接口，由抽象方法组成的集合就是接口。
+
+另外发现类成员之一属性用得也比较多，虽然还是不知道get访问器和set访问器有啥用。
 <!--more-->
 
 # 三大原则
@@ -47,11 +49,11 @@ hideHeaderAndFooter: no
 # 类
 
   类是一种__数据结构__，它可以包含数据成员（常量和域）、函数成员（方法、属性、事件、索引器、运算符、构造函数和析构函数）和嵌套类型。
-  
+
   类（class）实际上是对某种类型的对象定义变量和方法的原型,它表示__对现实生活中一类具有共同特征的事物的抽象__，是面向对象编程的基础。
 
   C#的构造函数：
-  
+
 ```cs
 struct str{
 int no;
@@ -87,7 +89,11 @@ public class Car
 
   - 字段
   
-  - 属性
+  - 属性。属性是对现实实体对象的抽象，提供对类或对象的访问。属性名的第一个字母通常都大写。属性的主要作用是限制外部类对类中成员的访问权限。
+  
+      1. `get访问器`（可读属性）：相当于一个具有属性类型返回值的无参数方法，它除了作为赋值的目标外，当在表达式中引用属性时，将调用该属性的`get访问器`计算属性的值。`get访问器`必须用`return`语句来返回。
+      
+      2. `set访问器`（可写属性）：相当于一个具有单个属性类型值参数和void返回类型的方法。
   
   - 枚举
   
@@ -283,17 +289,34 @@ public double Add(int x, double y)
             cat.Eat();
             Console.WriteLine("\r");
             cat.Roar();
+            Console.WriteLine("\r");
+            Tigger tigger = new Tigger();
+            tigger.Eat();
+            Console.WriteLine("\r");
+            tigger.Roar();
         }
     }
     class Animal
     {
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine("吃");
         }
-        public void Roar()
+        public virtual void Roar()
         {
             Console.WriteLine("叫");
+        }
+    }
+    //子类的运用
+    class Tigger:Animal
+    {
+        public override void Eat()
+        {
+            Console.WriteLine("老虎吃肉");
+        }
+        public override void Roar()
+        {
+            Console.WriteLine("嗷呜！");
         }
     }
 ```

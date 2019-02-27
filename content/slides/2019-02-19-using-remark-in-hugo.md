@@ -1,11 +1,8 @@
 ---
-title: Using Remark in Hugo
-author: Hoas
-date: '2019-02-19'
 slug: using-remark-in-hugo
 ---
 class: center, middle
-count: false
+
 ### 逃离office
 --
 
@@ -22,7 +19,7 @@ count: false
 见：https://github.com/gnab/remark/wiki/Using-with-Hugo
 
 ---
-
+class: center,middle
 # Formatting
 
 Referring to https://github.com/gnab/remark/wiki/Formatting.

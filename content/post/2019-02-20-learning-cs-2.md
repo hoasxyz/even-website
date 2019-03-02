@@ -7,6 +7,7 @@ categories:
   - course
 tags:
   - C#
+  - 中文
 lastmod: '2019-02-20T14:33:11+08:00'
 keywords: [C#]
 description: 'C#语言基础'

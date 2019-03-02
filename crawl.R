@@ -51,9 +51,11 @@ write.csv(hs, "深圳二手房.csv")
 
 proc.time() - t1
 
-hs <- read.csv("深圳二手房.csv", fileEncoding = "UTF-8") %>%
+hs <- read.csv("E:/1R/website/Excel/ershou.csv", fileEncoding = "UTF-8") %>%
   select(-1)
 
+hs <- read.csv("E:/1R/website/Excel/ershou.csv") %>%
+  select(-1)
 
 # 2 -----------------------------------------------------------------------
 

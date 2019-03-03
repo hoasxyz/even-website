@@ -46,3 +46,97 @@ ggplot()+
   
   And more Greek letters used in R can be acquired by referring to http://kestrel.nmt.edu/~raymond/software/howtos/greekscape.xhtml.
 
+## extra dashed lines
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(readxl)
+library(tidyverse)
+library(cowplot)
+
+a <- read_xlsx("E:/!大学/大三下/水资源开发利用/hw1/A.xlsx", sheet = 1)
+
+x <- a %>%
+  select(-1, -14) %>%
+  as.matrix() %>%
+  t() %>%
+  as.vector() %>%
+  ts(frequency = 12, start = c(1951, 1))
+
+m <- 100; kk <- 600; m2 <- vector("numeric"); s <- vector("numeric", kk)
+s[1] <- 0; d <- vector("numeric", kk); p <- vector("numeric")
+
+v <- seq(0,150,5)
+
+for (k in seq_along(v)) {
+  m2[k] <- 0
+  for (i in 1:kk) {
+    if (x[i] + s[i] <= m) {
+      d[i] <- s[i] + x[i]
+      s[i + 1] <- 0
+      m2[k] <- m2[k] + 1
+    } else if (s[i] + x[i] <= m + v[k]) {
+      d[i] <- m
+      s[i + 1] <- s[i] + x[i] - m
+    } else {
+      d[i] <- s[i] + x[i] - v[k]
+      s[i + 1] <- v[k]
+    }
+  }
+  p[k] <- (kk - m2[k]) / (kk + 1) * 100
+}
+
+vp <- rbind(v,p) %>%
+  t() %>%
+  as_tibble()
+
+ggplot(vp,mapping = aes(x = p, y = v)) +
+  geom_point() +
+  background_grid("xy") +
+  labs(x = "P(%)", y = expression(V[兴](m^3/s%.%月))) +
+  geom_vline(xintercept = 95, linetype = "dashed", color = "red") +
+  geom_hline(yintercept = 46.5, linetype = "dashed", color = "red") +
+  geom_smooth(se = FALSE)
+```
+
+## the title of legend
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+m <- seq(50,500, 10); kk <- 600; m2 <- vector("numeric"); s <- vector("numeric", kk)
+s[1] <- 0; d <- vector("numeric", kk); p <- vector("numeric")
+v <- seq(200, 800, 100); mp <- tibble()
+
+for(j in seq_along(v)){
+  for (k in seq_along(m)) {
+    m2[k] <- 0
+    for (i in 1:kk) {
+      if (x[i] + s[i] <= m[k]) {
+        d[i] <- s[i] + x[i]
+        s[i + 1] <- 0
+        m2[k] <- m2[k] + 1
+      } else if (s[i] + x[i] <= m[k] + v[j]) {
+        d[i] <- m[k]
+        s[i + 1] <- s[i] + x[i] - m[k]
+      } else {
+        d[i] <- s[i] + x[i] - v[j]
+        s[i + 1] <- v[j]
+      }
+    }
+    p[k] <- (kk - m2[k]) / (kk + 1) * 100
+  }
+  mp <- rbind(m,p,v=v[j]) %>%
+    t() %>%
+    rbind(mp) %>%
+    as_tibble()
+}
+
+mp$v <- mp$v %>%
+  as.factor()
+
+title <- expression(V(m^3/s%.%month))
+
+ggplot(mp, aes(x = p, y = m, color =v)) +
+  geom_smooth(se = FALSE) +
+  labs(x = "P(%)", y = expression(Q[p](m^3/s)), color = title) + 
+  theme(legend.title = element_text(size=10))
+```
+

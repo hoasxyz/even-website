@@ -23,9 +23,6 @@ mathjaxEnableSingleDollar: yes
 mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
-
-<!--more-->
-
 # 课堂案例
 
 `Program.cs`:
@@ -37,6 +34,7 @@ hideHeaderAndFooter: no
             Application.Run(new Form1());
         }
 ```
+<!--more-->
 
 `Form1.cs`:
 ```cs

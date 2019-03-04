@@ -11,7 +11,6 @@ tags:
 lastmod: '2019-02-27T13:59:29+08:00'
 keywords: [C#,面向对象编程进阶]
 description: 'C#面向对象编程进阶'
-draft: true
 comment: yes
 toc: yes
 autoCollapseToc: no

@@ -1,0 +1,13 @@
+---
+baseurl: "https://hoas.xyz/"
+DefaultContentLanguage: "en"
+hasCJKLanguage: true
+languageCode: "en"
+title: "Hoas"
+theme: "even"
+metaDataFormat: "yaml"
+algolia:
+  index: "even-website"
+  key: "ae741d683759192a0735d53b8e97bc62"
+  appID: "0MVBHZDXPK"
+---

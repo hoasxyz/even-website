@@ -1,0 +1,31 @@
+// ==============================
+// Search 1 - search-wrapper
+// =============================
+
+.search-wrapper {
+  	position: absolute;
+    right: 45px;
+    bottom: 0;
+}
+
+@include max-screen() {
+  .search-wrapper {
+    display: none;
+  }
+}
+
+// ==============================
+// Search 2 - algolia
+// =============================
+
+.aa-input-container {
+  	position: absolute;
+    right: 45px;
+    bottom: 0;
+}
+
+@include max-screen() {
+  .aa-input-container {
+    display: none;
+  }
+}

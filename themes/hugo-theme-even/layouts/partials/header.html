@@ -32,3 +32,8 @@
     {{- end }}
   </ul>
 </nav>
+
+
+{{- if .Site.Params.algolia.Enable }}
+  {{ partial "search.html" . }}
+{{- end}}

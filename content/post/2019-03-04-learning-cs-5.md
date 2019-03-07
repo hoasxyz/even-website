@@ -6,7 +6,8 @@ slug: learning-cs-5
 categories:
   - course
 tags:
-  - C#
+  - Cs
+  - 中文
 lastmod: '2019-03-04T14:10:18+08:00'
 keywords: [C#,Windows应用程序开发]
 description: 'C# Windows应用程序开发'

@@ -6,7 +6,7 @@ slug: learning-cs-3
 categories:
   - course
 tags:
-  - C#
+  - Cs
   - 中文
 lastmod: '2019-02-25T14:14:03+08:00'
 keywords: [C#]

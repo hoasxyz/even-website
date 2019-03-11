@@ -95,13 +95,9 @@ $$
 
 自变量趋于无穷大。所以 X 可以和数列极限的 N 一样取。
 
-## $\varepsilon - $
+## $\varepsilon - \delta$
 
-自变量趋于有限值。这个时候只要求
-
-\begin{equation}
-\label{400}
-\end{equation}
+自变量趋于有限值。这个时候只要求$\delta$就行。
 
 ## 函数极限存在的条件
 
@@ -116,9 +112,16 @@ $$
 - 找到两个都以一个固定值（不是无穷！）为极限的数列，使两个数列的函数的极限不相等。
 
 以上的方法大多是用来处理三角函数的，以下还需要知道几个函数极限的不存在，它们也关于三角函数：
+
 $$
-\lim_{x \to 0} sin(1/x), \lim_{x \to \infty}sinx,\lim_{x \to \infty} cosx,\lim_{x \to 0}cos1/x
+\lim_{x \to 0} sin \frac{1}{x}
 $$
+
+$$\lim_{x \to \infty}sinx$$
+
+$$\lim_{x \to \infty} cosx$$
+
+$$\lim_{x \to 0}cos\frac{1}{x}$$
 
 ### 夹逼准则
 

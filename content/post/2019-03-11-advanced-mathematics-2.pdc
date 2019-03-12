@@ -1,0 +1,95 @@
+---
+title: 高数 2 - 导数与微分
+author: Hoas
+date: '2019-03-11'
+slug: advanced-mathematics-2
+categories:
+  - course
+tags:
+  - Math
+  - 中文
+lastmod: '2019-03-11T20:42:23+08:00'
+keywords: [导数与微分]
+description: '导数与微分'
+comment: yes
+toc: yes
+autoCollapseToc: no
+postMetaInFooter: yes
+hiddenFromHomePage: no
+exclude_jquery: no
+contentCopyright: no
+reward: no
+mathjax: yes
+mathjaxEnableSingleDollar: yes
+mathjaxEnableAutoNumber: yes
+hideHeaderAndFooter: no
+---
+
+# 导数
+
+## 定义
+
+$$
+f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x)-f(x)}{\Delta x}
+$$
+
+$$
+f'(x) = \lim_{h \to 0} \frac{f(x + h)-f(x)}{h}
+$$
+
+要会换着用这两个公式，而且会他们的左右导数。
+
+<!--more-->
+
+## 可导性和连续性
+
+函数连续不一定可导；函数可导必然连续。经典反例：
+
+$$
+f(x) = \begin{cases} x,& x \geq 0, \\ -x,& x<0. \end{cases}
+$$
+
+这个问题中如果出现绝对值，就要判定可导性是否存在，经典案例：函数$f(x)=(x^2-x-2)|x^3-x|$的不可导点数为2，分别在自变量为0和1两点处。
+
+## 不能求导
+
+要注意求导和极限的区别，不要冒昧求导，求导意味着必然连续；同时也需要注意，可能一个分段函数是连续的，但是在某点（直接）求导是默认那一点是有意义的，一个例子：
+
+$$
+F(x) = \begin{cases} \frac{f(x)+asin(x)}{x},& x \neq 0, \\
+A, & x = 0.\end{cases}
+$$
+
+# 求导法则
+
+反函数的导数等于直接函数导数的倒数。
+
+掌握基本的求导公式和求导法则。注意，求导中的$ln(balabala)$要先看看能不能转换，提出来或者是别的操作。另外取对数求导法也比较实用。
+
+# 高阶导数
+
+$$
+\frac{d^2y}{dx^2} = \frac{d}{dx} \left( \frac{dy}{dx} \right)
+$$
+
+注意求导时右上角加括号的上标${(a^x)}^{(n)}$表示求导！
+
+# 微分
+
+$$
+dy = f'(x)dx
+$$
+
+$$
+f(x_0+\Delta x)\approx f(x_0)+f'(x+0)\Delta x
+$$
+
+# 备注
+
+- 接近完美地解决数学公式输出问题，不过没有目录，其中第二种方法行内公式可以生成：[https://github.com/olOwOlo/hugo-theme-even/issues/139](https://github.com/olOwOlo/hugo-theme-even/issues/139)
+
+- `\`自动编译为`<em>`的问题：[https://github.com/olOwOlo/hugo-theme-even/issues/40](https://github.com/olOwOlo/hugo-theme-even/issues/40)
+
+- 单`$`渲染：[https://github.com/olOwOlo/hugo-theme-even/pull/21](https://github.com/olOwOlo/hugo-theme-even/pull/21)
+
+- 突然发现`.pdc`文件中的URL不能直接引用啊：https://github.com/olOwOlo/hugo-theme-even/pull/21

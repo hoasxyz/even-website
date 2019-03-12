@@ -92,6 +92,12 @@ $(function () {
  $(".solarlunar").html("阳历："+lunar.cYear + "年" +lunar.cMonth +  "月" + lunar.cDay +"日（"+lunar.astro+"）<br />农历："+lunar.lYear+"年"+lunar.IMonthCn+lunar.IDayCn+"（"+lunar.Animal+"年）");
 });
 </script>
+<script type="text/javascript">
+var postContainer = document.querySelector('.post .post-content');
+postContainer.innerHTML = postContainer.innerHTML.replace(/\$\$.*(?:<em>.*<\/em>.*)+\$\$/g, function (match) {
+  return match.replace(/<\/?em>/g, '_');
+});
+</script>
 </center>
   </span>
 </div>

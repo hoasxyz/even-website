@@ -2,10 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
-public
-/node_modules
-/draft
-/Excel
-/xaringan
+public/
+node_modules/
+draft/
+Excel/
+xaringan/
 .li.R
 .crawl.R

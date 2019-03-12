@@ -4,8 +4,8 @@
 .Ruserdata
 public
 /node_modules
-draft
-Excel
-xaringan
-li.R
-crawl.R
+/draft
+/Excel
+/xaringan
+.li.R
+.crawl.R

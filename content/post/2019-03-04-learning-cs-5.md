@@ -191,3 +191,9 @@ control类派生的控件。
 
 有格式文本框控件，主要用于显示、输入和操作带有格式的文本。
 
+# 索引
+
+- C#窗体工程建立后如何修改工程文件名和命名空间：https://blog.csdn.net/mmhh3000/article/details/38539241?tdsourcetag=s_pctim_aiomsg
+
+- c#如何实现关闭当前窗体并打开另一个已经创建的窗体：https://zhidao.baidu.com/question/396598533.html?qbl=relate_question_4 。注意这里 form1 是指登录界面， form2 是指登录界面跳转的程序。
+

@@ -251,7 +251,7 @@ vector_tag(seg_cn,tag_worker)
 
 ## 命名实体识别
 
-我们识别南方周刊上一篇关于炫炫的文章[《现场信徒》](http://www.nfpeople.com/article/7329)：
+我们识别罕见的南方周刊上一篇关于炫炫的文章[《现场信徒》](http://www.nfpeople.com/article/7329)：
 
 ``` c
 library(pacman)

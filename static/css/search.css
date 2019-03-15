@@ -55,6 +55,7 @@
   color: #e4e4e4;
 }
 .aa-dropdown-menu {
+  padding: unset !important;
   background-color: #fff;
   border: 2px solid rgba(228, 228, 228, 0.6);
   border-top-width: 1px;

@@ -87,9 +87,12 @@ $$
 # 备注
 
 - 接近完美地解决数学公式输出问题，不过没有目录，其中第二种方法行内公式可以生成：[https://github.com/olOwOlo/hugo-theme-even/issues/139](https://github.com/olOwOlo/hugo-theme-even/issues/139)
-
 - `\`自动编译为`<em>`的问题：[https://github.com/olOwOlo/hugo-theme-even/issues/40](https://github.com/olOwOlo/hugo-theme-even/issues/40)
-
 - 单`$`渲染：[https://github.com/olOwOlo/hugo-theme-even/pull/21](https://github.com/olOwOlo/hugo-theme-even/pull/21)
+- 突然发现`.pdc`文件中的URL不能直接引用啊：https://github.com/olOwOlo/hugo-theme-even/pull/21  
 
-- 突然发现`.pdc`文件中的URL不能直接引用啊：https://github.com/olOwOlo/hugo-theme-even/pull/21
+三个后缀的区别：
+
+- `.md`可以使用**简单**的行内、独立公式，且有TOC。
+- `.pdc`可以使用复杂的行内、独立公式，没有TOC。
+- `.mmark`可以使用复杂的独立公式，不能使用任何行内公式，没有TOC。

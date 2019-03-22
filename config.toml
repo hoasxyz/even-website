@@ -11,6 +11,7 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
+pygmentsStyle = "manni"
 pygmentsCodefences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
@@ -118,7 +119,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []
-  customJS = ['canvas-nest.mod.js','calendar.js']
+  customJS = ['canvas-nest.mod.js','calendar.js','highlight.pack.js']
 
 #  [params.algolia]
 #   vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]

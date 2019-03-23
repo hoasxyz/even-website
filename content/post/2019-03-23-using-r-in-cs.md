@@ -64,6 +64,7 @@ hideHeaderAndFooter: no
 2. https://blog.csdn.net/cyb6100300115/article/details/12835819
 3. https://coders-corner.net/2015/11/01/use-r-in-c/ （这里给出了另一种比较新的写法，然并卵）
 4. https://stackoverflow.com/questions/19725649/i-am-trying-to-make-rdotnet-work-with-c-and-i-am-encountering-problems
+5. https://stackoverflow.com/questions/49983252/how-to-solve-rdotnet-rengine-nullreference-exception
 
 不过上述网站中有人解决了这个问题（甚至还有的没遇到过……）——**降低 R 的版本**。
 

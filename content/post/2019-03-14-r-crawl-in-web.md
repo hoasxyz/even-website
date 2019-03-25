@@ -94,6 +94,76 @@ library(tidyverse)
 df=separate(data = df, col = colname, into = c("code", "name"), sep = "\\|")
 ```
 
+# 爬取豆瓣图书top250
+
+说实话豆瓣还没人家二手房网站用心，你看看你们自己的数据，再看看人家的？豆(d)瓣(b) = 逗(d)比(b)。我写得恼火气！
+
+```R
+library(rvest)
+book <- tibble()
+for (i in seq(0, 225, 25)) {
+  url <- paste("https://book.douban.com/top250?start=", i, sep = "")
+
+  bname <- read_html(url, encoding = "UTF-8") %>%
+    html_nodes("div.pl2") %>%
+    html_text() %>%
+    str_split("\\n", simplify = TRUE)
+  bname <- bname[, 5] %>%
+    str_remove_all("(\\s)")
+
+  bdetail <- read_html(url, encoding = "UTF-8") %>%
+    html_nodes("p.pl") %>%
+    html_text() %>%
+    str_split("/", simplify = TRUE)
+  for (j in 1:25) {
+    if(length(bdetail[j,]) ==5){
+      if (bdetail[j, 5] != "") {
+        bdetail[j, 1] <- str_c(bdetail[j, 1], "(译)", bdetail[j, 2])
+        bdetail[j, 2] <- bdetail[j, 3]
+        bdetail[j, 3] <- bdetail[j, 4]
+        bdetail[j, 4] <- bdetail[j, 5]
+      }
+    }#else if(length(bdetail[j,]) ==6){# 加一个判断，50时的"你今天真好看"...
+    #   bdetail[j,] <- bdetail[j,-3]
+    #   if (bdetail[j, 5] != "") {
+    #     bdetail[j, 1] <- str_c(bdetail[j, 1], "(译)", bdetail[j, 2])
+    #     bdetail[j, 2] <- bdetail[j, 3]
+    #     bdetail[j, 3] <- bdetail[j, 4]
+    #     bdetail[j, 4] <- bdetail[j, 5]
+    # }
+    # }
+  }
+  bdetail <- bdetail[, 1:4]
+  for (j in 1:25) {
+    if (bdetail[j, 4] != "") {
+      bdetail[j, 4] <- bdetail[j, 4] %>%
+        str_extract_all("(\\d{1,3}).(\\d{1,2})", simplify = TRUE)
+    }
+  }
+
+  bgrade <- read_html(url, encoding = "UTF-8") %>%
+    html_nodes("span.rating_nums") %>%
+    html_text()
+  bnumber <- read_html(url, encoding = "UTF-8") %>%
+    html_nodes("span.pl") %>%
+    html_text() %>%
+    str_extract_all("(\\d{4,})", simplify = TRUE)
+  if (length(bnumber) >= 25) bnumber <- bnumber[1:25, 1]
+  bquote <- read_html(url, encoding = "UTF-8") %>%
+    html_nodes("span.inq") %>%
+    html_text()
+  b <- cbind(bname, bdetail, bgrade, bnumber, bquote) %>%
+    as_tibble() %>%
+    rename(
+      书名 = bname, 作者 = V2, 出版社 = V3, 出版时间 = V4,
+      售价 = V5, 豆瓣评分 = bgrade, 评分人数 = bnumber, 引言 = bquote
+    )
+  book <- rbind(book, b)
+}
+```
+
+只能运行到前100个，其中还有个张爱玲的书豆瓣连作者都买加上去；还有一书多价的（别找借口）；还有多个出版社的……掀桌了！我回去洗澡的！
+
 # 网上下载`.txt`文件
 
 ```c

@@ -28,7 +28,7 @@ hideHeaderAndFooter: no
 
 <!--more-->
 
-# 深圳市二手房
+# 链家网深圳二手房
 
 爬取网站：https://sz.lianjia.com/ershoufang/pg/
 
@@ -94,11 +94,79 @@ library(tidyverse)
 df=separate(data = df, col = colname, into = c("code", "name"), sep = "\\|")
 ```
 
+# 安居客深圳租房
+
+我发现我自己有点不知天高地厚啊？竟然有胆量去查 **二手房** ！！知错就改还是好孩子嘛，这不马上写个~~单室~~租房的……不过换了网站，因为：
+
+- 不想套用代码；
+- 房源数量一样；
+- 想尝试使用progress；
+- 价钱只有一个。
+
+链接：https://sz.zu.anjuke.com/fangyuan/fx1/
+
+```c
+library(rvest)
+library(progress)
+pg <- progress_bar$new(total = 50)
+
+hs <- tibble()
+
+for (i in 1:50) {
+  url <- paste("https://sz.zu.anjuke.com/fangyuan/fx1-p", i, sep = "")
+
+  hs_info <- url %>%
+    read_html() %>%
+    html_nodes("p.details-item.tag") %>%
+    html_text() %>%
+    str_split("\\|", simplify = TRUE)
+
+  hs_info[, 1] <- str_remove_all(hs_info[, 1], "\\s")
+  hs_info[, 2] <- str_remove(hs_info[, 2], "平米") %>%
+    as.numeric()
+  hs_info_else <- str_split(hs_info[, 3], "\\s", simplify = TRUE)[, 1] %>%
+    str_split("层\\ue147", simplify = TRUE)
+  hs_info <- hs_info[, 1:2] %>%
+    cbind(hs_info_else)
+
+  hs_posi <- url %>%
+    read_html() %>%
+    html_nodes("address.details-item") %>%
+    html_text() %>%
+    str_split("\\n", simplify = TRUE)
+  hs_posi[, 2] <- str_remove_all(hs_posi[, 2], "\\s")
+  hs_posi_else <- str_split(hs_posi[, 3], "\\s", simplify = TRUE)
+  hs_posi <- cbind(hs_posi[, 2], hs_posi_else[, 57], hs_posi_else[, 58])
+
+  hs_pric <- url %>%
+    read_html() %>%
+    html_nodes("div.zu-side") %>%
+    html_text() %>%
+    str_extract("(\\d{3,})") %>%
+    as.numeric()
+
+  house <- cbind(hs_posi, hs_info, hs_pric) %>%
+    as_tibble() %>%
+    rename(小区名 = V1, 地区 = V2, 道路 = V3, 厅室 = V4, 面积 = V5, 层数 = V6, 联系人 = V7, 月租 = hs_pric)
+
+  hs <- rbind(hs, house)
+  pg$tick()
+  Sys.sleep(1 / 100)
+}
+
+write.csv(hs, "深圳市租房.csv")
+
+```
+
+这网站还设人机识别……加了进度条感觉目标似乎更加明确了呢！这里发现如果要导出`.csv`文件用到的是`write.csv()`，如果是`write.csv2()`那么所有的信息都在一列了，而且都是乱码……
+
+如果在`write.csv()`中使用`fileEncoding = "UTF-8"`那么生成的也是乱码。因为Excel的默认编码方式不是`UTF-8`。但是不管是哪种在R中都没问题！
+
 # 爬取豆瓣图书top250
 
-说实话豆瓣还没人家二手房网站用心，你看看你们自己的数据，再看看人家的？豆(d)瓣(b) = 逗(d)比(b)。我真是写得恼火气！
+说实话豆瓣还没人家二手房网站用心，你看看你们自己的数据，再看看人家的？我真是写得恼火气！
 
-```R
+```c
 library(rvest)
 book <- tibble()
 for (i in seq(0, 225, 25)) {

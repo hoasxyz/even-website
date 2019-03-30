@@ -168,3 +168,4 @@ setTimeout(showsectime, 1000);
   
   - https://stackoverflow.com/questions/51459120/blogdown-xaringan-does-not-work-after-using-chakra-option.
 
+- Add `pangu.js`(盘古之白): https://yihui.name/cn/2017/05/pangu/

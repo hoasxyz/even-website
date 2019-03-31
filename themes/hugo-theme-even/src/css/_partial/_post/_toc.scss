@@ -14,7 +14,9 @@
     margin: 0 10px;
     font-size: $post-toc-title-size;
     font-weight: 400;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    text-align: center;
+    text-decoration-line: underline;
   }
 
   .post-toc-content {
@@ -30,7 +32,7 @@
 
     ul {
       padding-left: 20px;
-      list-style: $post-toc-list-style;
+      /*list-style: $post-toc-list-style;*/
 
       ul {
         padding-left: 15px;

@@ -42,7 +42,7 @@ hideHeaderAndFooter: no
 
 这里我用的数据源，结合`dataset`：
 
-```csharp
+```cs
 using OfficeOpenXml;
 using System.IO;
 using System.Data.OleDb;
@@ -112,7 +112,7 @@ using System.Data.OleDb;
 
 懒人方法，自动生成……
 
-```csharp
+```cs
             SaveFileDialog kk = new SaveFileDialog();
             kk.Title = "保存Excel文件";
             kk.Filter = "Excel(*.xls)|*.xls";
@@ -177,3 +177,4 @@ using System.Data.OleDb;
 不过这里只能保存为`.xls`格式，所以可以在导入的地方加一个`.xls`格式的选项，在读取那里已经有了。
 
 项目地址：https://github.com/hoasxyz/thrlay
+

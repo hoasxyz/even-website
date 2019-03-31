@@ -73,7 +73,7 @@
     color: $theme-color;
 
     &:hover {
-      border-bottom: $content-link-border;
+      border-bottom: dashed 2px #db44b7;
     }
 
     &.fancybox {

@@ -8,19 +8,32 @@ html {
 body {
   padding: 0;
   margin: 0;
+  letter-spacing: 0.2px;
   font-family: $global-font-family;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: $global-lineheight;
   color: $global-font-color;
-  background: $global-background;
+  /*background: $global-background;*/
   scroll-behavior: smooth;
-  border-top: 3px solid $theme-color;
+  /*border-top: 3px solid $theme-color;*/
   cursor: url(/cursor/cursor_7.png), auto;
+  background-image: linear-gradient(to right top, $theme-color 50%, #eee 50%);
+  background-size: 100% calc(100% - 100vh + 5px);
+  background-repeat: no-repeat;
 }
 
-a:hover{cursor:url(/cursor/cursor_8.png), pointer;}
+body::after {
+    content: "";
+    position: fixed;
+    top: 5px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $global-background;
+    z-index: -2;
+}
 
 @include max-screen() {
   body {
@@ -29,7 +42,7 @@ a:hover{cursor:url(/cursor/cursor_8.png), pointer;}
 }
 
 ::selection {
-  background: $theme-color;
+  background: #499cf1;
   color: #fff; 
 }
 
@@ -58,6 +71,10 @@ img {
 a {
   color: $global-font-color;
   text-decoration: none;
+}
+
+a:hover {
+  cursor:url(/cursor/cursor_8.png), pointer;
 }
 
 @each $header, $size in $global-headings {

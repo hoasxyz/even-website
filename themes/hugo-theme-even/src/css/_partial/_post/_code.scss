@@ -6,9 +6,9 @@ code, pre {
 }
 
 code {
-  padding: 3px 5px;
+  padding: 2px 5px;
   border-radius: 4px;
-  color: $code-color;
+  color: #54e4c8;
 }
 
 // highlight.js
@@ -151,6 +151,7 @@ figure.highlight {
 
   code {
     padding: 0;
+    color: #805218;
   }
 
   table {
@@ -210,14 +211,14 @@ figure.highlight {
   /* LineNumbersTable */  .lnt { color: $gray; }
   /* LineHighlight */  .hl { display: block; width: 100%; background-color: #ffffcc }
 
-  /* Keyword */  .k { color: #859900 }
+  /* Keyword */  .k { color: #cc0000; font-weight: bold }
   /* KeywordConstant */  .kc { color: #859900; font-weight: bold }
   /* KeywordDeclaration */  .kd { color: #859900 }
-  /* KeywordNamespace */  .kn { color: #dc322f; font-weight: bold }
-  /* KeywordPseudo */  .kp { color: #859900 }
-  /* KeywordReserved */  .kr { color: #859900 }
+  /* KeywordNamespace */  .kn { color: #805218 }
+  /* KeywordPseudo */  /*.kp { color: #859900 }*/
+  /* KeywordReserved */  .kr { color: #cc0000; font-weight: bold }
   /* KeywordType */  .kt { color: #859900; font-weight: bold }
-  /* Name */  .n { color: #268bd2 }
+  /* Name */  .n { color: #2c5ea5 }
   /* NameAttribute */  .na { color: #268bd2 }
   /* NameBuiltin */  .nb { color: #cb4b16 }
   /* NameBuiltinPseudo */  .bp { color: #268bd2 }
@@ -240,7 +241,7 @@ figure.highlight {
   /* NameVariableMagic */  .vm { color: #268bd2 }
   /* Literal */  .l { color: #2aa198 }
   /* LiteralDate */  .ld { color: #2aa198 }
-  /* LiteralString */  .s { color: #2aa198 }
+  /* LiteralString */  .s { color: #1abc9c}
   /* LiteralStringAffix */  .sa { color: #2aa198 }
   /* LiteralStringBacktick */  .sb { color: #2aa198 }
   /* LiteralStringChar */  .sc { color: #2aa198 }
@@ -254,7 +255,7 @@ figure.highlight {
   /* LiteralStringRegex */  .sr { color: #2aa198 }
   /* LiteralStringSingle */  .s1 { color: #2aa198 }
   /* LiteralStringSymbol */  .ss { color: #2aa198 }
-  /* LiteralNumber */  .m { color: #2aa198; font-weight: bold }
+  /* LiteralNumber */  .m { color: #268bd2; font-weight: bold }
   /* LiteralNumberBin */  .mb { color: #2aa198; font-weight: bold }
   /* LiteralNumberFloat */  .mf { color: #2aa198; font-weight: bold }
   /* LiteralNumberHex */  .mh { color: #2aa198; font-weight: bold }
@@ -280,4 +281,7 @@ figure.highlight {
   /* GenericStrong */  .gs { color: #d33682 }
   /* GenericSubheading */  .gu { color: #d33682 }
   /* GenericTraceback */  .gt { color: #d33682 }
+  /* Add */
+  .p { color: #555 }
+  .o { color: #b5b23d}
 }

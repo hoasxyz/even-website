@@ -17,13 +17,14 @@ body {
   color: $global-font-color;
   /*background: $global-background;*/
   scroll-behavior: smooth;
-  /*border-top: 3px solid $theme-color;*/
+  border-top: 3px solid $theme-color;
   cursor: url(/cursor/cursor_7.png), auto;
-  background-image: linear-gradient(to right top, $theme-color 50%, #eee 50%);
-  background-size: 100% calc(100% - 100vh + 5px);
-  background-repeat: no-repeat;
+  /*background-image: linear-gradient(to right top, $theme-color 50%, #eee 50%);*/
+  /*background-size: 100% calc(100% - 100vh + 5px);*/
+  /*background-repeat: no-repeat;*/
 }
 
+/*
 body::after {
     content: "";
     position: fixed;
@@ -34,6 +35,7 @@ body::after {
     background: $global-background;
     z-index: -2;
 }
+*/
 
 @include max-screen() {
   body {

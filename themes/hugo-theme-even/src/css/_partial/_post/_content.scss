@@ -89,7 +89,7 @@
     color: rgba(#34495e, 0.8);
     background-color: $content-blockquote-backgroud;
     box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, .5);
-    font-family: 'Times New Roman','KaiTi',楷体;
+    font-family: 'Times New Roman','KaiTi','楷体';
     border-left: 3px solid transparent;
 
     p {
@@ -110,8 +110,8 @@
     position: absolute;
     left: 5px;
     top: -35px;
-}
-  
+  }
+
   img {
     display: inline-block;
     max-width: 100%;

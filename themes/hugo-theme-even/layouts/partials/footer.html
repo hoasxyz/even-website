@@ -80,7 +80,7 @@ var hrsold=Math.floor(e_hrsold);
 var e_minsold=(hrsold-e_hrsold)*-60;
 var minsold=Math.floor((hrsold-e_hrsold)*-60); 
 var seconds=Math.floor((minsold-e_minsold)*-60).toString();
-document.getElementById("showsectime").innerHTML = "本站已快乐运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+document.getElementById("showsectime").innerHTML = "本站已快乐运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
 setTimeout(showsectime, 1000);
 }
 showsectime();
@@ -99,6 +99,16 @@ postContainer.innerHTML = postContainer.innerHTML.replace(/\$\$.*(?:<em>.*<\/em>
 });
 </script>
 </center>
-
+<script>
+(function(u, c) {
+  var d = document, t = 'script', o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  o.src = u;
+  if (c) { o.addEventListener('load', function(e) { c(e); }); }
+  s.parentNode.insertBefore(o, s);
+})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function() {
+  pangu.spacingPage();
+});
+</script>
   </span>
 </div>

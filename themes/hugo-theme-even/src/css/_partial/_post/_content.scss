@@ -70,10 +70,11 @@
   }
 
   a {
-    color: $theme-color;
+    color: #db44b7;
 
     &:hover {
-      border-bottom: dashed 2px #db44b7;
+      border-bottom: 2px dashed #db44b7;
+      padding-bottom: 2px;
     }
 
     &.fancybox {
@@ -88,7 +89,7 @@
     color: rgba(#34495e, 0.8);
     background-color: $content-blockquote-backgroud;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
-    font-family: 'Times New Roman','KaiTi';
+    font-family: 'Times New Roman','KaiTi',楷体;
     border-left: 3px solid transparent;
 
     p {

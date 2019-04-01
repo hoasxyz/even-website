@@ -16,10 +16,10 @@ description: "Exploring for many problems occured in blogdown."
 # Keeping Exploring!
 
   How to...
-  
+
   * add a web-fitted tabulate built by `.Rmd` file?
   
-  * generate a [toc in a `.Rmd` file](https://github.com/olOwOlo/hugo-theme-even/issues/100)?
+  * [generate a toc](https://github.com/olOwOlo/hugo-theme-even/issues/100) in a `.Rmd` file?
   
   * generate a normal tabulate(`.Rmd` file) just like `.md` and `Rmarkdown` file?
   
@@ -38,15 +38,15 @@ description: "Exploring for many problems occured in blogdown."
     - With Js: https://codepen.io/derekjp/pen/pJzpxB
     
     - https://webdesign.tutsplus.com/tutorials/how-to-build-a-page-scroll-progress-indicator-with-jquery-and-svg--cms-20881
-  
+    
     - Demo: https://infinum.co/the-capsized-eight/progress-bar-in-rails
   
   * add live 2D model in hugo website? In hexo: https://yq.aliyun.com/articles/653992/.
   
   * Something may appear sometime somewhere...
-  
+
 # Continent Found!
-  
+
 * Go-html-template learning:
   
   - https://www.cnblogs.com/f-ck-need-u/p/10053124.html#%E5%8E%BB%E9%99%A4%E7%A9%BA%E7%99%BD ;
@@ -58,11 +58,11 @@ description: "Exploring for many problems occured in blogdown."
 # Treasure
 
  * Too add [annotation](https://www.imooc.com/article/23400) in markdown, [underline](https://blog.olowolo.com/post/hugo-even-preview/index.md) in markdown and add [footnotes](http://www.ghostchina.com/markdown-guide/) in markdown.
- 
+
  * Insert audios in website. See <a target="_blank" title="索引" href="/post/terrylin/index.html#索引">御龙将军（uncover）</a> or [御龙将军（cover）](https://hoas.xyz/post/terrylin/#索引).
- 
+
  * Add one [comment area](https://www.smslit.top/2018/07/08/hugo-valine/) in hugo.
- 
+
  * If you changed any file under `/src/`, you need to rebuild.
 
 ```cmd

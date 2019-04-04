@@ -10,8 +10,8 @@ tags:
   - RMarkdown
   - 中文
 lastmod: '2019-02-12T18:45:04+08:00'
-keywords: [Capital of Statistics, COS,R,R语言,统计之都]
-description: 'R语言统计之都摘要'
+keywords: [Capital of Statistics, COS,R,R语言,统计之都,SO]
+description: 'R语言统计之都/SO摘要'
 comment: yes
 toc: yes
 autoCollapseToc: no
@@ -24,13 +24,15 @@ mathjaxEnableSingleDollar: yes
 mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
-  从[统计之都](https://d.cosx.org/)摘抄以及自己的备忘。
+  从[统计之都](https://d.cosx.org/)、[SO](https://stackoverflow.com/)摘抄以及自己的备忘。
 ![Capital of Statistics](https://slidesplayer.com/slide/11292749/61/images/40/%E7%BB%9F%E8%AE%A1%E4%B9%8B%E9%83%BD+%E4%B8%BB%E7%AB%99%EF%BC%9A%E7%9C%8B%E7%9C%8B%E5%A4%A7%E5%AE%B6%E9%83%BD%E5%9C%A8%E7%A0%94%E7%A9%B6%E4%BB%80%E4%B9%88%EF%BC%9F+%E8%AE%BA%E5%9D%9B%EF%BC%9A%E4%BB%8A%E5%A4%A9%E7%9A%84%E8%AE%B2%E5%BA%A7%E6%B2%A1%E5%90%AC%E6%87%82%EF%BC%9F+%E7%BB%B4%E5%9F%BA%EF%BC%9A%E7%BB%9F%E8%AE%A1%E5%AD%A6%E7%99%BE%E7%A7%91%E5%85%A8%E4%B9%A6%EF%BC%9F+%E5%92%8C%E7%BB%9F%E8%AE%A1%E4%B9%8B%E9%83%BD%E7%9B%B8%E5%85%B3%E7%9A%84%EF%BC%9A+R%E8%AF%AD%E8%A8%80%E4%BC%9A%E8%AE%AE+%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E9%82%80%E8%AF%B7%E8%B5%9B.jpg)
 
 <!--more-->
 
-## [txt文件提取冒号后的数值](https://d.cosx.org/d/3004-3004)
-  
+## txt文件提取冒号后的数值
+
+https://d.cosx.org/d/3004-3004
+
 ```r
 library(gsubfn)
 #> 载入需要的程辑包：proto
@@ -38,7 +40,9 @@ x <- c("1:2.000000"   ,    "2:5.000000"   ,  "13:155000000" )
 gsubfn("([[:alnum:]])+(:)","",x)
 #> [1] "2.000000"  "5.000000"  "155000000"
 ```
-## [提取每一行中的最大数值形成新的一行](https://d.cosx.org/d/420429-r)
+## 提取每一行中的最大数值形成新的一行
+
+https://d.cosx.org/d/420429-r
 
 附上apply函数族的介绍：http://blog.fens.me/r-apply/。
 ```r
@@ -72,7 +76,9 @@ df2
 #> 3:  7  8  9      9
 ```
 
-## [改进for循环](https://d.cosx.org/d/420414-for)
+## 改进for循环
+
+https://d.cosx.org/d/420414-for
 
 ```r
 x <- c(1, 2)
@@ -160,7 +166,9 @@ expand.grid(x = c(1, 2), y = c(3, 4, 5), z = c(6, 7, 8, 9)) %>%
 #> 24 2 5 9 312
 ```
 
-## [把符合某项的纯字母多行挑出来](https://d.cosx.org/d/420335-r)
+## 把符合某项的纯字母多行挑出来
+
+https://d.cosx.org/d/420335-r
 
 ```r
 v1 = c("AABBCC", "BBCCDD", "DDEEFF")
@@ -200,7 +208,9 @@ df %>%
 #> 3  4 CCDDFF DDEEFF   NA   NA NA
 ```
 
-## [用lubridate包生成像seq()函数一样的序列](https://d.cosx.org/d/420280-lubridate-seq)
+## 用lubridate包生成像seq()函数一样的序列
+
+https://d.cosx.org/d/420280-lubridate-seq
 
 ```r
 train <- data[data$ARRIVE_DATE < ymd(20181106),] #可以直接这样筛选
@@ -231,3 +241,24 @@ raw %>%
 #> 3  5 1987-01-05 15.6 0.0 1.60
 #> 4  6 1987-01-06 15.6 0.0 2.75
 ```
+
+## 向量中某值与其相邻n个数的subset
+
+https://stackoverflow.com/questions/55507218/subset-adjacent-values-around-one-value
+
+```c
+v <- seq(1, 50, .5)
+# 1
+v1 <- v[which(v == 25)  +  (-2:2)]
+embed(v1, 3)[, 3:1]
+# embed(v1, 3)
+
+# 2
+v[abs(v-25) <= 1]
+embed(v1, 3)
+    
+# 3
+n <- 3
+v[which(v==25) + (-n+1):0 + rep(seq_len(n)-1,each=n)]
+```
+

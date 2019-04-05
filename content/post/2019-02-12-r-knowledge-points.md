@@ -44,7 +44,7 @@ gsubfn("([[:alnum:]])+(:)","",x)
 
 https://d.cosx.org/d/420429-r
 
-附上apply函数族的介绍：http://blog.fens.me/r-apply/。
+附上apply函数族的介绍：http://blog.fens.me/r-apply/
 ```r
 library(dplyr)
 #> 
@@ -244,7 +244,9 @@ raw %>%
 
 ## 向量中某值与其相邻n个数的subset
 
-https://stackoverflow.com/questions/55507218/subset-adjacent-values-around-one-value
+SO: https://stackoverflow.com/questions/55507218/subset-adjacent-values-around-one-value
+
+COSX: https://d.cosx.org/d/420569-3/4
 
 ```c
 v <- seq(1, 50, .5)
@@ -261,4 +263,64 @@ embed(v1, 3)
 n <- 3
 v[which(v==25) + (-n+1):0 + rep(seq_len(n)-1,each=n)]
 ```
+
+## 字符和数字比大小？
+
+https://d.cosx.org/d/420566/2
+
+见`?“<”`。
+
+1. 如果是不同的数据类型进行比较，R会自动把数字类型转化为字符。
+
+> If the two arguments are atomic vectors of different types, one is coerced to the type of the other, the (decreasing) order of precedence being character, complex, numeric, integer, logical and raw.
+
+2. 如果是字符之间的比较，R 会先转化为 `UTF-8` 然后再比较。
+
+> Character strings can be compared with different marked encodings (see Encoding): they are translated to UTF-8 before comparison.
+> Raw vectors should not really be considered to have an order, but the numeric order of the byte representation is used.
+
+## 删除数据框中某一列中带有NA的行
+
+https://d.cosx.org/d/420558-na
+
+```c
+# 1
+library(tidyverse)
+
+tb <- tribble(
+  ~a, ~b, ~c, ~d, ~e,
+  NA, 7, NA, 9, 5,
+  2, 8, NA, 10, 6,
+  3, NA, 5, NA, 7,
+  4, 10, 6, 2, NA,
+  5, 1, 7, 3, NA,
+  6, 2, 8, 4, 10
+) %>%
+  dplyr::filter(!is.na(a))
+
+tb
+#> # A tibble: 5 x 5
+#>       a     b     c     d     e
+#>   <dbl> <dbl> <dbl> <dbl> <dbl>
+#> 1     2     8    NA    10     6
+#> 2     3    NA     5    NA     7
+#> 3     4    10     6     2    NA
+#> 4     5     1     7     3    NA
+#> 5     6     2     8     4    10
+
+# 2
+airquality
+airquality[!is.na(airquality$Ozone),]
+
+# 3
+tb%>% drop_na(a)
+      
+# 4
+tb_df=data.frame(tb)
+tb_df_narm=subset(tb_df, !is.na(a))
+```
+
+另外也有人提到：
+
+> 如果是需要计算 a 列的某些统计量，你可以用 `na.rm = TRUE` 来避免 NA 造成麻烦，比如 `mean(tb$a, na.rm = TRUE)`。如果你需要获取每个变量的每个测量值都完整的行，则可以用 `tb[complete.cases(tb), ]`。
 

@@ -56,7 +56,7 @@ copyright = "Hoas"            # default: author.name ↓        # 默认为下�
   identifier = "slides"
   url = "/slides/"
 [[menu.main]]
-  name = "四言诗"
+  name = "Poet"
   weight = 6
   identifier = "poet"
   url = "/poet/"

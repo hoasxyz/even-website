@@ -1,6 +1,6 @@
 ---
 title: 'Greta Thunberg: 为了环境，停课！'
-author: hoas
+author: Hoas
 date: '2019-04-08'
 slug: greta-thunberg
 categories:

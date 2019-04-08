@@ -2,7 +2,7 @@
 title: 'Greta Thunberg: 为了环境，停课！'
 author: hoas
 date: '2019-04-08'
-slug: greta-thunberg-为了环境-停课
+slug: greta-thunberg
 categories:
   - plain
 tags:

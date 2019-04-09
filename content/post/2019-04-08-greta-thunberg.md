@@ -35,7 +35,7 @@ hideHeaderAndFooter: no
 
 她一开始就与政治紧紧关联，一个身高大约1米54，满脸稚气的女孩出现在瑞典政治中心门口，吸引了不少媒体目光。三周的选举结束后，她没有恢复正常的上课时间，而是继续在议会大厦门口静坐，一块写着字的大牌子时而握在她手上；时而静静地立在墙角，倚在她的身边：
 
-> Skolstrejk för Klima
+> Skolstrejk för Klimatet
 >
 > 为了环境，停课！
 
@@ -71,7 +71,7 @@ hideHeaderAndFooter: no
 
 学运在德国曾有着改变历史的象征意义。早在50年前，1968年整个欧洲包括德国就曾掀起一场学生运动，以大学生为主导，挑战德国战后社会拘谨陈规，尝试建立言论自由和民主法治的崭新社会，它直接催生了激进组织红军旅，以及后来绿党和绿色和平组织的出现，对德国社会的影响深远。
 
-这次的“Fridays for Future”也是继法国“[黄背心](https://baike.baidu.com/item/%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E%E2%80%9C%E9%BB%84%E8%83%8C%E5%BF%83%E2%80%9D%E8%BF%90%E5%8A%A8/23189528)”示威之后，第二大欧洲示威游行运动。这一次的大规模“学生游行”接下来的状况会如何？我么们只能拭目以待……
+这次的“Fridays for Future”也是继法国“[黄背心](https://baike.baidu.com/item/%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E%E2%80%9C%E9%BB%84%E8%83%8C%E5%BF%83%E2%80%9D%E8%BF%90%E5%8A%A8/23189528)”示威之后，第二大欧洲示威游行运动。这一次的大规模“学生游行”接下来的状况会如何？我们只能拭目以待……
 
 > Rich countries like Sweden need to start reducing emissions by at least 15 percent every year. And that is so that we can stay below a two-degree warming target. Yet, as the IPCC have recently demonstrated, aiming instead for 1.5 degrees Celsius would significantly reduce the climate impacts. But we can only imagine what that means for reducing emissions. You would think the media and every one of our leaders would be talking about nothing else, but they never even mention it...
 >
@@ -167,11 +167,13 @@ Thunberg离课堂越来越远，离政治越来越近，而她今年只有16岁�
 
 然而从事实上讲，对于工业的发展，普通人所做的都是杯水车薪，一个人一年的污染可能都比不上工业的一个小时，环境的污染不仅仅要靠每一个普通人的行动，更需要管理者对规则的改变，因为社会是从上往下层叠带动的——否则就是游行甚至是革命。
 
-# 未来
+
 
 > The year 2078, I will celebrate my 75th birthday. If I have children or grandchildren, maybe they will spend that day with me. Maybe they will ask me about you, the people who were around, back in 2018. Maybe they will ask why you didn't do anything while there still was time to act. What we do or don't do right now will affect my entire life and the lives of my children and grandchildren. What we do or don't do right now, me and my generation can't undo in the future.
 >
 > 2078年，我会庆祝我75岁生日。如果我有儿孙的话，或许他们会和我一样度过那些日子。或许他们会问我，关于2018年的，我身边的你们。或许他们会问为什么即使现在还有时间采取行动而你们却什么都不做。我们现在的做与不做会影响我的一生和我儿孙的生命。我们当前做与不做的事，我和我的后代在未来也不会去做。
+
+# 未来
 
 ![strike](https://upload.wikimedia.org/wikipedia/commons/5/59/Follow_Greta%21_Strike_for_climate%2C_placard%2C_2018_%28cropped%29.jpg)
 

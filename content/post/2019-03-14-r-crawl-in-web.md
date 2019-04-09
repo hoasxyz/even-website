@@ -24,11 +24,57 @@ mathjaxEnableSingleDollar: yes
 mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
-这个时候才感受到GitHub的好处——我用git误删两个`.R`文件，这下全都可以找回来啦！
+下个[SelectorGadget](https://chrome.google.com/webstore/search/selectorgadget?hl=zh-CN)然后开启你的爬虫之旅~
 
 <!--more-->
 
-# 链家网深圳二手房
+# 常用函数
+
+- `read_html()`, 读取html文档或链接，可以是url链接，也可以是本地的html文件，
+  甚至是包含html的字符串。
+- `html_nodes()`, 选择提取文档中指定元素的部分。
+  支持`css`路径选择, 或`xpath`路径选择。
+  如果tags层数较多，必须使用selectorGadget复制准确的路径。
+  使用方式：开启SelectorGadget,然后鼠标选中位置，右击选择检查元素，光标移动到tags上。
+  然后选择copy,选择selector或xpath选项。
+- `html_text()`,提取tags内文本，
+- `html_table()`, 提前tags内表格。
+- `html_form()`, `set_values()`, 和`submit_form()`分别表示提取、修改和提交表单。
+
+# 表格提取
+
+```r
+library(rvest)
+library(magrittr)
+
+city_name <- c(
+  "beijing", "shanghai", "guangzhou", "shenzhen", "hangzhou",
+  "tianjin", "chengdu", "nanjing", "xian", "wuhan"
+)
+url_cites <- paste0("http://www.pm25.in/", city_name)
+
+for (n in 1:length(city_name)) {
+
+  # 提取表格
+  pm_city <- read_html(x = url_cites[n]) %>%
+    html_nodes(css = ".aqis_live_data .container .table") %>%
+    .[[2]] %>% # 注意这里的点
+    html_table()
+
+  # 批量生成变量
+  assign(x = paste0("pm_", city_name[n]), value = pm_city)
+}
+rm(url_cites, pm_city)
+
+DT::datatable(pm_chengdu)
+DT::datatable(pm_beijing)
+```
+
+
+
+# 实例
+
+## 链家网深圳二手房
 
 爬取网站：https://sz.lianjia.com/ershoufang/pg/
 
@@ -94,7 +140,7 @@ library(tidyverse)
 df=separate(data = df, col = colname, into = c("code", "name"), sep = "\\|")
 ```
 
-# 安居客深圳租房
+安居客深圳租房
 
 我发现我自己有点不知天高地厚啊？竟然有胆量去查 **二手房** ！！知错就改还是好孩子嘛，这不马上写个~~单室~~租房的……不过换了网站，因为：
 
@@ -162,7 +208,7 @@ write.csv(hs, "深圳市租房.csv")
 
 如果在`write.csv()`中使用`fileEncoding = "UTF-8"`那么生成的也是乱码。因为Excel的默认编码方式不是`UTF-8`。但是不管是哪种在R中都没问题！
 
-# 爬取豆瓣图书top250
+## 爬取豆瓣图书top250
 
 说实话豆瓣还没人家二手房网站用心，你看看你们自己的数据，再看看人家的？我真是写得恼火气！
 
@@ -234,7 +280,7 @@ for (i in seq(0, 225, 25)) {
 
 掀桌了！
 
-# 网上下载`.txt`文件
+## 网上下载`.txt`文件
 
 ```c
 require(pacman)

@@ -324,3 +324,27 @@ tb_df_narm=subset(tb_df, !is.na(a))
 
 > 如果是需要计算 a 列的某些统计量，你可以用 `na.rm = TRUE` 来避免 NA 造成麻烦，比如 `mean(tb$a, na.rm = TRUE)`。如果你需要获取每个变量的每个测量值都完整的行，则可以用 `tb[complete.cases(tb), ]`。
 
+## 日期格式转换时遇到中文月份
+
+https://d.cosx.org/d/149607-149607
+
+```r
+> sessionInfo()
+R version 3.5.3 (2019-03-11)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows >= 8 x64 (build 9200)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=Chinese (Simplified)_China.936  LC_CTYPE=Chinese (Simplified)_China.936   
+[3] LC_MONETARY=Chinese (Simplified)_China.936 LC_NUMERIC=C                              
+[5] LC_TIME=Chinese (Simplified)_China.936    
+...
+```
+
+```r
+Sys.setlocale("LC_TIME", "English")
+as.Date("2005-Sep-01", format="%Y-%b-%d")
+```
+

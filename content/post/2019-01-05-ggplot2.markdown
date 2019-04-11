@@ -169,13 +169,10 @@ ggplot(tb,aes(x = month,y = value, color = variable)) +
 When you meet with sequences of times and two or more sets of plot types, for example, `col` and `shape`:
 
 ```r
-  # scale_shape_discrete(name  =expression(保证率("%")),
-  #                      breaks=c("0.02", "0.2","2"),
-  #                      labels=c("0.02", "0.2","2"))+
-  # scale_color_discrete(name  =expression(保证率("%")),
-  #                      breaks=c("0.02", "0.2","2"),
-  #                      labels=c("0.02", "0.2","2"))
-final <- clipr::read_clip_tbl()%>%
+library(readxl)
+
+final <- read_xlsx("E:\\!大学\\大三下\\水资源开发利用\\ks\\配线表\\设计洪水配线计算.xlsx",
+                   sheet = 9, range = "A20:E35") %>%
   melt(id = "t")
 final$t <- ymd(final$t)
 final$variable <- str_replace(final$variable,"P.","P=")
@@ -193,4 +190,93 @@ ggplot(final,aes(x=t,y = value,color = variable,shape = variable))+
 ```
 
 <img src="/post/2019-01-05-ggplot2_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+
+## double y-axis
+
+[This method](http://www.10tiao.com/html/404/201808/2651058545/2.html) changes the second variable's value to fit the first y-axis, which plays a trick on the second y-axis.
+
+```r
+library(ggplot2)
+library(ReadAxfBOM)
+
+obs <- ReadAxfBOM("http://www.bom.gov.au/fwo/IDV60901/IDV60901.94866.axf")
+
+p <- ggplot(obs, aes(x = Timestamp)) +
+  geom_line(aes(y = air_temp, colour = "Tempeture")) +
+  geom_line(aes(y = rel_hum, colour = "Humidity")) +
+  scale_y_continuous(sec.axis = sec_axis(~., name = "Relative humidity [%]")) +
+  scale_colour_manual(values = c("blue", "red")) +
+  labs(y = "Air temperature [°C]", x = "Date and time", colour = "Parameter") +
+  theme(legend.position = c(0.8, 0.9))
+p
+```
+
+<img src="/post/2019-01-05-ggplot2_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+
+```r
+q <- ggplot(obs, aes(x = Timestamp)) +
+  geom_line(aes(y = air_temp, colour = "Tempeture")) +
+  geom_line(aes(y = rel_hum/5, colour = "Humidity")) +
+  scale_y_continuous(sec.axis = sec_axis(~.*5, name = "Relative humidity [%]")) +
+  scale_colour_manual(values = c("blue", "red")) +
+  labs(y = "Air temperature [°C]", x = "Date and time", colour = "Parameter") +
+  theme(legend.position = c(0.8, 0.9))
+q
+```
+
+<img src="/post/2019-01-05-ggplot2_files/figure-html/unnamed-chunk-5-2.png" width="672" />
+
+And [this](https://cloud.tencent.com/developer/article/1093077) is a similar method using range:
+
+```r
+# lct <- Sys.getlocale("LC_TIME")  
+#备份本地默认日期显示格式
+
+# Sys.setlocale("LC_TIME", "C")    
+#指定标准日期显示格式
+
+# Sys.setlocale("LC_TIME",lct)     
+#这一句是恢复默认系统日期显示格式
+#（记得要在使用完下面的month函数之后再运行这一句，否则月份返回的是中文）
+
+library("lubridate")
+library("ggplot2")
+library("scales")
+library("magrittr")
+library("tidyr")
+
+data1 <- data.frame(
+  Month = seq(from = as.Date('2017-01-01'),to=as.Date('2017-06-01'),by='1 month') %>% lubridate::month(label=TRUE),
+  Value = runif(6,10,50) %>% round()
+)
+
+data2 <- data.frame(
+  Month = seq(from = as.Date('2017-01-01'),to=as.Date('2017-06-01'),by='1 month') %>% lubridate::month(label=TRUE),
+  Categroy1 = runif(6,0.1,0.5) %>% round(2),
+  Categroy2 = runif(6,0.1,0.5) %>% round(2)
+) %>% gather(Category,Value,-1)
+
+ggplot() +
+  geom_col( data = data1,aes(x = Month,y = Value),fill="#6794a7") +
+  geom_line(data = data2,aes(x = Month,y = rescale(Value,c(0,55)),
+                             colour=Category,group=Category),size=1.5) +
+  geom_point(data = data2,aes(x = Month,y = rescale(Value,c(0,55)),
+                              colour=Category),shape=21,fill="white",size=4)+
+  scale_y_continuous(breaks=pretty_breaks(5),
+                     sec.axis = sec_axis( ~rescale(.,c(0,0.5)),
+                                          name = "Categroy",labels=sprintf("%d%%",(0:5)*10)))+
+  scale_color_manual(label = c("Categroy1", "Categroy2"),values = c("#ee8f71","#C10534")) +
+  labs(
+    title="This is a Title!",
+    subtitle="This is a Subtitle",
+    caption="This is a Caption"
+  )+
+  theme_minimal(base_size=16) %+replace% 
+  theme(
+    plot.caption = element_text(hjust=0),
+    plot.margin = unit(c(1,0.5,1,0.5), "lines")
+  )
+```
+
+<img src="/post/2019-01-05-ggplot2_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 

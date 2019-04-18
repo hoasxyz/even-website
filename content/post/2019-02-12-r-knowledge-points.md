@@ -348,3 +348,32 @@ Sys.setlocale("LC_TIME", "English")
 as.Date("2005-Sep-01", format="%Y-%b-%d")
 ```
 
+## `geom_smooth`还能这样玩？
+
+https://d.cosx.org/d/420602-ggplot2-spline-excel/5
+
+```r
+myspline = function(formula, data, ...)
+{
+    dat = model.frame(formula, data)
+    res = splinefun(dat[[2]], dat[[1]])
+    class(res) = "myspline"
+    res
+}
+
+predict.myspline = function(object, newdata, ...)
+{
+    object(newdata[[1]])
+}
+
+
+library(ggplot2)
+set.seed(123)
+dat = data.frame(xx = runif(100, -5, 5))
+dat$yy = sin(dat$xx)
+
+ggplot(dat, aes(x = xx, y = yy)) +
+    geom_point() +
+    geom_smooth(method = myspline, se = FALSE)
+```
+

@@ -377,3 +377,17 @@ ggplot(dat, aes(x = xx, y = yy)) +
     geom_smooth(method = myspline, se = FALSE)
 ```
 
+## 抽取数据框的奇数行为另一数据框
+
+https://d.cosx.org/d/107793-107793/2
+
+```r
+# 可以用序列索引
+seq(from=1, to=nrow(mtcars), by=2)
+
+# 掌声在哪里？
+mtcars[(1:nrow(mtcars))%%2==1,]
+
+mtcars[c(TRUE, FALSE), ]
+```
+

@@ -35,7 +35,11 @@ hideHeaderAndFooter: no
 
 小包也有大大的力量，**[janitor](https://github.com/sfirke/janitor)**值得拥有！虽然是数据清洗和一般的清洗一样本就是一项“脏”的工作，可是**janitor**教你便捷清洗而又不失优雅！
 
+<center>
+
 ![janitor](https://github.com/sfirke/janitor/raw/master/man/figures/logo_small.png)
+
+</center>
 
 The main janitor functions:
 
@@ -215,7 +219,7 @@ excel_numeric_to_date(41103.01, date_system = "mac pre-2011")
 #> [1] "2016-07-14"
 ```
 
-## `coalesce（）`
+## `coalesce()`
 
 ``` r
 library(dplyr)

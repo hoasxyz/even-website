@@ -27,6 +27,10 @@ hideHeaderAndFooter: no
 
 用 R 语言读取 Access和MS SQL 的经历，通过 ODBC 。十分感谢万飚老师的帮助！
 
+> **ODBC**（**Open Database Connectivity**，开放数据库互连）提供了一种标准的[API](https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%8E%A5%E5%8F%A3)（[应用程序编程接口](https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E7%BC%96%E7%A8%8B%E6%8E%A5%E5%8F%A3)）方法来访问[数据库管理系统](https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F)（DBMS）。这些API利用[SQL](https://zh.wikipedia.org/wiki/SQL)来完成其大部分任务。ODBC本身也提供了对SQL语言的支持，用户可以直接将SQL语句送给ODBC。ODBC的设计者们努力使它具有最大的独立性和开放性：与具体的编程语言无关，与具体的数据库系统无关，与具体的操作系统无关。
+
+ODBC可以在`控制面板`--`ODBC`中打开。
+
 <!--more-->
 
 # 基本配置信息

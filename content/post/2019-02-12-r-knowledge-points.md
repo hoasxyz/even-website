@@ -129,14 +129,7 @@ expand.grid(x = c(1, 2), y = c(3, 4, 5), z = c(6, 7, 8, 9)) %>%
 注意！这样会出错：
 ```r
 library(dplyr)
-#> 
-#> 载入程辑包：'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
+
 expand.grid(x = c(1, 2), y = c(3, 4, 5), z = c(6, 7, 8, 9)) %>%
   dplyr::mutate(sum = sum(x,y,z))
 #>    x y z sum

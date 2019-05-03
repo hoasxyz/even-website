@@ -1,5 +1,5 @@
 ---
-title: $k$-NN
+title: k-NN
 author: Hoas
 date: '2019-04-30'
 slug: k-nearest-neighbor

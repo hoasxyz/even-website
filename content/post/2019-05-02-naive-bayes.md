@@ -26,7 +26,7 @@ mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
 
-# Bayes theorem
+# Bayes’ theorem
 
 这是一种和天气预报大致相同的概念方法。托马斯·贝叶斯（Thomas Bayes）发明了用来描述时间的概率以及如何根据附加信息修正概率的基本原则，这些原则构成了现在称为的**贝叶斯方法**（Bayesian methods）的基础。
 

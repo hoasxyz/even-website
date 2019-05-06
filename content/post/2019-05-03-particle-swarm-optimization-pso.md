@@ -83,13 +83,23 @@ PSO算法使用如下心理学假设：在寻求一致的认知过程中，个�
 psoptim(par, fn, gr = NULL, …, lower = -1, upper = 1, control = list())
 ```
 
+| param     | meaning                                                      |
+| --------- | ------------------------------------------------------------ |
+| `par`     | Vector with length defining the dimensionality of the optimization problem. Providing actual values of `par` are not necessary (`NA` is just fine). Included primarily for compatibility with `optim` but if values are provided within the `lower` and `upper` bounds then the first particle will be initialized to the position provided by `par`. |
+| `fn`      | A function to be minimized (or maximized), with first argument the vector of parameters over which minimization is to take place. It should return a scalar result. |
+| `gr`      | A function to return the gradient if local search is BFGS. If it is `NULL`, a finite-difference approximation will be used. |
+| `...`     | Further arguments to be passed to `fn` and `gr`.             |
+| `lower`   | Lower bounds on the variables.                               |
+| `upper`   | Upper bounds on the variables.                               |
+| `control` | A list of control parameters. See “Details”.                 |
+
 - **par**  定义最佳化问题的维度，一般用NA就可以了
 - **fn**  适应值函数（最佳化的目标函数）
 - **gr**  如果局部搜索使用的是BFGS，那么这个参数表示返回对应梯度的函数。如果该参数为`NULL`，表示将使用有限差分的方法
 - **lower upper**  搜索范围
 - **control**  其他选项的控制，选项如下：
-- **trace**  是否显示每次迭代的过程，显示(trace=1)不显示(trace=0)，预设为0
-- **fnscale**  最大化(fnscale=0)或最小化(fnscale=1)，预设为1
+- **trace**  是否显示每次迭代的过程，显示(trace=1)不显示(trace = 0)，预设为0
+- **fnscale**  最大化(fnscale = -1, 值为-1倍)或最小化(fnscale = 1)，预设为1，如果为2，那么values = values/2
 - **maxit**  最大迭代次数，预设maxit=1000
 - **maxf**  停止的条件，适应值函数的最大值，预设Inf
 - **abstol**  停止的条件，适应值函数的最小值，预设-Inf
@@ -100,7 +110,9 @@ psoptim(par, fn, gr = NULL, …, lower = -1, upper = 1, control = list())
 - **cg**  整体最佳解的权重，预设5+log(2)
 - **v.max**  移动速度的大小，预设v.max*d
 
-## 1
+[Details](https://rdrr.io/cran/pso/man/psoptim.html)
+
+### 1
 
 直接上源码吧，接下来的问题是一个三维空间的求最小值的问题：
 
@@ -262,7 +274,7 @@ psoObj
 
 <sup>Created on 2019-05-03 by the [reprex package](https://reprex.tidyverse.org) (v0.2.1)</sup>
 
-## 2
+### 2
 
 当然也可以这样玩，在维数D较少的时候最好可视化以下方便查看：
 
@@ -330,7 +342,7 @@ psoptim(rep(NA, 1),
 <center>
 ![pso](https://i2.wp.com/static.squarespace.com/static/51156277e4b0b8b2ffe11c00/t/51ae3f26e4b08dce860b9b6e/1370373942285/pso.gif?zoom=1.25&w=456)
 </center>
-## 3
+### 3
 
 当然也可以参考：https://blog.csdn.net/qq_27755195/article/details/62216762
 
@@ -458,6 +470,111 @@ for (i in 1:iters){
 
 </center>
 
-# For parameters
+## `metaheuristicOpt::PSO()`
+
+```r
+PSO(FUN, optimType = "MIN", numVar, numPopulation = 40, maxIter = 500,
+  rangeVar, Vmax = 2, ci = 1.49445, cg = 1.49445, w = 0.729)
+```
+
+Arguments:
+
+| param           | meaning                                                      |
+| --------------- | ------------------------------------------------------------ |
+| `FUN`           | an objective function or cost function,                      |
+| `optimType`     | a string value that represent the type of optimization. There are two option for this arguments: `"MIN"` and `"MAX"`. The default value is `"MIN"`, which the function will do minimization. Otherwise, you can use `"MAX"`for maximization problem. |
+| `numVar`        | a positive integer to determine the number variable.<br />定义最后函数返回的变量（数值）的数量。 |
+| `numPopulation` | a positive integer to determine the number population.<br />定义粒子的数量。 |
+| `maxIter`       | a positive integer to determine the maximum number of iteration. |
+| `rangeVar`      | a matrix (*2 \times n*) containing the range of variables, where *n* is the number of variables, and first and second rows are the lower bound (minimum) and upper bound (maximum) values, respectively. If all variable have equal upper bound, you can define `rangeVar` as matrix (*2 \times 1*). |
+| `Vmax`          | a positive integer to determine the maximum particle's velocity. |
+| `ci`            | a positive integer to determine individual cognitive.        |
+| `cg`            | a positive integer to determine group cognitive.             |
+| `w`             | a positive integer to determine inertia weight.              |
+
+``` r
+# PSO-1 ---------------------------------------------------------------------
+
+library(metaheuristicOpt)
+# define sphere function as objective function
+f <- function(x){
+  x*sin(10*pi * x) + 2
+}
+
+## Define parameter
+Vmax <- 2
+ci <- 1.5
+cg <- 1.5
+w <- 0.7
+numVar <- 2 # 最好为1
+rangeVar <- matrix(c(-1, 2), nrow = 2)
+
+## calculate the optimum solution using Particle Swarm Optimization Algorithm
+resultPSO <- PSO(f,
+                 optimType = "MAX", numVar, numPopulation = 20,
+                 maxIter = 100, rangeVar, Vmax, ci, cg, w
+)
+resultPSO
+#> [1] 1.850547 1.677820
+
+## calculate the optimum value using sphere function
+f(resultPSO)
+#> [1] 3.850274 3.076761
+
+# PSO-2 -------------------------------------------------------------------
+
+library(metaheuristicOpt)
+# define sphere function as objective function
+f <- function(x){
+  sqrt(x[1]^2 + x[2]^2)
+}
+
+## Define parameter
+Vmax <- 2
+ci <- 1.5
+cg <- 1.5
+w <- 0.7
+numVar <- 2
+rangeVar <- matrix(c(-100, 100, -100, 100), nrow = 2)
+
+## calculate the optimum solution using Particle Swarm Optimization Algorithm
+resultPSO <- PSO(f,
+                 optimType = "MIN", numVar, numPopulation = 20,
+                 maxIter = 100, rangeVar, Vmax, ci, cg, w
+)
+resultPSO
+#> [1] 1.203468e-06 1.165472e-06
+
+## calculate the optimum value using sphere function
+f(resultPSO)
+#> [1] 1.675309e-06
+
+# demo --------------------------------------------------------------------
+
+sphere <- function(X){
+  return(sum(X^2))
+}
+
+## Define parameter 
+Vmax <- 2
+ci <- 1.5
+cg <- 1.5
+w <- 0.7
+numVar <- 5 # 最好为1
+rangeVar <- matrix(c(-10,10), nrow=2)
+
+## calculate the optimum solution using Particle Swarm Optimization Algorithm
+PSO(sphere, optimType="MIN", numVar, numPopulation=20, 
+    maxIter=100, rangeVar, Vmax, ci, cg, w)
+#> [1]  2.752593e-05 -3.125573e-05 -3.122459e-06 -1.217008e-05 -1.571504e-05
+
+## calculate the optimum value using sphere function
+sphere(resultPSO)
+#> [1] 2.806661e-12
+```
+
+<sup>Created on 2019-05-04 by the [reprex package](https://reprex.tidyverse.org) (v0.2.1)</sup>
+
+# Optimize for parameters
 
 当然对一个模型来说，确定该模型的目标函数，然后给出该模型所需的一系列待确定的参数以及参数的取值范围，那么如果想要目标函数取得一个最值（最大或者最小）那么可以采用PSO。又因为参数过多所以导致计算会很慢。

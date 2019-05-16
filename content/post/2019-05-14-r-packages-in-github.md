@@ -1,15 +1,15 @@
 ---
-title: R Packages in GitHub
+title: R Packages on GitHub
 author: Hoas
 date: '2019-05-14'
-slug: r-packages-in-github
+slug: r-packages-on-github
 categories:
   - fragmentray
 tags:
   - R
 lastmod: '2019-05-14T20:42:02+08:00'
-keywords: [R Packages in GitHub]
-description: 'R Packages in GitHub'
+keywords: [R Packages on GitHub]
+description: 'R Packages on GitHub'
 comment: yes
 toc: yes
 autoCollapseToc: no
@@ -24,7 +24,7 @@ mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
 
-R packages collecting in GitHub.
+R packages collecting on GitHub.
 
 <!--more-->
 
@@ -62,9 +62,9 @@ R packages collecting in GitHub.
 
 # File
 
-- [awalker89 / openxlsx](https://github.com/awalker89/openxlsx)
+[awalker89 / openxlsx](https://github.com/awalker89/openxlsx)
 
-- [alistaire47 / read.so](https://github.com/alistaire47/read.so)
+[alistaire47 / read.so](https://github.com/alistaire47/read.so)
 
 # HtmlWidget
 
@@ -86,12 +86,16 @@ R packages collecting in GitHub.
    3. [wilkelab / cowplot](https://github.com/wilkelab/cowplot)
    4. [jrnold / ggthemes](https://github.com/jrnold/ggthemes)
    5. [bbc / bbplot](https://github.com/bbc/bbplot)
+   6. [cttobin / ggthemr](https://github.com/cttobin/ggthemr)
+   7. [nanxstats / ggsci](https://github.com/nanxstats/ggsci)
 
 - Add-in:
   1. [dreamRs / esquisse](https://github.com/dreamRs/esquisse)
   2. [calligross / ggthemeassist](https://github.com/calligross/ggthemeassist)
+
 - Mark:
   1. [const-ae / ggsignif](https://github.com/const-ae/ggsignif)
+
 - Plot:
   1. [kassambara / ggpubr](https://github.com/kassambara/ggpubr)
   2. [ropensci / plotly](https://github.com/ropensci/plotly)

@@ -50,6 +50,8 @@ R packages collecting on GitHub.
 
 [rstudio / gt](https://github.com/rstudio/gt)
 
+[ewenharrison / finalfit](https://github.com/ewenharrison/finalfit)(Three lines table)
+
 # Map
 
 [riatelab / cartography](https://github.com/riatelab/cartography)
@@ -66,6 +68,8 @@ R packages collecting on GitHub.
 
 [alistaire47 / read.so](https://github.com/alistaire47/read.so)
 
+[r-lib / vroom](https://github.com/r-lib/vroom)
+
 # HtmlWidget
 
 [jbkunst / highcharter](https://github.com/jbkunst/highcharter)
@@ -80,6 +84,15 @@ R packages collecting on GitHub.
 
 # Ggplot2
 
+- There are three ways to align the grid(x/y axis ticks):
+
+	- `cowplot::plot_grid()`. Pay attention that this method gets rid of `ggalt::xspline()`;
+
+	- `egg::ggarrange()`;
+
+	- `patchwork::plot_layout()`.
+
+
 - Theme:
    1. [hrbrmstr / hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
    2. [ricardo-bion / ggtech](https://github.com/ricardo-bion/ggtech)
@@ -88,19 +101,23 @@ R packages collecting on GitHub.
    5. [bbc / bbplot](https://github.com/bbc/bbplot)
    6. [cttobin / ggthemr](https://github.com/cttobin/ggthemr)
    7. [nanxstats / ggsci](https://github.com/nanxstats/ggsci)
-
 - Add-in:
   1. [dreamRs / esquisse](https://github.com/dreamRs/esquisse)
   2. [calligross / ggthemeassist](https://github.com/calligross/ggthemeassist)
-
 - Mark:
   1. [const-ae / ggsignif](https://github.com/const-ae/ggsignif)
-
 - Plot:
   1. [kassambara / ggpubr](https://github.com/kassambara/ggpubr)
   2. [ropensci / plotly](https://github.com/ropensci/plotly)
   3. [thomasp85 / gganimate](https://github.com/thomasp85/gganimate)
   4. [rstudio / ggvis](https://github.com/rstudio/ggvis)
+  5. [oswaldosantos / ggsn](https://github.com/oswaldosantos/ggsn)
+  6. [RobWHickman / ggparliament](https://github.com/RobWHickman/ggparliament)
+  7. [daattali / ggExtra](https://github.com/daattali/ggExtra)
+  8. [IndrajeetPatil / ggstatsplot](https://github.com/IndrajeetPatil/ggstatsplot)
+- Else:
+
+   1. [thomasp85 / ggforce](https://github.com/thomasp85/ggforce)
 
 # Text Mining
 
@@ -148,6 +165,12 @@ R packages collecting on GitHub.
 
 [r-lib / crayon](https://github.com/r-lib/crayon)
 
+[mdequeljoe / rdoc](https://github.com/mdequeljoe/rdoc)
+
+[Nowosad / rcartocolor](https://github.com/Nowosad/rcartocolor)
+
+[EmilHvitfeldt / paletteer](https://github.com/EmilHvitfeldt/paletteer)
+
 # Tools
 
 [dcomtois / summarytools](https://github.com/dcomtois/summarytools)
@@ -167,3 +190,7 @@ R packages collecting on GitHub.
 # Help
 
 [amrrs / For-Data-Science-Beginners](https://github.com/amrrs/For-Data-Science-Beginners)
+
+# statistic
+
+[tidymodels / infer](https://github.com/tidymodels/infer)

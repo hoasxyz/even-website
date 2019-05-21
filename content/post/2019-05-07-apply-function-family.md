@@ -214,3 +214,100 @@ sapply(a, function(x) matrix(x, 2, 2))
 ```
 
 <sup>Created on 2019-05-07 by the [reprex package](https://reprex.tidyverse.org) (v0.2.1)</sup>
+
+# Parallel
+
+`*apply`函数族用得多的还数前三个，可是哪个更快些呢？使用新安江模型测试。包含数据导入在内，整个新安江模型一遍需要0.3秒左右，如果去掉洪号的list，可以缩短至0.20秒左右，其中数据的导入只需0.03秒：
+
+```r
+> system.time(xaj.model(raw_param))
+用户 系统 流逝 
+0.29 0.02 0.30 
+```
+
+这里使用[PSO算法](https://hoas.xyz/post/particle-swarm-optimization/)优化参数，其中参数矩阵为：
+
+``` r
+> par_matrix %>% str
+ num [1:100, 1:13] 107.9 30.9 149.4 100.4 58 ...
+ - attr(*, "dimnames")=List of 2
+  ..$ : NULL
+  ..$ : chr [1:13] "WM" "WUM" "WLM" "K" ...
+```
+
+## `*pply()`
+
+`sapply()`>`lapply()`>`apply()`：
+
+```r
+> system.time(apply(par_matrix, 1, xaj.model))
+ 用户  系统  流逝 
+22.65  2.22 26.99 
+> system.time(lapply(par_matrix %>% t %>% data.frame, xaj.model) %>% unlist)
+ 用户  系统  流逝 
+20.33  1.50 24.09 
+> system.time(sapply(par_matrix %>% t %>% data.frame, xaj.model, simplify = TRUE))
+ 用户  系统  流逝 
+19.62  1.53 22.02 
+```
+
+## `snow::*` or `parallel::*`
+
+`parapply()`>`parLapply()`>`parApply()`：
+
+```r
+> # Calculate the number of cores
+> no_cores <- detectCores() - 1
+> # Initiate cluster
+> cl <- makeCluster(no_cores)
+> system.time(parApply(cl, par_matrix, 1, xaj.model))
+用户 系统 流逝 
+0.45 0.30 9.91 
+> system.time(parLapply(cl, par_matrix %>% t %>% data.frame, xaj.model))
+用户 系统 流逝 
+0.45 0.28 8.96 
+> system.time(parSapply(cl, par_matrix %>% t %>% data.frame, xaj.model, simplify = TRUE))
+用户 系统 流逝 
+0.06 0.19 8.11 
+
+> stopCluster(cl)
+```
+
+## `snowfall::`
+
+```r
+> sfInit(parallel = TRUE, cpus = detectCores() - 1)
+
+> system.time(sfApply(par_matrix, 1, xaj.model))
+用户 系统 流逝 
+0.00 0.20 8.90 
+> system.time(sfLapply(par_matrix %>% t %>% data.frame, xaj.model))
+用户 系统 流逝 
+0.04 0.13 7.90 
+> system.time(sfSapply(par_matrix %>% t %>% data.frame, xaj.model, simplify = TRUE))
+用户 系统 流逝 
+0.05 0.15 7.74 
+> system.time(sfApply(par_matrix, 1, xaj.model))
+
+> sfStop()
+
+Stopping cluster
+```
+
+## `future.apply::`
+
+```r
+> system.time(future_apply(par_matrix, 1, xaj.model))
+ 用户  系统  流逝 
+18.56  1.38 20.44 
+> system.time(future_lapply(par_matrix %>% t %>% data.frame, xaj.model) %>% unlist)
+ 用户  系统  流逝 
+16.34  1.25 17.78 
+> system.time(future_sapply(par_matrix %>% t %>% data.frame, xaj.model, simplify = TRUE))
+ 用户  系统  流逝 
+16.93  1.26 18.97 
+```
+
+## `foreach()`
+
+对`if()`函数的并行优化，这里只能是对速度的优化，如果迭代有先后顺序那么就很抱歉了……这个思想和该函数族一样，说白了高级语言还就只是高级语言，[具体用法](https://blog.csdn.net/sinat_26917383/article/details/52719232)这里的比较初级。

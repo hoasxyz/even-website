@@ -36,6 +36,16 @@ R packages collecting on GitHub.
 
 [rstudio / shinythemes](https://github.com/rstudio/shinythemes)
 
+[daattali / shinyjs](https://github.com/daattali/shinyjs)
+
+[daattali / advanced-shiny](https://github.com/daattali/advanced-shiny)
+
+[dreamRs / shinyWidgets](https://github.com/dreamRs/shinyWidgets)
+
+[rstudio / shinydashboard](https://github.com/rstudio/shinydashboard)
+
+[chriddyp / plotly-shiny](https://github.com/chriddyp/plotly-shiny)
+
 # Table
 
 [davidgohel / flextable](https://github.com/davidgohel/flextable)
@@ -84,15 +94,6 @@ R packages collecting on GitHub.
 
 # Ggplot2
 
-- There are three ways to align the grid(x/y axis ticks):
-
-	- `cowplot::plot_grid()`. Pay attention that this method gets rid of `ggalt::xspline()`;
-
-	- `egg::ggarrange()`;
-
-	- `patchwork::plot_layout()`.
-
-
 - Theme:
    1. [hrbrmstr / hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
    2. [ricardo-bion / ggtech](https://github.com/ricardo-bion/ggtech)
@@ -101,11 +102,17 @@ R packages collecting on GitHub.
    5. [bbc / bbplot](https://github.com/bbc/bbplot)
    6. [cttobin / ggthemr](https://github.com/cttobin/ggthemr)
    7. [nanxstats / ggsci](https://github.com/nanxstats/ggsci)
+   8. [gadenbuie / ggpomological](https://github.com/gadenbuie/ggpomological)
+
 - Add-in:
   1. [dreamRs / esquisse](https://github.com/dreamRs/esquisse)
   2. [calligross / ggthemeassist](https://github.com/calligross/ggthemeassist)
+
 - Mark:
+
   1. [const-ae / ggsignif](https://github.com/const-ae/ggsignif)
+  2. [slowkow / ggrepel](https://github.com/slowkow/ggrepel)
+
 - Plot:
   1. [kassambara / ggpubr](https://github.com/kassambara/ggpubr)
   2. [ropensci / plotly](https://github.com/ropensci/plotly)
@@ -115,9 +122,20 @@ R packages collecting on GitHub.
   6. [RobWHickman / ggparliament](https://github.com/RobWHickman/ggparliament)
   7. [daattali / ggExtra](https://github.com/daattali/ggExtra)
   8. [IndrajeetPatil / ggstatsplot](https://github.com/IndrajeetPatil/ggstatsplot)
+
+- Combine:
+
+  1. ⭐[thomasp85 / patchwork](https://github.com/thomasp85/patchwork)
+
+  2. ⭐[baptiste / egg](https://github.com/baptiste/egg)
+  3. [kassambara / ggpubr](https://github.com/kassambara/ggpubr)
+  4. [**grid**](https://d.cosx.org/d/420679-ggplot2/11)
+  5. [wilkelab / cowplot](https://github.com/wilkelab/cowplot)
+
 - Else:
 
    1. [thomasp85 / ggforce](https://github.com/thomasp85/ggforce)
+   2. [ropensci / plotly](https://github.com/ropensci/plotly)
 
 # Text Mining
 

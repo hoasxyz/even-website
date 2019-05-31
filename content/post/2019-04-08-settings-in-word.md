@@ -69,3 +69,31 @@ hideHeaderAndFooter: no
 # 代码段
 
 代码段的行距固定为15磅才能显示下划线。
+
+其实这和字体有关，不过小于12磅后行间距会让人太压抑，字体是`Consolas`。
+
+# `PDFMOfficeAddin.dll`
+
+这个是比较坑的一个地方。word自带的PDF导出（即另存为）和文件中的打印设置不能完全还原成你想要的文档样式，目前已经发现了两点：
+
+1. 分页符后面空了一页，现在发现是为了保证**每节一定是偶数页**，我就奇了怪了之前怎么没发现；
+2. mathtype插入的章节符被打印出来了。
+
+于是乎，我自己的`.dll`文件又遇到了报错，反正就是使用不了，然后在官网一堆[解决方案](https://helpx.adobe.com/cn/acrobat/kb/pdfmaker-unavailable-office-2007-office.html)中找到了合适的答案：
+
+打开**命令提示符**（可以左下角搜索），然后以管理员身份运行，
+
+```cmd
+Microsoft Windows [版本 10.0.17134.765]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\WINDOWS\system32>regsvr32 "C:\Program Files\Adobe\Acrobat\PDFMaker\Office\x64\PDFMOfficeAddin.dll"
+
+C:\WINDOWS\system32>regsvr32 "C:\Program Files\Adobe\Acrobat\PDFMaker\Office\PDFMOfficeAddin.dll"
+
+C:\WINDOWS\system32>regsvr32 "D:\Adobe\Acrobat DC\PDFMaker\Office\x64\PDFMOfficeAddin.dll"
+
+C:\WINDOWS\system32>regsvr32 "D:\Adobe\Acrobat DC\PDFMaker\Office\PDFMOfficeAddin.dll"
+```
+
+其中在`x64`中的文件是最终的解决方案。

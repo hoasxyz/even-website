@@ -92,6 +92,8 @@ R packages collecting on GitHub.
 
 [cosname / recharts](https://github.com/cosname/recharts)
 
+[rstudio / dygraphs](https://github.com/rstudio/dygraphs)
+
 # Ggplot2
 
 - Theme:
@@ -103,39 +105,37 @@ R packages collecting on GitHub.
    6. [cttobin / ggthemr](https://github.com/cttobin/ggthemr)
    7. [nanxstats / ggsci](https://github.com/nanxstats/ggsci)
    8. [gadenbuie / ggpomological](https://github.com/gadenbuie/ggpomological)
-
 - Add-in:
   1. [dreamRs / esquisse](https://github.com/dreamRs/esquisse)
   2. [calligross / ggthemeassist](https://github.com/calligross/ggthemeassist)
-
 - Mark:
 
   1. [const-ae / ggsignif](https://github.com/const-ae/ggsignif)
   2. [slowkow / ggrepel](https://github.com/slowkow/ggrepel)
-
 - Plot:
   1. [kassambara / ggpubr](https://github.com/kassambara/ggpubr)
-  2. [ropensci / plotly](https://github.com/ropensci/plotly)
-  3. [thomasp85 / gganimate](https://github.com/thomasp85/gganimate)
-  4. [rstudio / ggvis](https://github.com/rstudio/ggvis)
-  5. [oswaldosantos / ggsn](https://github.com/oswaldosantos/ggsn)
-  6. [RobWHickman / ggparliament](https://github.com/RobWHickman/ggparliament)
-  7. [daattali / ggExtra](https://github.com/daattali/ggExtra)
-  8. [IndrajeetPatil / ggstatsplot](https://github.com/IndrajeetPatil/ggstatsplot)
-
+  2. [thomasp85 / gganimate](https://github.com/thomasp85/gganimate)
+  3. [oswaldosantos / ggsn](https://github.com/oswaldosantos/ggsn)
+  4. [RobWHickman / ggparliament](https://github.com/RobWHickman/ggparliament)
+  5. [daattali / ggExtra](https://github.com/daattali/ggExtra)
+  6. [IndrajeetPatil / ggstatsplot](https://github.com/IndrajeetPatil/ggstatsplot)
 - Combine:
 
   1. ⭐[thomasp85 / patchwork](https://github.com/thomasp85/patchwork)
-
   2. ⭐[baptiste / egg](https://github.com/baptiste/egg)
   3. [kassambara / ggpubr](https://github.com/kassambara/ggpubr)
   4. [**grid**](https://d.cosx.org/d/420679-ggplot2/11)
   5. [wilkelab / cowplot](https://github.com/wilkelab/cowplot)
-
+- Interactive:
+   1. [JohnCoene / g2r](https://github.com/JohnCoene/g2r)
+   2. [rstudio / ggvis](https://github.com/rstudio/ggvis)
+   3. [ropensci / plotly](https://github.com/ropensci/plotly)
+   4. [davidgohel / ggiraph](https://github.com/davidgohel/ggiraph)
 - Else:
 
    1. [thomasp85 / ggforce](https://github.com/thomasp85/ggforce)
    2. [ropensci / plotly](https://github.com/ropensci/plotly)
+   3. [strengejacke / ggeffects](https://github.com/strengejacke/ggeffects)
 
 # Text Mining
 
@@ -212,3 +212,4 @@ R packages collecting on GitHub.
 # statistic
 
 [tidymodels / infer](https://github.com/tidymodels/infer)
+

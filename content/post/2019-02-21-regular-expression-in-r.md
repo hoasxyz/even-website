@@ -310,6 +310,8 @@ You can also specify the number of matches precisely:
 - `{n,m}`: between n and m
 
 ```r
+x <- "1888 is the longest year in Roman numerals: MDCCCLXXXVIII"
+
 str_view(x, "C{2}")
 
 str_view(x, "C{2,}")

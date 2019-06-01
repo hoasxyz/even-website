@@ -97,3 +97,38 @@ C:\WINDOWS\system32>regsvr32 "D:\Adobe\Acrobat DC\PDFMaker\Office\PDFMOfficeAddi
 ```
 
 其中在`x64`中的文件是最终的解决方案。
+
+# 三线表样式设置
+
+主要是上下粗线和内框细线的区别，这个地方有点坑，必须要掌握好设置的顺序。word每次添加新线的磅数默认是0.5磅。因此先不要设置内框线，先设置好上下两个粗线，然后再添加内框线，这时已经默认为0.5磅了。设置上下框线可以**间**接在**格式-边框和底纹**中设置（说实话我不知道要这个有啥用……）。
+
+如果先设置好了一个粗磅，比如1.5磅，然后加上的新线默认为0.5磅，若这个时候在界面中（不是边框和底纹）修改磅数为0.75磅，那么所有的设置的线的磅数都为0.75磅了。
+
+经测试设置三种及三种以上不同粗细的线是不现实的……
+
+# Mathtype
+
+## 插入章节分隔符
+
+一般都是章，这个分隔符不要放在章标题上！我不知道如何不让它在目录中显示。
+
+# 参考文献
+
+R的两本书：
+
+- Hadley Wickam,Garrett Grolemund. R for Data Science[M]. First Edition. Sebastopol. O’Reilly Media, Inc. 2016(12).
+
+- Robert I. Kabacoff. R in Action[M]. Second Edition. Westampton. Manning Publications. 2015.
+
+# 文字样式
+
+文字样式在电脑中的位置为：`C:\Users\Hoas\AppData\Roaming\Microsoft\QuickStyles`。
+
+发现表格样式是包含在文字样式之内的，因为别的不清楚，所以我只留了一个文字样式。
+
+# `Normal.dot`
+
+以下内容要放在该文件中设置：
+
+- 默认表格样式；
+- 默认页眉页脚距两端距离。

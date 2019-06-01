@@ -384,3 +384,33 @@ mtcars[(1:nrow(mtcars))%%2==1,]
 mtcars[c(TRUE, FALSE), ]
 ```
 
+## 如何显示一个数据框中变量的缺失值
+
+```r
+> inspectdf::inspect_na(airquality, show_plot = TRUE)
+The `show_plot = TRUE` is deprecated and will be removed in a future version.  The `show_plot()` function should be used instead.  For more info, check out the help file ?show_plot()
+# A tibble: 6 x 3
+  col_name   cnt  pcnt
+  <chr>    <dbl> <dbl>
+1 Ozone       37 24.2 
+2 Solar.R      7  4.58
+3 Wind         0  0   
+4 Temp         0  0   
+5 Month        0  0   
+6 Day          0  0   
+```
+
+```
+> table(airquality$Ozone, useNA = 'ifany')
+
+   1    4    6    7    8    9   10   11   12   13   14   16   18   19   20   21   22   23   24   27   28   29 
+   1    1    1    3    1    3    1    3    2    4    4    4    4    1    4    4    1    6    2    1    3    1 
+  30   31   32   34   35   36   37   39   40   41   44   45   46   47   48   49   50   52   59   61   63   64 
+   2    1    3    1    2    2    2    2    1    1    3    2    1    1    1    1    1    1    2    1    1    2 
+  65   66   71   73   76   77   78   79   80   82   84   85   89   91   96   97  108  110  115  118  122  135 
+   1    1    1    2    1    1    2    1    1    1    1    2    1    1    1    2    1    1    1    1    1    1 
+ 168 <NA> 
+   1   37 
+```
+
+不过`vis_miss(airquality)`只能显示比例和图像，更加可视化了些。

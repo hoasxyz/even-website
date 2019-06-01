@@ -94,6 +94,8 @@ R packages collecting on GitHub.
 
 [rstudio / dygraphs](https://github.com/rstudio/dygraphs)
 
+[kilianreber / chartbookR](https://github.com/kilianreber/chartbookR)
+
 # Ggplot2
 
 - Theme:
@@ -213,3 +215,14 @@ R packages collecting on GitHub.
 
 [tidymodels / infer](https://github.com/tidymodels/infer)
 
+[jacob-long / interactions](https://github.com/jacob-long/interactions)
+
+# Data.frame Visualisation
+
+[alastairrushworth / inspectdf](https://github.com/alastairrushworth/inspectdf)
+
+[ropensci / visdat](https://github.com/ropensci/visdat)
+
+# High-performance computing
+
+[ropensci / drake](https://github.com/ropensci/drake)

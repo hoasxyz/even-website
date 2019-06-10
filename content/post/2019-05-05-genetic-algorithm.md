@@ -250,3 +250,38 @@ GA | iter = 300 | Mean = -0.1747869 | Best = -0.1497262
 [1,] 1.850547
 ```
 
+# `genalg::rbga()`
+
+```r
+rbga(stringMin=c(), stringMax=c(),
+     suggestions=NULL,
+     popSize=200, iters=100,
+     mutationChance=NA,
+     elitism=NA,
+     monitorFunc=NULL, evalFunc=NULL,
+     showSettings=FALSE, verbose=FALSE)
+```
+
+| Arguments        | Meaning                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| `stringMin`      | vector with minimum values for each gene.                    |
+| `stringMax`      | vector with maximum values for each gene.                    |
+| `suggestions`    | optional list of suggested chromosomes                       |
+| `popSize`        | the population size.                                         |
+| `iters`          | the number of iterations.                                    |
+| `mutationChance` | the chance that a gene in the chromosome mutates. By default 1/(size+1). It affects the convergence rate and the probing of search space: a low chance results in quicker convergence, while a high chance increases the span of the search space. |
+| `elitism`        | the number of chromosomes that are kept into the next generation. By default is about 20% of the population size. |
+| `monitorFunc`    | Method run after each generation to allow monitoring of the optimization |
+| `evalFunc`       | User supplied method to calculate the evaluation function for the given chromosome |
+| `showSettings`   | if true the settings will be printed to screen. By default False. |
+| `verbose`        | if true the algorithm will be more verbose. By default False. |
+
+默认为求最小。
+
+```r
+rbga(stringMin = c( 30,  4, 20, 15, 0.02, 0.1, 10, 0.1, 0.01, 0.01, 0.980, 0.5, 0.01),
+     stringMax = c(150, 60, 50, 60, 0.50, 5.0, 50, 1.5, 0.50, 0.50, 1.000, 1.0, 1.0),
+     popSize = 50, iters = 10, mutationChance = 0.05,
+     evalFunc = xaj.model.min, verbose = TRUE)
+```
+

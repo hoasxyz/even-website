@@ -414,3 +414,34 @@ The `show_plot = TRUE` is deprecated and will be removed in a future version.  T
 ```
 
 不过`vis_miss(airquality)`只能显示比例和图像，更加可视化了些。
+
+# 矩阵分组求和
+
+<https://d.cosx.org/d/420730>
+
+``` r
+tmp <- matrix(data = sample(1:10, 12, replace = T), ncol = 2)
+rownames(tmp) <- c("A", "B", "B", "B", "C", "A")
+
+rowsum(tmp, row.names(tmp))
+#>   [,1] [,2]
+#> A   11   11
+#> B   12   13
+#> C    9   10
+
+tmp %>%
+  as_tibble(rownames = "grp") %>%
+  group_by(grp) %>%
+  summarise_all(sum)
+#> Warning: `as_tibble.matrix()` requires a matrix with column names or a `.name_repair` argument. Using compatibility `.name_repair`.
+#> This warning is displayed once per session.
+#> # A tibble: 3 x 3
+#>   grp      V1    V2
+#>   <chr> <int> <int>
+#> 1 A        11    11
+#> 2 B        12    13
+#> 3 C         9    10
+```
+
+<sup>Created on 2019-06-10 by the [reprex package](https://reprex.tidyverse.org) (v0.3.0)</sup>
+

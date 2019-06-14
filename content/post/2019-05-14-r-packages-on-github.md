@@ -177,6 +177,8 @@ R packages collecting on GitHub.
 
 [hebrewseniorlife / bookdownThemeEditor](https://github.com/hebrewseniorlife/bookdownThemeEditor)
 
+[brentthorne / posterdown](https://github.com/brentthorne/posterdown)
+
 # Color
 
 [karthik / wesanderson](https://github.com/karthik/wesanderson)
@@ -226,3 +228,8 @@ R packages collecting on GitHub.
 # High-performance computing
 
 [ropensci / drake](https://github.com/ropensci/drake)
+
+# Packages
+
+[r-lib / conflicted](https://github.com/r-lib/conflicted)
+

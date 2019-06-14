@@ -10,7 +10,7 @@ tags:
   - Shiny
 lastmod: '2019-05-18T22:38:21+08:00'
 keywords: [初识Shiny]
-draft: true
+draft: false
 description: '初识Shiny'
 comment: yes
 toc: yes
@@ -34,4 +34,94 @@ hideHeaderAndFooter: no
 </center>
 
 <!--more-->
+
+# 布局
+
+承袭**所见即所思**的思想，shiny的布局有时候让我感到很困惑，因为官方网站上也没有具体的示例，只有自己亲测布局。布局的解析就拿这次部署的[App](https://hoas.shinyapps.io/xajModel/)来展示：
+
+`ui.R`:
+
+```r
+tagList(
+  tags$head(
+    # 设置标题样式
+  ),
+  
+  h1(
+    # 设置标题
+  ),
+  
+  navbarPage(
+    theme = shinythemes::themeSelector(),
+    'label',
+    tabPanel( # 第一同级
+      'id',
+      icon,
+      sidebarLayout(
+        sidebarPanel( # 不放sidebar也行的！
+          width,
+          ...
+        )
+      ),
+      
+      mainPanel(
+        width,
+        ...
+      )
+    ),
+    
+    tabPanel( # 第二同级
+      mainPanel(
+        tabsetPanel(
+          'id', # 好像为必须，不然会报错！
+          tabPanel(...),
+          tabPanel(...),
+          tabPanel(...),
+        )
+      ),
+      column(
+        width,
+        wellPanel( # 好像不能设置宽度，column可以，默认为铺满
+          tabsetPanel(...)
+        )
+      )
+    ),
+    
+    tabPanel( # 第三同级
+      ...,
+      mainPanel(
+        tabsetPanel(...)
+      )
+    ),
+    
+    tabPanel( # 第四同级
+      ...,
+      mainPanel(...),
+      column(
+        wellPanel(tabsetPanel(...))
+      )
+    ),
+    
+    tabPanel( # 第五同级
+      ...,
+      mainPanel(...)
+    ),
+    
+    tabPanel( # 第六同级
+      ...,
+      mainPanel(
+        tabsetPanel(
+          ...,
+          tabPanel(
+            column(...),
+            column(...),
+            column(...)
+          ),
+          tabPanel(...) # 同上
+        )
+      )
+    )
+  )
+)
+```
 

@@ -138,3 +138,14 @@ ps.Start();
 ```
 
 不知道对不对，水库洪水调节计算指的是`ToolStripMenu`的名字。
+
+另一个[简单的方法](https://zhidao.baidu.com/question/264907314902042525.html?qbl=relate_question_0)亲测可以：
+
+```r
+string path = "cmd.exe";
+System.Diagnostics.Process.Start(path);
+
+string path = Application.StartupPath + "\\thrlay.exe";
+System.Diagnostics.Process.Start(path);
+```
+

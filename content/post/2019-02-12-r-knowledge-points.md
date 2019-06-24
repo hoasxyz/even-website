@@ -415,7 +415,7 @@ The `show_plot = TRUE` is deprecated and will be removed in a future version.  T
 
 不过`vis_miss(airquality)`只能显示比例和图像，更加可视化了些。
 
-# 矩阵分组求和
+## 矩阵分组求和
 
 <https://d.cosx.org/d/420730>
 

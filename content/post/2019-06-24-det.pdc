@@ -1,0 +1,131 @@
+---
+title: 行列式
+author: Hoas
+date: '2019-06-24'
+slug: det
+categories:
+  - course
+tags:
+  - Math
+lastmod: '2019-06-24T22:20:30+08:00'
+keywords: []
+description: ''
+comment: yes
+toc: yes
+autoCollapseToc: no
+postMetaInFooter: yes
+hiddenFromHomePage: no
+exclude_jquery: no
+contentCopyright: no
+reward: no
+mathjax: yes
+mathjaxEnableSingleDollar: yes
+mathjaxEnableAutoNumber: yes
+hideHeaderAndFooter: no
+---
+
+# 二阶行列式
+
+$$
+\left\{ 
+\begin{array}{c}
+a_{11}x_1 + a_{12}x_2= b_1 \\ 
+a_{21}x_1 + a_{22}x_2= b_2
+\end{array}
+\right.
+$$
+
+$$
+D = \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \\ \end{vmatrix} \neq 0, D_1 = \begin{vmatrix} b_{1} & a_{12} \\ b_{2} & a_{22} \\ \end{vmatrix}, D_2 = \begin{vmatrix} a_{11} & b_1 \\ a_{21} & b_2 \\ \end{vmatrix}
+$$
+
+$$
+x_1 = \frac{D_1}{D}, x_2 = \frac{D_2}{D}
+$$
+
+# 三阶行列式
+
+展开式为：主对角线-副对角线。
+
+$$
+\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \\ \end{vmatrix} = a_{11}a_{12}a_{13} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{11}a_{23}a_{32} - a_{12}a_{21}a_{33} - a_{13}a_{22}a_{31}
+$$
+
+<!--more-->
+
+# 全排列和对换
+
+逆序数为奇数的排列叫做奇排列；逆序数为偶数的排列叫做偶排列。例如$32514$的逆序数$ = 0 + 1 + 0 + 3 + 1 = 5$。
+
+排列中将任意两个元素对调其余元素不动称之为**对换**：
+
+- 定理1：一个排列中的任意两个元素对换，排列改变奇偶性。
+
+- 推论：奇排列对换成标准排列的对换次数为奇数，偶排列对换成标准排列的对换次数为偶数。
+
+# n阶行列式的定义
+
+$$
+\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \\ \end{vmatrix} = \sum(-1)^t a_{1p_1} a_{2p_2} a_{3p_3}
+$$
+
+其中$p_1, p_2, p_3$为列标的排列，$t$为排列的逆序数。
+
+**上下三角行列式**和**对角行列式**的值为行列式主对角线上的值的乘积。
+
+# 行列式的性质
+
+1. 行列式与它的转置行列式（关于主对角线对称）相等，即$D = D^T$。
+
+2. 对换行列式的两行（列），行列式变号。
+
+   	- 如果行列式有两行（列）完全相同，则此行列式等于零。
+
+3. 行列式的某一行（列）中所有的元素都乘同一数$k$，等于用数$k$乘此行列式。
+
+   	- 行列式中某一行（列）的所有元素的公因子可以提到行列式记号的外面。
+
+4. 行列式中如果有两行（列）元素成比例，则此行列式等于零。
+
+5. 若行列式的某一行（列）的元素都是两数之和，则可以将该行列式**拆分**为两个行列式。
+
+6. 把行列式的某一行（列）的各元素乘同一数然后加到另一行（列）对应的元素上去，行列式不变。
+
+## 方法
+
+1. 换行：
+
+$$
+\frac{n(n-1)}{2}
+$$
+
+2. 矩阵分块法。
+
+# 行列式按行（列）展开
+
+**余子式**$M_{ij}$和**代数余子式**$A_{ij} = (-1)^{i+j}M_{ij}$。
+
+- 一个$n$阶行列式，如果其中第$i$行所有元素除$a_{ij}$外都为零，那么这行列式等于$a_{ij}$与它的代数余子式的乘积，即：
+
+$$
+D = a_{ij}A_{ij}
+$$
+
+- 行列式等于它的任一行（列）的各元素与其对应的代数余子式乘积之和，上例为特例。
+
+- 行列式某一行（列）的元素与另一行（列）的对应元素的代数余子式乘积之和等于零。
+
+综上：
+$$
+\sum_{k=1}^n a_{ki}A_{kj} = \begin{cases}
+D, \quad when \; i = j \\
+0, \quad \; when \; i\neq j
+\end{cases}
+$$
+或：
+$$
+\sum_{k=1}^n a_{ik}A_{jk} = \begin{cases}
+D, \quad when \; i = j \\
+0, \quad \; when \; i\neq j
+\end{cases}
+$$

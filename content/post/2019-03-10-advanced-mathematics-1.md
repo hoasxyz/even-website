@@ -1,5 +1,5 @@
 ---
-title: 高数1 - 极限与连续
+title: 高数 1 - 极限与连续
 author: Hoas
 date: '2019-03-10'
 slug: advanced-mathematics-1

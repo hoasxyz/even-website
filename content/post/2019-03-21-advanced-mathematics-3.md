@@ -1,5 +1,5 @@
 ---
-title: 高数3 - 中值定理和导数
+title: 高数 3 - 中值定理和导数
 author: Hoas
 date: '2019-03-21'
 slug: advanced-mathematics-3

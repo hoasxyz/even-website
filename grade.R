@@ -16,10 +16,8 @@ colnames(grade) <- c(
   "school year", "semester", "score"
 )
 grade %<>%
-  clean_names("lower_camel")
-
-grade$courseType <- as.factor(grade$courseType)
-grade$schoolYear <- as.factor(grade$schoolYear)
+  clean_names("lower_camel") %>% 
+  purrr::modify_at(c('courseType', 'schoolYear'), as.factor)
 
 skimr::skim(grade)
 
@@ -55,6 +53,17 @@ grade %<>%
   }) %>%
   select(-i) %>%
   mutate(GPAWeight = GPA * courseCredit)
+
+grade %>% 
+  filter(schoolYear == 2018 & semester == 1) %>% 
+  with({
+    GPA <<- sum(GPAWeight) / sum(courseCredit)
+    totalCredit <<- sum(courseCredit)
+  })
+
+sum(grade_2018$GPAWeight) / sum(grade_2018$courseCredit)
+
+sum(grade$GPAWeight) / sum(grade$courseCredit)
 
 # overview ----------------------------------------------------------------
 
@@ -176,3 +185,4 @@ grade %>%
   geom_text(aes(label = count),
             vjust = 1, position = position_stack()
   )
+

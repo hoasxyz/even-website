@@ -3,7 +3,7 @@ p_load(readxl, ggthemes, ggtech)
 
 # data input and manipulation ---------------------------------------------
 
-grade <- read_xlsx("E:\\1R\\website\\Excel\\mygrade.xlsx")
+grade <- read_xlsx("E:\\1R\\website\\Excel\\xuxiangrade.xlsx")
 
 grade %<>%
   remove_empty("cols") %>%
@@ -59,6 +59,7 @@ grade %>%
   with({
     GPA <<- sum(GPAWeight) / sum(courseCredit)
     totalCredit <<- sum(courseCredit)
+    averageScore <<- sum(scoreWeight) / sum(courseCredit)
   })
 
 sum(grade_2018$GPAWeight) / sum(grade_2018$courseCredit)

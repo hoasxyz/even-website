@@ -55,7 +55,7 @@ grade %<>%
   mutate(GPAWeight = GPA * courseCredit)
 
 grade %>% 
-  filter(schoolYear == 2018 & semester == 1) %>% 
+  filter(courseType != '公共选修') %>% 
   with({
     GPA <<- sum(GPAWeight) / sum(courseCredit)
     totalCredit <<- sum(courseCredit)

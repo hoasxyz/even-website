@@ -3,7 +3,7 @@ p_load(readxl, ggthemes, ggtech)
 
 # data input and manipulation ---------------------------------------------
 
-grade <- read_xlsx("E:\\1R\\website\\Excel\\xuxiangrade.xlsx")
+grade <- read_xlsx("E:\\1R\\website\\Excel\\mygrade.xlsx")
 
 grade %<>%
   remove_empty("cols") %>%
@@ -66,6 +66,12 @@ sum(grade_2018$GPAWeight) / sum(grade_2018$courseCredit)
 
 sum(grade$GPAWeight) / sum(grade$courseCredit)
 
+
+
+grade_2018 <- grade %>% 
+  filter(schoolYear == 2018 & courseType != '公共选修')
+
+sum(grade_2018$scoreWeight) / sum(grade_2018$courseCredit)
 # overview ----------------------------------------------------------------
 
 grade %>%

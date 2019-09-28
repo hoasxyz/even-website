@@ -233,3 +233,7 @@ R packages collecting on GitHub.
 
 [r-lib / conflicted](https://github.com/r-lib/conflicted)
 
+# Extract
+
+[ropensci / tabulizer](https://github.com/ropensci/tabulizer) with [example](https://www.r-bloggers.com/pdf-scraping-in-r-with-tabulizer/)
+

@@ -159,7 +159,6 @@ setTimeout(showsectime, 1000);
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 - One fast and free [CDN](http://raw.githack.com/) can be used with github!
-
 - Embed Slides in Your Blog: 
 
   - https://timmastny.rbind.io/blog/embed-slides-knitr-blogdown/;
@@ -167,5 +166,5 @@ setTimeout(showsectime, 1000);
   - https://portfolio.peter-baumgartner.net/2018/07/21/presentations-with-xaringan/;
   
   - https://stackoverflow.com/questions/51459120/blogdown-xaringan-does-not-work-after-using-chakra-option.
-
 - Add `pangu.js`(盘古之白): https://yihui.name/cn/2017/05/pangu/
+- When you do not want to write a git commit:https://d.cosx.org/d/420396-git-commit

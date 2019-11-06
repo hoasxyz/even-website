@@ -307,7 +307,7 @@ ggplot(tb,aes(x = month,y = value, color = variable)) +
 ```
 
 When you meet with sequences of times and two or more sets of plot types, for example, `col` and `shape`:
-```{r echo=TRUE, warning=FALSE}
+```{r echo=TRUE, message=FALSE, warning=FALSE}
 library(readxl)
 library(reshape2)
 library(lubridate)

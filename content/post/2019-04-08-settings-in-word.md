@@ -146,3 +146,14 @@ R的两本书：
 - 默认页边距标准：上边距为25mm，下边距为20mm，左边距为30mm，右边距为30mm。然后再点击窗口左下方“设为默认值”。
 
 当保存封面样式时会问到将样式保存到`normal`中还是`building blocks`里，我选择了`building blocks`，虽然放狗搜并没有得到一个好的结论。
+
+# R语言高清图插入
+
+在论坛：
+
+1.  https://d.cosx.org/d/420771-rstudio ;
+2.  https://d.cosx.org/d/421024-r-rstudio/4 
+
+中均未得到一个让我比较满意的结果。但并不是没有结果，可以用来保存少量高质量的PDF或者是PNG图像，不过操作略微繁琐，不适合大批量图像的使用。
+
+在RStudio中，将图像以metafile的形式导出至剪贴板，然后放置到word中进行裁剪。将word文件导出为PDF格式的文件不能通过Adobe acrobat和内置的导出为PDF，而是需要在打印中选择Microsoft Print to PDF打印机去打印。这个可以正常显示DIN字体。

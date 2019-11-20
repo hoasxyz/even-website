@@ -166,5 +166,7 @@ setTimeout(showsectime, 1000);
   - https://portfolio.peter-baumgartner.net/2018/07/21/presentations-with-xaringan/;
   
   - https://stackoverflow.com/questions/51459120/blogdown-xaringan-does-not-work-after-using-chakra-option.
-- Add `pangu.js`(盘古之白): https://yihui.name/cn/2017/05/pangu/
+  
+- Add `pangu.js`(盘古之白): https://yihui.name/cn/2017/05/pangu/ in `footer.html` file.
+
 - When you do not want to write a git commit:https://d.cosx.org/d/420396-git-commit

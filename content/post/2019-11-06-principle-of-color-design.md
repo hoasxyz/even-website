@@ -24,7 +24,7 @@ mathjaxEnableAutoNumber: yes
 hideHeaderAndFooter: no
 ---
 
-色彩有各种各样的分类或者表达方式，《色彩设计的原理》中使用的是被认定为色彩学基础的“[曼塞尔色系](https://baike.baidu.com/item/%E5%AD%9F%E5%A1%9E%E5%B0%94%E9%A2%9C%E8%89%B2%E7%B3%BB%E7%BB%9F/2754031?fr=aladdin)”（Munsell）。这种方法将色彩分为**色相**、**纯度**、**明度**三种要素。
+色彩有各种各样的分类或者表达方式，[《色彩设计的原理》](https://book.douban.com/subject/6790599/)中使用的是被认定为色彩学基础的“[曼塞尔色系](https://baike.baidu.com/item/%E5%AD%9F%E5%A1%9E%E5%B0%94%E9%A2%9C%E8%89%B2%E7%B3%BB%E7%BB%9F/2754031?fr=aladdin)”（Munsell）。这种方法将色彩分为**色相**、**纯度**、**明度**三种要素。
 
 ![三要素](https://pic4.zhimg.com/80/8fd1eed9e957d90904bc7719d1473dbf_hd.jpg)
 

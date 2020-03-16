@@ -35,7 +35,7 @@ hideHeaderAndFooter: no
 
 ## 表格运算
 
-在[上次课设中介绍的表格运算](https://hoas.xyz/post/summary-of-course-design/)里，
+在[上次课设中介绍的表格运算](https://hoas.netlify.com/post/summary-of-course-design/)里，
 
 1. 如果中途生成了非向量形式的结构，比如`matrix`或者`data.frame`，那么需要在每次循环最后进行移除；
 2. 如果每次循环有生成下次循环的初始变量，那么可以在循环的最后加上`if(i < length(y)) z[i + 1] <- z_next[i]`，最开始最好全部赋值为`NA`，用`if(i == 1) z[i] <- z0`引入初值；
